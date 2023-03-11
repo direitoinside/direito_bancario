@@ -1,0 +1,2037 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Portal de Serviços e-SAJ</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=02002AJPZ0000&processo.foro=2&processo.numero=1028254-91.2022.8.26.0002';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=5560b6f0-f08c-4c04-8b8f-a4d1afc40cdf"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=1bc1f261-79f4-4d85-bb3b-841640f42801"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=b356b281-a290-4ee5-be4b-5cac52d11216"></script><script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.5/lodash.js?n=7c43fb40-c492-4529-a88c-d72b6b829587"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=faa4e604-119c-4c73-aae7-76d0a5993031"></script><script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=13577c34-a8ec-4418-9578-68951cb93e25"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=4192496e-c67f-44a4-a3c1-4e0d38ccc83f"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=dcb31eb8-b217-4576-9525-e41333228427"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=c3e2a135-67be-4db1-8c41-d69485bdd482"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=c9dedce0-8216-4b43-b7b2-150a63bff307"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=3236211a-0ed2-4f29-81c3-f614fa62cf71"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=9f6aa096-d777-4707-a641-e496ce5e04dc"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=26c33a8c-8055-4531-a865-a567be048b32"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=686458821"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=98ed0563-76b0-4961-a878-6c90fc9e341b"></script><script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=88149fee-fdac-4ab0-8e15-ec168dd83d31" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script><script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script><script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos à pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script><script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=1814283828"></script><script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+				
+			})
+		})(jQuery);
+	</script><script src="https://fast.conpass.io/H1xuDQHJ8X.js"></script><script type="text/javascript">
+            Conpass.init({
+                email: "277519",
+            });
+        </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script><!-- HEADER--><div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions__barra">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="/cpopg/abrirPastaDigital.do?processo.codigo=02002AJPZ0000">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="/cpopg/abrirPastaDigital.do?processo.codigo=02002AJPZ0000&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                            <button class="btn btn-primary btn-space" id="pbPeticionar" name="pbPeticionar" onclick="window.location.href = '/cpopg/peticionarIntermediariaParaProcesso.do?cdProcesso=02002AJPZ0000&amp;cdForo=2&amp;peticionanteResponsavel=277519-277519'">
+                                Peticionar
+                            </button>
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary__barra">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        1028254-91.2022.8.26.0002
+                    </span>
+                    
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento do Juizado Especial Cível">Procedimento do Juizado Especial Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Interpretação / Revisão de Contrato">Interpretação / Revisão de Contrato</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro Regional II - Santo Amaro">Foro Regional II - Santo Amaro</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="1ª Vara do Juizado Especial Cível">1ª Vara do Juizado Especial Cível</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Marina San Juan Melo">Marina San Juan Melo</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details__barra">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">05/05/2022 às 08:46 - Livre</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2022/001843</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span>
+</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         4.077,35</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left aside-nav--acessibilidade"><div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--light.png" alt=""></a>
+        </header><nav class="aside-nav__main-menu"><ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"></ul></nav><div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside><aside class="aside-nav aside-nav--right aside-nav__user"><div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/aside/brasoes/br-tjsp.jpg" alt="">
+</div>
+            <ul class="aside-nav__user__sign__list">
+<li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de São Paulo</span></li>
+            </ul>
+<a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--dark.png" alt=""></a>
+        </div>
+        <hr>
+<div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+<li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+<ul class="aside-nav__user__info__list-access">
+<li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+</div>
+    </div>
+</aside><header><link rel="shortcut icon" href="https://esaj.tjsp.jus.br/esaj/tema/padrao/clientes/SP/imagens/favicon.ico" type="image/x-icon">
+<link href="https://esaj.tjsp.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+<nav class="header__navbar--barra"><div class="header__navbar__barra-acessibilidade">
+                <a class="header__navbar__barra-acessibilidade-anchor" target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes"><span>Acessibilidade</span></a>
+                <a target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes">
+                    <img onmouseover="exibirLibras()" onmouseleave="ocultarLibras()" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/mao.png" alt="MAO"></a>
+            </div>
+            <img id="gifLibras" class="header__navbar__barra-acessibilidade-libras" style="display: none" height="100" width="100" border="0" alt="LIBRAS" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/libras.gif"><a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href="">
+<a class="linkLogo" href="https://esaj.tjsp.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos do 1ºGrau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+<li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjsp.jus.br/"> TJSP </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text"></span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul></nav></header><div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script><script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://esaj.tjsp.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://esaj.tjsp.jus.br/sajcas/conteudoIdentificacaoJson?script=1677308505871&retorno=' + encodeURIComponent(location.href);
+</script><script src="https://esaj.tjsp.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script><script src="https://esaj.tjsp.jus.br/sajcas/seletorVersaoBeta.js?n=3fc713ba-90c0-4172-a138-2e539a6e6819&amp;versao=2"></script><script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqte </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Miriam de Lima Mastiguin
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Felipe Moura Paz Landim
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqdo </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					AYMORÉ CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Henrique José Parada Simão
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+</table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<thead>
+<tr>
+<th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true"> </th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody id="tabelaUltimasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Publicação: 23/01/2023
+Número do Diário: 3654
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Dispensado o relatório, nos termos do art. 38, da Lei 9099/95, fundamento e decido. O feito comporta julgamento antecipado, nos termos do art. 355, I, do CPC, sendo desnecessária a produção de prova oral em audiência. Ademais, os documentos carreados aos autos são suficientes a compreensão do tema e julgamento do pedido. Cuida-se de ação revisional de cláusulas contratuais. Afasto, inicialmente, a preliminar de impugnação ao requerimento de assistência judiciaria gratuita, ante a gratuidade na tramitação dos processos no Juizado Especial Cível, na fase de conhecimento. Desacolho, ainda, a prescrição aventada, vez que no caso dos autos, incide a prescrição decenal. Assim a jurisprudência predominante, no sentido de que os pedidos de restituição de quantias pagas estabelecidas em contrato sujeitam-se ao prazo decenal (art. 205 CC). No mérito, tenho que o pedido não comporta acolhimento. Pois bem, a parte autora pleitea a incidência de juros simples em sua amortização, calculados apenas uma vez no início do contrato. Há entendimento consolidado pelo Superior Tribunal de Justiça, entretanto, no sentido de que, após a edição da MP 2170-36, de 2000, não mais é vedado a instituições financeiras a capitalização de juros (Súmula 382 do STJ). Não há qualquer ilegalidade, assim, no sistema de amortização aplicado. Ademais, o contrato firmado entre as partes, acostado aos autos, contempla taxa de juros anual superior ao duodécuplo da mensal, conforme acima especificado, o que basta para autorizar a cobrança da taxa efetiva anual contratada (STJ - REsp 973827/RS, afetado para julgamento o rito dos recursos repetitivos), do qual a parte estava ciente. Confira-se a jurisprudência acerca do tema: Apelação Contrato bancário Cédula de Crédito Bancário Contrato de financiamento para aquisição de veículo Ação revisional Improcedência Código de Defesa do Consumidor Incidência Súmula n. 297 do E. Superior Tribunal de Justiça Encargos financeiros Abusividade da taxa de juros remuneratórios praticada não evidenciada Capitalização de juros É permitida a capitalização de juros com periodicidade inferior a um ano em contratos celebrados após 31.3.2000, data da publicação da Medida Provisória nº 1.963-17/2000 (em vigor como MP-2.170-36/2001), desde que expressamente pactuada A previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança da taxa efetiva anual contratada Prevalecimento, no caso, da nova orientação acolhida pelo E. Superior Tribunal de Justiça no julgamento do Recurso Especial n. 973.827-RS, processado nos termos do art. 543-C do CPC Pretensão de substituição do sistema de amortização Tabela Price pelo Método Sac ou Gauss Impossibilidade diante do ajuste contratual Comissão de permanência Embora não haja no contrato menção expressa à cobrança de comissão de permanência, há previsão de juros moratórios à taxa de 1% ao mês, cumulados com juros remuneratórios e multa de 2% Forma disfarçada e indevida de cobrar comissão de permanência, embutindo os encargos cumulativamente Inadmissibilidade Aplicação da Súmula 472 do STJ que impede a cumulação da comissão de permanência com outros encargos moratórios e remuneratórios, devendo ser limitada à taxa de juros pactuada e à taxa média de mercado divulgada pelo Banco Central Tarifa de cadastro Tarifa cobrada para confecção de cadastro para início de relacionamento Abusividade, entretanto, quanto ao valor cobrado Redução que deve ser determinada de acordo com valor médio divulgado no período Recurso parcialmente provido. (TJSP; Apelação Cível 1005412-35.2019.8.26.0322; Relator (a): Thiago de Siqueira; Órgão Julgador: 14ª Câmara de Direito Privado; Foro de Lins - 3ª Vara Cível; Data do Julgamento: 29/03/2021; Data de Registro: 29/03/2021) Restou assentado no REsp.1061530/RS, decidido na sistemática dos recursos repetitivos, que a revisão das taxas de juros remuneratórios dos contratos de mútuo bancário é possível, em situações excepcionais, "desde que caracterizada a relação de consumo e a abusividade, no sentido de colocar o consumidor em desvantagem exagerada, ficasse cabalmente demonstrada ante as peculiaridades do caso concreto". (REsp1061530/ RS RECURSO ESPECIAL 2008/0119992-4 Relator(a) Ministra NANCY ANDRIGHI (1118) Órgão Julgador S2 - SEGUNDA SEÇÃO Data do Julgamento 22/10/2008 Data da Publicação/Fonte DJe 10/03/2009) Neste sentido vem-se decidindo: PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. BANCÁRIO. JUROS REMUNERATÓRIOS. LIMITAÇÃO. COMPROVAÇÃO DE ABUSO. AUSÊNCIA. REEXAME DE MATÉRIA CONTRATUAL E FÁTICA DA LIDE. SÚMULAS 5 E 7 DO SUPERIOR TRIBUNAL DE JUSTIÇA. INCIDÊNCIA. 1. Nos termos da jurisprudência sedimentada em sede de recurso especial repetitivo (REsp nº 1.061.530/RS, Rel. Ministra NANCY ANDRIGHI, DJe de 10/3/2009), admite-se a revisão das taxas de juros remuneratórios desde que o abuso fique cabalmente demonstrado diante das peculiaridades do caso concreto, não sendo suficiente o mero fato de a taxa cobrada estar acima da média de mercado. 2. Tendo o Tribunal de origem registrado não ser hipótese de abuso na cobrança da taxa em relação à média de mercado, inviável o recurso especial, eis que sua análise impõe reexame da matéria contratual e fática da lide, vedado nos termos dos enunciados nº 5 e 7 da Súmula do STJ. 3. Agravo interno a que se nega provimento. (AgInt no AREsp 766348 / MS, AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL 2015/0209128-4, Relator(a) Ministra MARIA ISABEL GALLOTTI (1145), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 09/05/2017, Data da Publicação/ DJe 16/05/2017) g.n. AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL.CONTRATO BANCÁRIO. JUROS REMUNERATÓRIOS. INAPLICÁVEL LIMITAÇÃO EM12% AO ANO. JUROS DE MORA. PERCENTUAL CONTRATADO EM 1% AO MÊS.POSSIBILIDADE. REPETIÇÃO/COMPENSAÇÃO DO INDÉBITO. AGRAVO DESPROVIDO. 1. A taxa de juros remuneratórios praticada pela instituição financeira acima da taxa média do mercado não induz, por si só, à conclusão de tratar-se de cobrança abusiva. Precedentes. Assim, ante a ausência de comprovação cabal da cobrança abusiva, deve ser mantida, in casu, a taxa de juros remuneratórios acordada. 2. Os juros moratórios cobrados em contratos bancários podem ser pactuados até o limite de 12% ao ano, previsto na Lei de Usura, ao passo que seu piso obedeceria à prescrição legal do art. 1.062 do Código Civil revogado, como ocorrente no caso em tela, ficando mantido o percentual contratado, que se adequa à faixa admitida pelo posicionamento jurisprudencial mais moderno. 3. No que concerne à compensação de valores e à repetição do indébito, esta eg. Corte tem jurisprudência pacífica no sentido de seu cabimento "sempre que verificado o pagamento indevido, em repúdio ao enriquecimento ilícito de quem o receber, independentemente da comprovação do erro" (REsp 615.012/RS, Quarta Turma, Rel. Min. Luis Felipe Salomão, DJe de 8.6.2010). 4. Agravo regimental a que se nega provimento. (AgRg no AREsp 591826 / RS, AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL 2014/0250849-8, Relator(a) Ministro RAUL ARAÚJO (1143), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 08/03/2016, Data da Publicação/Fonte DJe 17/03/2016) g.n. No caso em tela, não vislumbro a alegada abusividade em taxa de juros aplicada, mormente porque o consumidor tinha pleno conhecimento do valor das parcelas e dos juros aplicados, com os quais, de forma expressa, concordou, conforme se extrai do contrato acostado aos autos. No que toca à cobrança da denominada tarifa de cadastro, igualmente, razão não assiste razão a parte autora. Neste sentido, a jurisprudência pacificada do C. STJ , firmada em recurso especial repetitivo (REsp 1.251.331) e cristalizada na Súmula 566 do STJ, é de que nos contratos bancários posteriores ao início da vigência da Resolução-CMN n. 3.518/2007, em 30/4/2008, pode ser cobrada a tarifa de cadastro, expressamente tipificada em ato normativo padronizador da autoridade monetária, a qual, entretanto, somente pode ser cobrada no início do relacionamento entre o consumidor e a instituição financeira. Note-se que, in casu, a parte autora não demonstrou que era correntista da ré, de forma que a cobrança da taxa em comento não se revestiu de ilegitimidade, inclusive porque correspondeu a prática de atos administrativos, tratando-se de contraprestação por serviços prestados. Resta analisar a alegação de que teria ocorrido venda casada relativamente a contratação do seguro prestamista. Como se sabe, o seguro em comento tem por objetivo o pagamento de algumas prestações ou a quitação do saldo devedor na hipótese de morte/invalidez/desemprego do segurado, ou alguma situação adversa. In casu, pode-se observar que o mesmo foi contratado em documento apartado e junto a empresa de seguro distinta da ré (fls.16- Zurich Santander Bras), o qua afasta a tese de que a contratação teria sido imposta pelo agente financeiro como condição para a liberação do financiamento. Ao contrário, indica que o consumidor concordou em realizar a avença de forma livre e consciente. É o quanto basta. Ante o exposto, julgo IMPROCEDENTE o pedido e, em consequência, extingo o feito, com resolução do mérito, nos termos do art. 487, I, do CPC. Custas e honorários advocatícios "ex lege". Para apreciação do pedido de concessão dos benefícios da justiça gratuita, a parte autora deverá apresentar documentos que comprovem seu atual estado de hipossuficiência (duas últimas declarações de bens e rendimentos utilizadas para fins de imposto de renda perante a Receita Federal, ou caso se declare, sob as penas da lei, contribuinte isenta de I.R., deverá anexar os dois últimos comprovantes de rendimento mensais). Na hipótese de interposição de recurso inominado, o que poderá ocorrer no prazo de 10 dias, deverá ser recolhido preparo, composto de duas verbas: a) 1% sobre o valor da causa, observado o mínimo de 05 UFESPS (correspondente as custas dispensadas em 1ª Instância de jurisdição), mais b) 4% (quatro por cento) sobre o valor da causa, ou, nas hipóteses de pedido condenatório, 4% sobre o valor fixado na sentença se for líquido, ou, se ilíquido, sobre o valor fixado pelo juiz para esse fim, observado também o mínimo de 05 UFESPS- guia DARE-SP- Documento de Arrecadação de Receitas Estaduais Código de Receita 230-6), acrescido das despesas processuais referentes a todos os serviços forenses realizados, nos termos do comunicado 1530/2021, montante a ser recolhido no prazo de 48 horas, a contar da interposição do recurso, independentemente de nova intimação. Caso tenha ocorrido depósito de mídia em cartório, deverá a parte depositante, no prazo de 15 (quinze) dias contados a partir do trânsito em julgado e independentemente de nova intimação, comparecer perante esta unidade e proceder a retirada. Decorrido o prazo e na inércia do interessado, fica a serventia autorizada a proceder a inutilização das referidas mídias, nos termos do art. 1.259 das Normas da Corregedoria. P.R.I.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Felipe Moura Paz Landim (OAB 469268/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-140004611" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=140004611&amp;nmRecursoAcessado=Julgada+improcedente+a+a%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-140004611" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=140004611&amp;nmRecursoAcessado=Julgada+improcedente+a+a%C3%A7%C3%A3o"> Julgada improcedente a ação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Dispensado o relatório, nos termos do art. 38, da Lei 9099/95, fundamento e decido. O feito comporta julgamento antecipado, nos termos do art. 355, I, do CPC, sendo desnecessária a produção de prova oral em audiência. Ademais, os documentos carreados aos autos são suficientes a compreensão do tema e julgamento do pedido. Cuida-se de ação revisional de cláusulas contratuais. Afasto, inicialmente, a preliminar de impugnação ao requerimento de assistência judiciaria gratuita, ante a gratuidade na tramitação dos processos no Juizado Especial Cível, na fase de conhecimento. Desacolho, ainda, a prescrição aventada, vez que no caso dos autos, incide a prescrição decenal. Assim a jurisprudência predominante, no sentido de que os pedidos de restituição de quantias pagas estabelecidas em contrato sujeitam-se ao prazo decenal (art. 205 CC). No mérito, tenho que o pedido não comporta acolhimento. Pois bem, a parte autora pleitea a incidência de juros simples em sua amortização, calculados apenas uma vez no início do contrato. Há entendimento consolidado pelo Superior Tribunal de Justiça, entretanto, no sentido de que, após a edição da MP 2170-36, de 2000, não mais é vedado a instituições financeiras a capitalização de juros (Súmula 382 do STJ). Não há qualquer ilegalidade, assim, no sistema de amortização aplicado. Ademais, o contrato firmado entre as partes, acostado aos autos, contempla taxa de juros anual superior ao duodécuplo da mensal, conforme acima especificado, o que basta para autorizar a cobrança da taxa efetiva anual contratada (STJ - REsp 973827/RS, afetado para julgamento o rito dos recursos repetitivos), do qual a parte estava ciente. Confira-se a jurisprudência acerca do tema: Apelação Contrato bancário Cédula de Crédito Bancário Contrato de financiamento para aquisição de veículo Ação revisional Improcedência Código de Defesa do Consumidor Incidência Súmula n. 297 do E. Superior Tribunal de Justiça Encargos financeiros Abusividade da taxa de juros remuneratórios praticada não evidenciada Capitalização de juros É permitida a capitalização de juros com periodicidade inferior a um ano em contratos celebrados após 31.3.2000, data da publicação da Medida Provisória nº 1.963-17/2000 (em vigor como MP-2.170-36/2001), desde que expressamente pactuada A previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança da taxa efetiva anual contratada Prevalecimento, no caso, da nova orientação acolhida pelo E. Superior Tribunal de Justiça no julgamento do Recurso Especial n. 973.827-RS, processado nos termos do art. 543-C do CPC Pretensão de substituição do sistema de amortização Tabela Price pelo Método Sac ou Gauss Impossibilidade diante do ajuste contratual Comissão de permanência Embora não haja no contrato menção expressa à cobrança de comissão de permanência, há previsão de juros moratórios à taxa de 1% ao mês, cumulados com juros remuneratórios e multa de 2% Forma disfarçada e indevida de cobrar comissão de permanência, embutindo os encargos cumulativamente Inadmissibilidade Aplicação da Súmula 472 do STJ que impede a cumulação da comissão de permanência com outros encargos moratórios e remuneratórios, devendo ser limitada à taxa de juros pactuada e à taxa média de mercado divulgada pelo Banco Central Tarifa de cadastro Tarifa cobrada para confecção de cadastro para início de relacionamento Abusividade, entretanto, quanto ao valor cobrado Redução que deve ser determinada de acordo com valor médio divulgado no período Recurso parcialmente provido. (TJSP; Apelação Cível 1005412-35.2019.8.26.0322; Relator (a): Thiago de Siqueira; Órgão Julgador: 14ª Câmara de Direito Privado; Foro de Lins - 3ª Vara Cível; Data do Julgamento: 29/03/2021; Data de Registro: 29/03/2021) Restou assentado no REsp.1061530/RS, decidido na sistemática dos recursos repetitivos, que a revisão das taxas de juros remuneratórios dos contratos de mútuo bancário é possível, em situações excepcionais, "desde que caracterizada a relação de consumo e a abusividade, no sentido de colocar o consumidor em desvantagem exagerada, ficasse cabalmente demonstrada ante as peculiaridades do caso concreto". (REsp1061530/ RS RECURSO ESPECIAL 2008/0119992-4 Relator(a) Ministra NANCY ANDRIGHI (1118) Órgão Julgador S2 - SEGUNDA SEÇÃO Data do Julgamento 22/10/2008 Data da Publicação/Fonte DJe 10/03/2009) Neste sentido vem-se decidindo: PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. BANCÁRIO. JUROS REMUNERATÓRIOS. LIMITAÇÃO. COMPROVAÇÃO DE ABUSO. AUSÊNCIA. REEXAME DE MATÉRIA CONTRATUAL E FÁTICA DA LIDE. SÚMULAS 5 E 7 DO SUPERIOR TRIBUNAL DE JUSTIÇA. INCIDÊNCIA. 1. Nos termos da jurisprudência sedimentada em sede de recurso especial repetitivo (REsp nº 1.061.530/RS, Rel. Ministra NANCY ANDRIGHI, DJe de 10/3/2009), admite-se a revisão das taxas de juros remuneratórios desde que o abuso fique cabalmente demonstrado diante das peculiaridades do caso concreto, não sendo suficiente o mero fato de a taxa cobrada estar acima da média de mercado. 2. Tendo o Tribunal de origem registrado não ser hipótese de abuso na cobrança da taxa em relação à média de mercado, inviável o recurso especial, eis que sua análise impõe reexame da matéria contratual e fática da lide, vedado nos termos dos enunciados nº 5 e 7 da Súmula do STJ. 3. Agravo interno a que se nega provimento. (AgInt no AREsp 766348 / MS, AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL 2015/0209128-4, Relator(a) Ministra MARIA ISABEL GALLOTTI (1145), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 09/05/2017, Data da Publicação/ DJe 16/05/2017) g.n. AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL.CONTRATO BANCÁRIO. JUROS REMUNERATÓRIOS. INAPLICÁVEL LIMITAÇÃO EM12% AO ANO. JUROS DE MORA. PERCENTUAL CONTRATADO EM 1% AO MÊS.POSSIBILIDADE. REPETIÇÃO/COMPENSAÇÃO DO INDÉBITO. AGRAVO DESPROVIDO. 1. A taxa de juros remuneratórios praticada pela instituição financeira acima da taxa média do mercado não induz, por si só, à conclusão de tratar-se de cobrança abusiva. Precedentes. Assim, ante a ausência de comprovação cabal da cobrança abusiva, deve ser mantida, in casu, a taxa de juros remuneratórios acordada. 2. Os juros moratórios cobrados em contratos bancários podem ser pactuados até o limite de 12% ao ano, previsto na Lei de Usura, ao passo que seu piso obedeceria à prescrição legal do art. 1.062 do Código Civil revogado, como ocorrente no caso em tela, ficando mantido o percentual contratado, que se adequa à faixa admitida pelo posicionamento jurisprudencial mais moderno. 3. No que concerne à compensação de valores e à repetição do indébito, esta eg. Corte tem jurisprudência pacífica no sentido de seu cabimento "sempre que verificado o pagamento indevido, em repúdio ao enriquecimento ilícito de quem o receber, independentemente da comprovação do erro" (REsp 615.012/RS, Quarta Turma, Rel. Min. Luis Felipe Salomão, DJe de 8.6.2010). 4. Agravo regimental a que se nega provimento. (AgRg no AREsp 591826 / RS, AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL 2014/0250849-8, Relator(a) Ministro RAUL ARAÚJO (1143), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 08/03/2016, Data da Publicação/Fonte DJe 17/03/2016) g.n. No caso em tela, não vislumbro a alegada abusividade em taxa de juros aplicada, mormente porque o consumidor tinha pleno conhecimento do valor das parcelas e dos juros aplicados, com os quais, de forma expressa, concordou, conforme se extrai do contrato acostado aos autos. No que toca à cobrança da denominada tarifa de cadastro, igualmente, razão não assiste razão a parte autora. Neste sentido, a jurisprudência pacificada do C. STJ , firmada em recurso especial repetitivo (REsp 1.251.331) e cristalizada na Súmula 566 do STJ, é de que nos contratos bancários posteriores ao início da vigência da Resolução-CMN n. 3.518/2007, em 30/4/2008, pode ser cobrada a tarifa de cadastro, expressamente tipificada em ato normativo padronizador da autoridade monetária, a qual, entretanto, somente pode ser cobrada no início do relacionamento entre o consumidor e a instituição financeira. Note-se que, in casu, a parte autora não demonstrou que era correntista da ré, de forma que a cobrança da taxa em comento não se revestiu de ilegitimidade, inclusive porque correspondeu a prática de atos administrativos, tratando-se de contraprestação por serviços prestados. Resta analisar a alegação de que teria ocorrido venda casada relativamente a contratação do seguro prestamista. Como se sabe, o seguro em comento tem por objetivo o pagamento de algumas prestações ou a quitação do saldo devedor na hipótese de morte/invalidez/desemprego do segurado, ou alguma situação adversa. In casu, pode-se observar que o mesmo foi contratado em documento apartado e junto a empresa de seguro distinta da ré (fls.16- Zurich Santander Bras), o qua afasta a tese de que a contratação teria sido imposta pelo agente financeiro como condição para a liberação do financiamento. Ao contrário, indica que o consumidor concordou em realizar a avença de forma livre e consciente. É o quanto basta. Ante o exposto, julgo IMPROCEDENTE o pedido e, em consequência, extingo o feito, com resolução do mérito, nos termos do art. 487, I, do CPC. Custas e honorários advocatícios "ex lege". Para apreciação do pedido de concessão dos benefícios da justiça gratuita, a parte autora deverá apresentar documentos que comprovem seu atual estado de hipossuficiência (duas últimas declarações de bens e rendimentos utilizadas para fins de imposto de renda perante a Receita Federal, ou caso se declare, sob as penas da lei, contribuinte isenta de I.R., deverá anexar os dois últimos comprovantes de rendimento mensais). Na hipótese de interposição de recurso inominado, o que poderá ocorrer no prazo de 10 dias, deverá ser recolhido preparo, composto de duas verbas: a) 1% sobre o valor da causa, observado o mínimo de 05 UFESPS (correspondente as custas dispensadas em 1ª Instância de jurisdição), mais b) 4% (quatro por cento) sobre o valor da causa, ou, nas hipóteses de pedido condenatório, 4% sobre o valor fixado na sentença se for líquido, ou, se ilíquido, sobre o valor fixado pelo juiz para esse fim, observado também o mínimo de 05 UFESPS- guia DARE-SP- Documento de Arrecadação de Receitas Estaduais Código de Receita 230-6), acrescido das despesas processuais referentes a todos os serviços forenses realizados, nos termos do comunicado 1530/2021, montante a ser recolhido no prazo de 48 horas, a contar da interposição do recurso, independentemente de nova intimação. Caso tenha ocorrido depósito de mídia em cartório, deverá a parte depositante, no prazo de 15 (quinze) dias contados a partir do trânsito em julgado e independentemente de nova intimação, comparecer perante esta unidade e proceder a retirada. Decorrido o prazo e na inércia do interessado, fica a serventia autorizada a proceder a inutilização das referidas mídias, nos termos do art. 1.259 das Normas da Corregedoria. P.R.I.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Sentença
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+<tbody style="display: none;" id="tabelaTodasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Publicação: 23/01/2023
+Número do Diário: 3654
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Dispensado o relatório, nos termos do art. 38, da Lei 9099/95, fundamento e decido. O feito comporta julgamento antecipado, nos termos do art. 355, I, do CPC, sendo desnecessária a produção de prova oral em audiência. Ademais, os documentos carreados aos autos são suficientes a compreensão do tema e julgamento do pedido. Cuida-se de ação revisional de cláusulas contratuais. Afasto, inicialmente, a preliminar de impugnação ao requerimento de assistência judiciaria gratuita, ante a gratuidade na tramitação dos processos no Juizado Especial Cível, na fase de conhecimento. Desacolho, ainda, a prescrição aventada, vez que no caso dos autos, incide a prescrição decenal. Assim a jurisprudência predominante, no sentido de que os pedidos de restituição de quantias pagas estabelecidas em contrato sujeitam-se ao prazo decenal (art. 205 CC). No mérito, tenho que o pedido não comporta acolhimento. Pois bem, a parte autora pleitea a incidência de juros simples em sua amortização, calculados apenas uma vez no início do contrato. Há entendimento consolidado pelo Superior Tribunal de Justiça, entretanto, no sentido de que, após a edição da MP 2170-36, de 2000, não mais é vedado a instituições financeiras a capitalização de juros (Súmula 382 do STJ). Não há qualquer ilegalidade, assim, no sistema de amortização aplicado. Ademais, o contrato firmado entre as partes, acostado aos autos, contempla taxa de juros anual superior ao duodécuplo da mensal, conforme acima especificado, o que basta para autorizar a cobrança da taxa efetiva anual contratada (STJ - REsp 973827/RS, afetado para julgamento o rito dos recursos repetitivos), do qual a parte estava ciente. Confira-se a jurisprudência acerca do tema: Apelação Contrato bancário Cédula de Crédito Bancário Contrato de financiamento para aquisição de veículo Ação revisional Improcedência Código de Defesa do Consumidor Incidência Súmula n. 297 do E. Superior Tribunal de Justiça Encargos financeiros Abusividade da taxa de juros remuneratórios praticada não evidenciada Capitalização de juros É permitida a capitalização de juros com periodicidade inferior a um ano em contratos celebrados após 31.3.2000, data da publicação da Medida Provisória nº 1.963-17/2000 (em vigor como MP-2.170-36/2001), desde que expressamente pactuada A previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança da taxa efetiva anual contratada Prevalecimento, no caso, da nova orientação acolhida pelo E. Superior Tribunal de Justiça no julgamento do Recurso Especial n. 973.827-RS, processado nos termos do art. 543-C do CPC Pretensão de substituição do sistema de amortização Tabela Price pelo Método Sac ou Gauss Impossibilidade diante do ajuste contratual Comissão de permanência Embora não haja no contrato menção expressa à cobrança de comissão de permanência, há previsão de juros moratórios à taxa de 1% ao mês, cumulados com juros remuneratórios e multa de 2% Forma disfarçada e indevida de cobrar comissão de permanência, embutindo os encargos cumulativamente Inadmissibilidade Aplicação da Súmula 472 do STJ que impede a cumulação da comissão de permanência com outros encargos moratórios e remuneratórios, devendo ser limitada à taxa de juros pactuada e à taxa média de mercado divulgada pelo Banco Central Tarifa de cadastro Tarifa cobrada para confecção de cadastro para início de relacionamento Abusividade, entretanto, quanto ao valor cobrado Redução que deve ser determinada de acordo com valor médio divulgado no período Recurso parcialmente provido. (TJSP; Apelação Cível 1005412-35.2019.8.26.0322; Relator (a): Thiago de Siqueira; Órgão Julgador: 14ª Câmara de Direito Privado; Foro de Lins - 3ª Vara Cível; Data do Julgamento: 29/03/2021; Data de Registro: 29/03/2021) Restou assentado no REsp.1061530/RS, decidido na sistemática dos recursos repetitivos, que a revisão das taxas de juros remuneratórios dos contratos de mútuo bancário é possível, em situações excepcionais, "desde que caracterizada a relação de consumo e a abusividade, no sentido de colocar o consumidor em desvantagem exagerada, ficasse cabalmente demonstrada ante as peculiaridades do caso concreto". (REsp1061530/ RS RECURSO ESPECIAL 2008/0119992-4 Relator(a) Ministra NANCY ANDRIGHI (1118) Órgão Julgador S2 - SEGUNDA SEÇÃO Data do Julgamento 22/10/2008 Data da Publicação/Fonte DJe 10/03/2009) Neste sentido vem-se decidindo: PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. BANCÁRIO. JUROS REMUNERATÓRIOS. LIMITAÇÃO. COMPROVAÇÃO DE ABUSO. AUSÊNCIA. REEXAME DE MATÉRIA CONTRATUAL E FÁTICA DA LIDE. SÚMULAS 5 E 7 DO SUPERIOR TRIBUNAL DE JUSTIÇA. INCIDÊNCIA. 1. Nos termos da jurisprudência sedimentada em sede de recurso especial repetitivo (REsp nº 1.061.530/RS, Rel. Ministra NANCY ANDRIGHI, DJe de 10/3/2009), admite-se a revisão das taxas de juros remuneratórios desde que o abuso fique cabalmente demonstrado diante das peculiaridades do caso concreto, não sendo suficiente o mero fato de a taxa cobrada estar acima da média de mercado. 2. Tendo o Tribunal de origem registrado não ser hipótese de abuso na cobrança da taxa em relação à média de mercado, inviável o recurso especial, eis que sua análise impõe reexame da matéria contratual e fática da lide, vedado nos termos dos enunciados nº 5 e 7 da Súmula do STJ. 3. Agravo interno a que se nega provimento. (AgInt no AREsp 766348 / MS, AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL 2015/0209128-4, Relator(a) Ministra MARIA ISABEL GALLOTTI (1145), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 09/05/2017, Data da Publicação/ DJe 16/05/2017) g.n. AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL.CONTRATO BANCÁRIO. JUROS REMUNERATÓRIOS. INAPLICÁVEL LIMITAÇÃO EM12% AO ANO. JUROS DE MORA. PERCENTUAL CONTRATADO EM 1% AO MÊS.POSSIBILIDADE. REPETIÇÃO/COMPENSAÇÃO DO INDÉBITO. AGRAVO DESPROVIDO. 1. A taxa de juros remuneratórios praticada pela instituição financeira acima da taxa média do mercado não induz, por si só, à conclusão de tratar-se de cobrança abusiva. Precedentes. Assim, ante a ausência de comprovação cabal da cobrança abusiva, deve ser mantida, in casu, a taxa de juros remuneratórios acordada. 2. Os juros moratórios cobrados em contratos bancários podem ser pactuados até o limite de 12% ao ano, previsto na Lei de Usura, ao passo que seu piso obedeceria à prescrição legal do art. 1.062 do Código Civil revogado, como ocorrente no caso em tela, ficando mantido o percentual contratado, que se adequa à faixa admitida pelo posicionamento jurisprudencial mais moderno. 3. No que concerne à compensação de valores e à repetição do indébito, esta eg. Corte tem jurisprudência pacífica no sentido de seu cabimento "sempre que verificado o pagamento indevido, em repúdio ao enriquecimento ilícito de quem o receber, independentemente da comprovação do erro" (REsp 615.012/RS, Quarta Turma, Rel. Min. Luis Felipe Salomão, DJe de 8.6.2010). 4. Agravo regimental a que se nega provimento. (AgRg no AREsp 591826 / RS, AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL 2014/0250849-8, Relator(a) Ministro RAUL ARAÚJO (1143), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 08/03/2016, Data da Publicação/Fonte DJe 17/03/2016) g.n. No caso em tela, não vislumbro a alegada abusividade em taxa de juros aplicada, mormente porque o consumidor tinha pleno conhecimento do valor das parcelas e dos juros aplicados, com os quais, de forma expressa, concordou, conforme se extrai do contrato acostado aos autos. No que toca à cobrança da denominada tarifa de cadastro, igualmente, razão não assiste razão a parte autora. Neste sentido, a jurisprudência pacificada do C. STJ , firmada em recurso especial repetitivo (REsp 1.251.331) e cristalizada na Súmula 566 do STJ, é de que nos contratos bancários posteriores ao início da vigência da Resolução-CMN n. 3.518/2007, em 30/4/2008, pode ser cobrada a tarifa de cadastro, expressamente tipificada em ato normativo padronizador da autoridade monetária, a qual, entretanto, somente pode ser cobrada no início do relacionamento entre o consumidor e a instituição financeira. Note-se que, in casu, a parte autora não demonstrou que era correntista da ré, de forma que a cobrança da taxa em comento não se revestiu de ilegitimidade, inclusive porque correspondeu a prática de atos administrativos, tratando-se de contraprestação por serviços prestados. Resta analisar a alegação de que teria ocorrido venda casada relativamente a contratação do seguro prestamista. Como se sabe, o seguro em comento tem por objetivo o pagamento de algumas prestações ou a quitação do saldo devedor na hipótese de morte/invalidez/desemprego do segurado, ou alguma situação adversa. In casu, pode-se observar que o mesmo foi contratado em documento apartado e junto a empresa de seguro distinta da ré (fls.16- Zurich Santander Bras), o qua afasta a tese de que a contratação teria sido imposta pelo agente financeiro como condição para a liberação do financiamento. Ao contrário, indica que o consumidor concordou em realizar a avença de forma livre e consciente. É o quanto basta. Ante o exposto, julgo IMPROCEDENTE o pedido e, em consequência, extingo o feito, com resolução do mérito, nos termos do art. 487, I, do CPC. Custas e honorários advocatícios "ex lege". Para apreciação do pedido de concessão dos benefícios da justiça gratuita, a parte autora deverá apresentar documentos que comprovem seu atual estado de hipossuficiência (duas últimas declarações de bens e rendimentos utilizadas para fins de imposto de renda perante a Receita Federal, ou caso se declare, sob as penas da lei, contribuinte isenta de I.R., deverá anexar os dois últimos comprovantes de rendimento mensais). Na hipótese de interposição de recurso inominado, o que poderá ocorrer no prazo de 10 dias, deverá ser recolhido preparo, composto de duas verbas: a) 1% sobre o valor da causa, observado o mínimo de 05 UFESPS (correspondente as custas dispensadas em 1ª Instância de jurisdição), mais b) 4% (quatro por cento) sobre o valor da causa, ou, nas hipóteses de pedido condenatório, 4% sobre o valor fixado na sentença se for líquido, ou, se ilíquido, sobre o valor fixado pelo juiz para esse fim, observado também o mínimo de 05 UFESPS- guia DARE-SP- Documento de Arrecadação de Receitas Estaduais Código de Receita 230-6), acrescido das despesas processuais referentes a todos os serviços forenses realizados, nos termos do comunicado 1530/2021, montante a ser recolhido no prazo de 48 horas, a contar da interposição do recurso, independentemente de nova intimação. Caso tenha ocorrido depósito de mídia em cartório, deverá a parte depositante, no prazo de 15 (quinze) dias contados a partir do trânsito em julgado e independentemente de nova intimação, comparecer perante esta unidade e proceder a retirada. Decorrido o prazo e na inércia do interessado, fica a serventia autorizada a proceder a inutilização das referidas mídias, nos termos do art. 1.259 das Normas da Corregedoria. P.R.I.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Felipe Moura Paz Landim (OAB 469268/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-140004611" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=140004611&amp;nmRecursoAcessado=Julgada+improcedente+a+a%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-140004611" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=140004611&amp;nmRecursoAcessado=Julgada+improcedente+a+a%C3%A7%C3%A3o"> Julgada improcedente a ação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Dispensado o relatório, nos termos do art. 38, da Lei 9099/95, fundamento e decido. O feito comporta julgamento antecipado, nos termos do art. 355, I, do CPC, sendo desnecessária a produção de prova oral em audiência. Ademais, os documentos carreados aos autos são suficientes a compreensão do tema e julgamento do pedido. Cuida-se de ação revisional de cláusulas contratuais. Afasto, inicialmente, a preliminar de impugnação ao requerimento de assistência judiciaria gratuita, ante a gratuidade na tramitação dos processos no Juizado Especial Cível, na fase de conhecimento. Desacolho, ainda, a prescrição aventada, vez que no caso dos autos, incide a prescrição decenal. Assim a jurisprudência predominante, no sentido de que os pedidos de restituição de quantias pagas estabelecidas em contrato sujeitam-se ao prazo decenal (art. 205 CC). No mérito, tenho que o pedido não comporta acolhimento. Pois bem, a parte autora pleitea a incidência de juros simples em sua amortização, calculados apenas uma vez no início do contrato. Há entendimento consolidado pelo Superior Tribunal de Justiça, entretanto, no sentido de que, após a edição da MP 2170-36, de 2000, não mais é vedado a instituições financeiras a capitalização de juros (Súmula 382 do STJ). Não há qualquer ilegalidade, assim, no sistema de amortização aplicado. Ademais, o contrato firmado entre as partes, acostado aos autos, contempla taxa de juros anual superior ao duodécuplo da mensal, conforme acima especificado, o que basta para autorizar a cobrança da taxa efetiva anual contratada (STJ - REsp 973827/RS, afetado para julgamento o rito dos recursos repetitivos), do qual a parte estava ciente. Confira-se a jurisprudência acerca do tema: Apelação Contrato bancário Cédula de Crédito Bancário Contrato de financiamento para aquisição de veículo Ação revisional Improcedência Código de Defesa do Consumidor Incidência Súmula n. 297 do E. Superior Tribunal de Justiça Encargos financeiros Abusividade da taxa de juros remuneratórios praticada não evidenciada Capitalização de juros É permitida a capitalização de juros com periodicidade inferior a um ano em contratos celebrados após 31.3.2000, data da publicação da Medida Provisória nº 1.963-17/2000 (em vigor como MP-2.170-36/2001), desde que expressamente pactuada A previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança da taxa efetiva anual contratada Prevalecimento, no caso, da nova orientação acolhida pelo E. Superior Tribunal de Justiça no julgamento do Recurso Especial n. 973.827-RS, processado nos termos do art. 543-C do CPC Pretensão de substituição do sistema de amortização Tabela Price pelo Método Sac ou Gauss Impossibilidade diante do ajuste contratual Comissão de permanência Embora não haja no contrato menção expressa à cobrança de comissão de permanência, há previsão de juros moratórios à taxa de 1% ao mês, cumulados com juros remuneratórios e multa de 2% Forma disfarçada e indevida de cobrar comissão de permanência, embutindo os encargos cumulativamente Inadmissibilidade Aplicação da Súmula 472 do STJ que impede a cumulação da comissão de permanência com outros encargos moratórios e remuneratórios, devendo ser limitada à taxa de juros pactuada e à taxa média de mercado divulgada pelo Banco Central Tarifa de cadastro Tarifa cobrada para confecção de cadastro para início de relacionamento Abusividade, entretanto, quanto ao valor cobrado Redução que deve ser determinada de acordo com valor médio divulgado no período Recurso parcialmente provido. (TJSP; Apelação Cível 1005412-35.2019.8.26.0322; Relator (a): Thiago de Siqueira; Órgão Julgador: 14ª Câmara de Direito Privado; Foro de Lins - 3ª Vara Cível; Data do Julgamento: 29/03/2021; Data de Registro: 29/03/2021) Restou assentado no REsp.1061530/RS, decidido na sistemática dos recursos repetitivos, que a revisão das taxas de juros remuneratórios dos contratos de mútuo bancário é possível, em situações excepcionais, "desde que caracterizada a relação de consumo e a abusividade, no sentido de colocar o consumidor em desvantagem exagerada, ficasse cabalmente demonstrada ante as peculiaridades do caso concreto". (REsp1061530/ RS RECURSO ESPECIAL 2008/0119992-4 Relator(a) Ministra NANCY ANDRIGHI (1118) Órgão Julgador S2 - SEGUNDA SEÇÃO Data do Julgamento 22/10/2008 Data da Publicação/Fonte DJe 10/03/2009) Neste sentido vem-se decidindo: PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. BANCÁRIO. JUROS REMUNERATÓRIOS. LIMITAÇÃO. COMPROVAÇÃO DE ABUSO. AUSÊNCIA. REEXAME DE MATÉRIA CONTRATUAL E FÁTICA DA LIDE. SÚMULAS 5 E 7 DO SUPERIOR TRIBUNAL DE JUSTIÇA. INCIDÊNCIA. 1. Nos termos da jurisprudência sedimentada em sede de recurso especial repetitivo (REsp nº 1.061.530/RS, Rel. Ministra NANCY ANDRIGHI, DJe de 10/3/2009), admite-se a revisão das taxas de juros remuneratórios desde que o abuso fique cabalmente demonstrado diante das peculiaridades do caso concreto, não sendo suficiente o mero fato de a taxa cobrada estar acima da média de mercado. 2. Tendo o Tribunal de origem registrado não ser hipótese de abuso na cobrança da taxa em relação à média de mercado, inviável o recurso especial, eis que sua análise impõe reexame da matéria contratual e fática da lide, vedado nos termos dos enunciados nº 5 e 7 da Súmula do STJ. 3. Agravo interno a que se nega provimento. (AgInt no AREsp 766348 / MS, AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL 2015/0209128-4, Relator(a) Ministra MARIA ISABEL GALLOTTI (1145), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 09/05/2017, Data da Publicação/ DJe 16/05/2017) g.n. AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL.CONTRATO BANCÁRIO. JUROS REMUNERATÓRIOS. INAPLICÁVEL LIMITAÇÃO EM12% AO ANO. JUROS DE MORA. PERCENTUAL CONTRATADO EM 1% AO MÊS.POSSIBILIDADE. REPETIÇÃO/COMPENSAÇÃO DO INDÉBITO. AGRAVO DESPROVIDO. 1. A taxa de juros remuneratórios praticada pela instituição financeira acima da taxa média do mercado não induz, por si só, à conclusão de tratar-se de cobrança abusiva. Precedentes. Assim, ante a ausência de comprovação cabal da cobrança abusiva, deve ser mantida, in casu, a taxa de juros remuneratórios acordada. 2. Os juros moratórios cobrados em contratos bancários podem ser pactuados até o limite de 12% ao ano, previsto na Lei de Usura, ao passo que seu piso obedeceria à prescrição legal do art. 1.062 do Código Civil revogado, como ocorrente no caso em tela, ficando mantido o percentual contratado, que se adequa à faixa admitida pelo posicionamento jurisprudencial mais moderno. 3. No que concerne à compensação de valores e à repetição do indébito, esta eg. Corte tem jurisprudência pacífica no sentido de seu cabimento "sempre que verificado o pagamento indevido, em repúdio ao enriquecimento ilícito de quem o receber, independentemente da comprovação do erro" (REsp 615.012/RS, Quarta Turma, Rel. Min. Luis Felipe Salomão, DJe de 8.6.2010). 4. Agravo regimental a que se nega provimento. (AgRg no AREsp 591826 / RS, AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL 2014/0250849-8, Relator(a) Ministro RAUL ARAÚJO (1143), Órgão Julgador T4 - QUARTA TURMA, Data do Julgamento 08/03/2016, Data da Publicação/Fonte DJe 17/03/2016) g.n. No caso em tela, não vislumbro a alegada abusividade em taxa de juros aplicada, mormente porque o consumidor tinha pleno conhecimento do valor das parcelas e dos juros aplicados, com os quais, de forma expressa, concordou, conforme se extrai do contrato acostado aos autos. No que toca à cobrança da denominada tarifa de cadastro, igualmente, razão não assiste razão a parte autora. Neste sentido, a jurisprudência pacificada do C. STJ , firmada em recurso especial repetitivo (REsp 1.251.331) e cristalizada na Súmula 566 do STJ, é de que nos contratos bancários posteriores ao início da vigência da Resolução-CMN n. 3.518/2007, em 30/4/2008, pode ser cobrada a tarifa de cadastro, expressamente tipificada em ato normativo padronizador da autoridade monetária, a qual, entretanto, somente pode ser cobrada no início do relacionamento entre o consumidor e a instituição financeira. Note-se que, in casu, a parte autora não demonstrou que era correntista da ré, de forma que a cobrança da taxa em comento não se revestiu de ilegitimidade, inclusive porque correspondeu a prática de atos administrativos, tratando-se de contraprestação por serviços prestados. Resta analisar a alegação de que teria ocorrido venda casada relativamente a contratação do seguro prestamista. Como se sabe, o seguro em comento tem por objetivo o pagamento de algumas prestações ou a quitação do saldo devedor na hipótese de morte/invalidez/desemprego do segurado, ou alguma situação adversa. In casu, pode-se observar que o mesmo foi contratado em documento apartado e junto a empresa de seguro distinta da ré (fls.16- Zurich Santander Bras), o qua afasta a tese de que a contratação teria sido imposta pelo agente financeiro como condição para a liberação do financiamento. Ao contrário, indica que o consumidor concordou em realizar a avença de forma livre e consciente. É o quanto basta. Ante o exposto, julgo IMPROCEDENTE o pedido e, em consequência, extingo o feito, com resolução do mérito, nos termos do art. 487, I, do CPC. Custas e honorários advocatícios "ex lege". Para apreciação do pedido de concessão dos benefícios da justiça gratuita, a parte autora deverá apresentar documentos que comprovem seu atual estado de hipossuficiência (duas últimas declarações de bens e rendimentos utilizadas para fins de imposto de renda perante a Receita Federal, ou caso se declare, sob as penas da lei, contribuinte isenta de I.R., deverá anexar os dois últimos comprovantes de rendimento mensais). Na hipótese de interposição de recurso inominado, o que poderá ocorrer no prazo de 10 dias, deverá ser recolhido preparo, composto de duas verbas: a) 1% sobre o valor da causa, observado o mínimo de 05 UFESPS (correspondente as custas dispensadas em 1ª Instância de jurisdição), mais b) 4% (quatro por cento) sobre o valor da causa, ou, nas hipóteses de pedido condenatório, 4% sobre o valor fixado na sentença se for líquido, ou, se ilíquido, sobre o valor fixado pelo juiz para esse fim, observado também o mínimo de 05 UFESPS- guia DARE-SP- Documento de Arrecadação de Receitas Estaduais Código de Receita 230-6), acrescido das despesas processuais referentes a todos os serviços forenses realizados, nos termos do comunicado 1530/2021, montante a ser recolhido no prazo de 48 horas, a contar da interposição do recurso, independentemente de nova intimação. Caso tenha ocorrido depósito de mídia em cartório, deverá a parte depositante, no prazo de 15 (quinze) dias contados a partir do trânsito em julgado e independentemente de nova intimação, comparecer perante esta unidade e proceder a retirada. Decorrido o prazo e na inércia do interessado, fica a serventia autorizada a proceder a inutilização das referidas mídias, nos termos do art. 1.259 das Normas da Corregedoria. P.R.I.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Sentença
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			22/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-136239168" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=136239168&amp;nmRecursoAcessado=Termo+de+Audi%C3%AAncia+Expedido">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-136239168" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=136239168&amp;nmRecursoAcessado=Termo+de+Audi%C3%AAncia+Expedido"> Termo de Audiência Expedido
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				AUDIÊNCIA VIRTUAL - Infrutífera com CONTESTAÇÃO (1ª Vara)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro">
+<td></td>
+<td></td>
+			<td>
+				
+
+
+
+
+<div style="padding: 5px 35px 5px;">
+	
+	
+	
+        
+         
+         	
+         
+    
+	<a href="#liberarAutoPorSenha" class="linkMidiaMov" id="linkMidiaVincMov-Audiência de Conciliação Virtual - 1ª Vara do Juizado Especial Cível Santo Amaro - Proc. 1028254-91.2022.8.26.0002 - 21_09_2022 - 13H30-20220921_133749-Gravação de Reunião">
+		
+			
+				
+					
+					
+						<img src="/cpopg/imagens/movie.png" alt="vídeo">
+					
+				
+			
+			
+		
+		Audiência de Conciliação Virtual - 1ª Vara do Juizado Especial Cível Santo Amaro - Proc. 1028254-91.2022.8.26.0002 - 21_09_2022 - 13H30-20220921_133749-Gravação de Reunião - Disponível em 22/09/2022
+	</a><br>
+</div>
+
+			</td>
+		</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WSTA.22.70681234-6
+Tipo da Petição: Petições Diversas
+Data: 19/09/2022 14:54
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0595/2022
+Data da Publicação: 15/09/2022
+Número do Diário: 3590
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WSTA.22.70665346-9
+Tipo da Petição: Petições Diversas
+Data: 13/09/2022 16:41
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WSTA.22.70665338-8
+Tipo da Petição: Petições Diversas
+Data: 13/09/2022 16:41
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0595/2022
+Teor do ato: AVISO DE CARTÓRIO: Encontra-se disponível nos autos o link para ingresso à audiência de conciliação designada e orientações para acesso.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Felipe Moura Paz Landim (OAB 469268/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-135862385" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=135862385&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-135862385" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=135862385&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE"> Ato Ordinatório - Intimação - DJE
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				AVISO DE CARTÓRIO: Encontra-se disponível nos autos o link para ingresso à audiência de conciliação designada e orientações para acesso.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0574/2022
+Data da Publicação: 08/09/2022
+Número do Diário: 3585
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0574/2022
+Teor do ato: Vistos. Diante do pedido formulado na página 65, e em razão do princípio da celeridade, designo audiência virtual de conciliação para 21 de setembro de 2022 às 13:30h, a ser realizada por meio de videoconferência, por meio da ferramenta Microsoft Teams, a qual dispensa a instalação no computador das partes, e também pode ser acessada em smartphones. Providencie a Serventia o cadastro da audiência e a disponibilização do link de acesso nos autos, certificando-se. Poderão as partes indicar seus e-mails nos autos a fim de possibilitar o envio do link de acesso à audiência. De todo modo, independentemente de recebimento de e-mail, no dia e horário agendados, as partes deverão ingressar na audiência virtual através link disponibilizado nos autos, com vídeo e áudio habilitados. Para maiores informações, o manual de participação em audiências virtuais está disponível em http://www.tjsp.jus.br/Download/CapacitacaoSistemas/ParticiparAudienciaVirtual.pdf. Oportunamente, será analisada a necessidade de realização de Audiência de Instrução e Julgamento. Int.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Felipe Moura Paz Landim (OAB 469268/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-135455569" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=135455569&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-135455569" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=135455569&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Diante do pedido formulado na página 65, e em razão do princípio da celeridade, designo audiência virtual de conciliação para 21 de setembro de 2022 às 13:30h, a ser realizada por meio de videoconferência, por meio da ferramenta Microsoft Teams, a qual dispensa a instalação no computador das partes, e também pode ser acessada em smartphones. Providencie a Serventia o cadastro da audiência e a disponibilização do link de acesso nos autos, certificando-se. Poderão as partes indicar seus e-mails nos autos a fim de possibilitar o envio do link de acesso à audiência. De todo modo, independentemente de recebimento de e-mail, no dia e horário agendados, as partes deverão ingressar na audiência virtual através link disponibilizado nos autos, com vídeo e áudio habilitados. Para maiores informações, o manual de participação em audiências virtuais está disponível em http://www.tjsp.jus.br/Download/CapacitacaoSistemas/ParticiparAudienciaVirtual.pdf. Oportunamente, será analisada a necessidade de realização de Audiência de Instrução e Julgamento. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WSTA.22.70637760-7
+Tipo da Petição: Petições Diversas
+Data: 02/09/2022 14:17
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Designada Audiência de Conciliação
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Conciliação
+Data: 21/09/2022 Hora 13:30
+Local: Sala 03 - Conciliação
+Situacão: Realizada
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-135449294" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=135449294&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-135449294" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=135449294&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida"> Certidão de Cartório Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				C E R T I D Ã O Certifico e dou fé que não houve manifestação da autora acerca da dispensa da audiência de conciliação. Certifico também que a contestação de páginas 40-65 é tempestiva. Nada Mais.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WSTA.22.70354684-0
+Tipo da Petição: Petições Diversas
+Data: 27/05/2022 17:55
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WSTA.22.70339203-6
+Tipo da Petição: Petições Diversas
+Data: 23/05/2022 16:45
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					AR Positivo Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Juntada de AR : AR382354014TJ
+Situação : Cumprido
+Modelo : Processo Digital - Carta - Citação e Intimação - Apresentar Acordo-Defesa - Sem Audiência - Juizado
+Destinatário : AYMORÉ CRÉDITO, FINANCIAMENTO E INVESTIMENTO S/A
+Diligência : 13/05/2022
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0277/2022
+Data da Publicação: 11/05/2022
+Número do Diário: 3502
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-130673609" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=130673609&amp;nmRecursoAcessado=Carta+de+Intima%C3%A7%C3%A3o+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-130673609" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=130673609&amp;nmRecursoAcessado=Carta+de+Intima%C3%A7%C3%A3o+Expedida"> Carta de Intimação Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Processo Digital - Carta - Citação e Intimação - Apresentar Acordo-Defesa - Sem Audiência - Juizado
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0277/2022
+Teor do ato: Vistos. Em atenção ao princípio da celeridade, dispensa-se a audiência de conciliação nos presentes autos e, ponderando-se que a finalidade primordial do Juizado é a tentativa de composição entre as partes, faculto à parte requerida a apresentação de eventual proposta de acordo, no prazo de quinze dias. Fica autorizado à z. serventia informar as plataformas de acordo credenciadas pelo TJ acerca do ajuizamento do presente feito, com vistas a tentativa de composição amigável entre as partes, caso a parte requerida se tratar de empresa conveniada. Não havendo anuência de qualquer das partes quanto a dispensa do ato em questão, deverá se manifestar em igual prazo, sob pena de se presumir a concordância. No caso de concordância da dispensa da audiência de tentativa de conciliação, bem como ausência de proposta de acordo pela ré, no mesmo prazo de 15 dias, a se iniciar da intimação da presente decisão, a requerida deverá oferecer contestação, sob pena de revelia. Decorrido, tornem os autos conclusos. Cite-se e intimem-se as partes.
+Advogados(s): Felipe Moura Paz Landim (OAB 469268/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-130666520" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=130666520&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-130666520" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=02002AJPZ0000&amp;cdDocumento=130666520&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Em atenção ao princípio da celeridade, dispensa-se a audiência de conciliação nos presentes autos e, ponderando-se que a finalidade primordial do Juizado é a tentativa de composição entre as partes, faculto à parte requerida a apresentação de eventual proposta de acordo, no prazo de quinze dias. Fica autorizado à z. serventia informar as plataformas de acordo credenciadas pelo TJ acerca do ajuizamento do presente feito, com vistas a tentativa de composição amigável entre as partes, caso a parte requerida se tratar de empresa conveniada. Não havendo anuência de qualquer das partes quanto a dispensa do ato em questão, deverá se manifestar em igual prazo, sob pena de se presumir a concordância. No caso de concordância da dispensa da audiência de tentativa de conciliação, bem como ausência de proposta de acordo pela ré, no mesmo prazo de 15 dias, a se iniciar da intimação da presente decisão, a requerida deverá oferecer contestação, sob pena de revelia. Decorrido, tornem os autos conclusos. Cite-se e intimem-se as partes.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído Livremente (por Sorteio) (movimentação exclusiva do distribuidor)
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+</table>
+<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value=""><input id="linkNaoExibidomovimentacoes" type="hidden" value="Recolher"><span id="mensagensExibindomovimentacoes" class="mensagemExibindo">
+
+</span>  
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+        <span id="setasDireitamovimentacoes" class="setasDireita">
+            <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+        </span>
+        Mais
+    </a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+<thead>
+<tr class="label">
+<th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								23/05/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								27/05/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								02/09/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								13/09/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								13/09/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								19/09/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+</tbody>
+</table>
+<!--  Tabela de petições diversas --><script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tr>
+<td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr></table>
+<!--  Incidentes --><script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tbody id="dadosApensosNaoDisponiveis"><tr>
+<td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr></tbody></table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+            
+                
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+<tr class="label">
+<th align="left" valign="top" width="140">Data</th>
+                <th align="left" valign="top" width="*">Audiência</th>
+                <th align="left" valign="top" width="100">Situação</th>
+                <th align="left" valign="top" width="100">Qt. Pessoas</th>
+            </tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td colspan="4"></td>
+            </tr>
+<tr class="fundoClaro">
+<td valign="top" align="left" width="140">
+                        21/09/2022
+                    </td>
+                    
+                        
+                            <td valign="top" align="left" width="*">
+                                Conciliação<br><br><a href="#liberarAutoPorSenha" class="unj-link-collapse linkGravacoesAudiencia" id="linkGravacoesAudiencia-3996494" data-toggle="collapse">
+                                    <span class="unj-link-collapse__show">
+                                        <i class="unj-link-collapse__icon glyph glyph-chevron-right"></i>
+                                        Mostrar gravações
+                                    </span>
+                                    <span class="unj-link-collapse__hide">
+                                        <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                                        Recolher gravações
+                                    </span>
+                                </a>
+                                <div style="padding: 5px 35px 5px; display: none;">
+                                    
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+                                        
+                                        <a href="/cpopg/abrirGravacaoAudiencia.do?processo.codigo=02002AJPZ0000&amp;gravacaoAudiencia=%5C2%5C2022%5C09%5C22%5C136239168_1_V.asf&amp;nmRecursoAcessado=Audi%C3%AAncia+de+Concilia%C3%A7%C3%A3o+Virtual+-+1%C2%AA+Vara+do+Juizado+Especial+C%C3%ADvel+Santo+Amaro+-+Proc.+1028254-91.2022.8.26.0002+-+21_09_2022+-+13H30-20220921_133749-Grava%C3%A7%C3%A3o+de+Reuni%C3%A3o" class="linkGravacaoAudiencia">
+                                            
+                                                
+                                                    
+                                                        
+                                                        
+                                                            <img src="/cpopg/imagens/movie.png" alt="vídeo">
+                                                        
+                                                    
+                                                
+                                                
+                                            
+                                                Audiência de Conciliação Virtual - 1ª Vara do Juizado Especial Cível Santo Amaro - Proc. 1028254-91.2022.8.26.0002 - 21_09_2022 - 13H30-20220921_133749-Gravação de Reunião
+                                        </a><br>
+</div>
+                            </td>
+                        
+                        
+                    
+
+                    <td align="left" valign="top" width="100">
+                        Realizada
+                    </td>
+                    <td align="left" valign="top" width="100">
+                        2
+                    </td>
+                </tr>
+</table>
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+<thead>
+<tr class="fundoClaro">
+<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td colspan="6"></td>
+				</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=02002AJPZ0000&amp;processo.foro=2&amp;processo.numero=1028254-91.2022.8.26.0002" id="popupSenha" style="display: none;" method="POST">
+		
+		<table role="document">
+<tr>
+<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+<tr align="center">
+<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso"><input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+<tr>
+<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha"><input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+</td>
+			</tr>
+</table>
+</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer><nav class="navbar__footer"><div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+<li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ"></a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan"></a>
+                </li>
+            </ul>
+<ul class="navbar__footer__list-actions"></ul>
+</div>
+    </nav></footer>
+</body>
+</html>

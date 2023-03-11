@@ -1,0 +1,4125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Portal de Serviços e-SAJ</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=2S001HMXN0000&processo.foro=100&processo.numero=1118387-16.2021.8.26.0100';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=5560b6f0-f08c-4c04-8b8f-a4d1afc40cdf"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=1bc1f261-79f4-4d85-bb3b-841640f42801"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=b356b281-a290-4ee5-be4b-5cac52d11216"></script><script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.5/lodash.js?n=7c43fb40-c492-4529-a88c-d72b6b829587"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=faa4e604-119c-4c73-aae7-76d0a5993031"></script><script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=13577c34-a8ec-4418-9578-68951cb93e25"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=4192496e-c67f-44a4-a3c1-4e0d38ccc83f"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=dcb31eb8-b217-4576-9525-e41333228427"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=c3e2a135-67be-4db1-8c41-d69485bdd482"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=c9dedce0-8216-4b43-b7b2-150a63bff307"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=3236211a-0ed2-4f29-81c3-f614fa62cf71"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=9f6aa096-d777-4707-a641-e496ce5e04dc"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=26c33a8c-8055-4531-a865-a567be048b32"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=686458821"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=98ed0563-76b0-4961-a878-6c90fc9e341b"></script><script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=88149fee-fdac-4ab0-8e15-ec168dd83d31" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script><script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script><script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos à pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script><script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=1814283828"></script><script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+				
+			})
+		})(jQuery);
+	</script><script src="https://fast.conpass.io/H1xuDQHJ8X.js"></script><script type="text/javascript">
+            Conpass.init({
+                email: "277519",
+            });
+        </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script><!-- HEADER--><div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions__barra">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="/cpopg/abrirPastaDigital.do?processo.codigo=2S001HMXN0000">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="/cpopg/abrirPastaDigital.do?processo.codigo=2S001HMXN0000&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                            <button class="btn btn-primary btn-space" id="pbPeticionar" name="pbPeticionar" onclick="window.location.href = '/cpopg/peticionarIntermediariaParaProcesso.do?cdProcesso=2S001HMXN0000&amp;cdForo=100&amp;peticionanteResponsavel=277519-277519'">
+                                Peticionar
+                            </button>
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary__barra">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        1118387-16.2021.8.26.0100
+                    </span>
+                    
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Pagamento Indevido">Pagamento Indevido</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro Central Cível">Foro Central Cível</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="28ª Vara Cível">28ª Vara Cível</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="FLAVIA POYARES MIRANDA">FLAVIA POYARES MIRANDA</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details__barra">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">04/02/2022 às 12:20 - Livre</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2022/000190</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span>
+</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         2.999,97</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left aside-nav--acessibilidade"><div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--light.png" alt=""></a>
+        </header><nav class="aside-nav__main-menu"><ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"></ul></nav><div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside><aside class="aside-nav aside-nav--right aside-nav__user"><div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/aside/brasoes/br-tjsp.jpg" alt="">
+</div>
+            <ul class="aside-nav__user__sign__list">
+<li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de São Paulo</span></li>
+            </ul>
+<a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--dark.png" alt=""></a>
+        </div>
+        <hr>
+<div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+<li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+<ul class="aside-nav__user__info__list-access">
+<li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+</div>
+    </div>
+</aside><header><link rel="shortcut icon" href="https://esaj.tjsp.jus.br/esaj/tema/padrao/clientes/SP/imagens/favicon.ico" type="image/x-icon">
+<link href="https://esaj.tjsp.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+<nav class="header__navbar--barra"><div class="header__navbar__barra-acessibilidade">
+                <a class="header__navbar__barra-acessibilidade-anchor" target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes"><span>Acessibilidade</span></a>
+                <a target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes">
+                    <img onmouseover="exibirLibras()" onmouseleave="ocultarLibras()" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/mao.png" alt="MAO"></a>
+            </div>
+            <img id="gifLibras" class="header__navbar__barra-acessibilidade-libras" style="display: none" height="100" width="100" border="0" alt="LIBRAS" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/libras.gif"><a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href="">
+<a class="linkLogo" href="https://esaj.tjsp.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos do 1ºGrau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+<li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjsp.jus.br/"> TJSP </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text"></span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul></nav></header><div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script><script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://esaj.tjsp.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://esaj.tjsp.jus.br/sajcas/conteudoIdentificacaoJson?script=1677308505871&retorno=' + encodeURIComponent(location.href);
+</script><script src="https://esaj.tjsp.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script><script src="https://esaj.tjsp.jus.br/sajcas/seletorVersaoBeta.js?n=3fc713ba-90c0-4172-a138-2e539a6e6819&amp;versao=2"></script><script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqte </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					BANCO SANTANDER (BRASIL) S.A.
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Cauê Tauan de Souza Yaegashi
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqda </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					BANCO PAN S/A
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						FELICIANO LYRA MOURA
+					
+				 
+				
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Bernardo Buosi
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+</table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<thead>
+<tr>
+<th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true"> </th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody id="tabelaUltimasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-106385770" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=106385770&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-106385770" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=106385770&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida"> Certidão de Cartório Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Certidão - Genérica
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Disponibilização: 11/01/2023
+Data da Publicação: 12/01/2023
+Número do Diário: 3655
+Página: 1423
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Vistos. Fls. 287/288. Diante da transação realizada pelas partes, já cumprida, homologo o acordo e JULGO EXTINTA a execução, na forma do art. 924, III, do CPC. Custas "ex lege". Oportunamente, arquive-se. P.R.I.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-104927580" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104927580&amp;nmRecursoAcessado=Extinta+a+Execu%C3%A7%C3%A3o%2FCumprimento+da+Senten%C3%A7a+pela+Satisfa%C3%A7%C3%A3o+da+Obriga%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-104927580" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104927580&amp;nmRecursoAcessado=Extinta+a+Execu%C3%A7%C3%A3o%2FCumprimento+da+Senten%C3%A7a+pela+Satisfa%C3%A7%C3%A3o+da+Obriga%C3%A7%C3%A3o"> Extinta a Execução/Cumprimento da Sentença pela Satisfação da Obrigação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 287/288. Diante da transação realizada pelas partes, já cumprida, homologo o acordo e JULGO EXTINTA a execução, na forma do art. 924, III, do CPC. Custas "ex lege". Oportunamente, arquive-se. P.R.I.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+<tbody style="display: none;" id="tabelaTodasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-106385770" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=106385770&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-106385770" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=106385770&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida"> Certidão de Cartório Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Certidão - Genérica
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Disponibilização: 11/01/2023
+Data da Publicação: 12/01/2023
+Número do Diário: 3655
+Página: 1423
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Vistos. Fls. 287/288. Diante da transação realizada pelas partes, já cumprida, homologo o acordo e JULGO EXTINTA a execução, na forma do art. 924, III, do CPC. Custas "ex lege". Oportunamente, arquive-se. P.R.I.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-104927580" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104927580&amp;nmRecursoAcessado=Extinta+a+Execu%C3%A7%C3%A3o%2FCumprimento+da+Senten%C3%A7a+pela+Satisfa%C3%A7%C3%A3o+da+Obriga%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-104927580" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104927580&amp;nmRecursoAcessado=Extinta+a+Execu%C3%A7%C3%A3o%2FCumprimento+da+Senten%C3%A7a+pela+Satisfa%C3%A7%C3%A3o+da+Obriga%C3%A7%C3%A3o"> Extinta a Execução/Cumprimento da Sentença pela Satisfação da Obrigação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 287/288. Diante da transação realizada pelas partes, já cumprida, homologo o acordo e JULGO EXTINTA a execução, na forma do art. 924, III, do CPC. Custas "ex lege". Oportunamente, arquive-se. P.R.I.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.42297685-9
+Tipo da Petição: Petição Intermediária
+Data: 21/12/2022 17:00
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Suspensão do Prazo
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Prazo referente ao usuário foi alterado para 10/02/2023 devido à alteração da tabela de feriados
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 1042/2022
+Data da Publicação: 12/12/2022
+Número do Diário: 3646
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 1042/2022
+Teor do ato: Vistos. Aguarde-se notícia do integral cumprimento do acordo. Int.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-104509113" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104509113&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-104509113" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104509113&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Aguarde-se notícia do integral cumprimento do acordo. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 1028/2022
+Data da Publicação: 07/12/2022
+Número do Diário: 3644
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 1028/2022
+Teor do ato: Vistos. Fls. 278/280: Homologo o acordo entabulado entre as partes para que produza seus regulares efeitos. Saliento que não há se falar em homologação do acordo por sentença, na medida em que o mérito do presente feito já fora devidamente apreciado quando da prolação da sentença. Comunicado o regular cumprimento da avença, tornem conclusos para extinção e arquivamento do feito. Intime-se.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-104382364" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104382364&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-104382364" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=104382364&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 278/280: Homologo o acordo entabulado entre as partes para que produza seus regulares efeitos. Saliento que não há se falar em homologação do acordo por sentença, na medida em que o mérito do presente feito já fora devidamente apreciado quando da prolação da sentença. Comunicado o regular cumprimento da avença, tornem conclusos para extinção e arquivamento do feito. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Pedido de Homologação de Acordo Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.42163947-6
+Tipo da Petição: Pedido de Homologação de Acordo
+Data: 02/12/2022 11:12
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Execução/Cumprimento de Sentença Iniciada (o)
+				
+			
+			
+			<br><span style="font-style: italic;">
+				0048197-11.2022.8.26.0100 - Cumprimento de sentença
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0902/2022
+Data da Publicação: 31/10/2022
+Número do Diário: 3620
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0902/2022
+Teor do ato: Vistos. Tendo em vista a certidão de fls.274, manifeste-se o exequente em termos de prosseguimento. Ficam as partes cientificadas de que eventual cumprimento de sentença deverá tramitar em formato digital, em incidente, devendo ser instruído com as peças especificadas no art. 1.286, § 2º, das NSCGJ, nos termos do Provimento CG nº 16/2016. Nada sendo requerido em 30 dias, proceda-se à baixa e arquivem-se. Int.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-103240595" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=103240595&amp;nmRecursoAcessado=Decis%C3%A3o+Determina%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-103240595" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=103240595&amp;nmRecursoAcessado=Decis%C3%A3o+Determina%C3%A7%C3%A3o"> Decisão Determinação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Tendo em vista a certidão de fls.274, manifeste-se o exequente em termos de prosseguimento. Ficam as partes cientificadas de que eventual cumprimento de sentença deverá tramitar em formato digital, em incidente, devendo ser instruído com as peças especificadas no art. 1.286, § 2º, das NSCGJ, nos termos do Provimento CG nº 16/2016. Nada sendo requerido em 30 dias, proceda-se à baixa e arquivem-se. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			25/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-103239556" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=103239556&amp;nmRecursoAcessado=Tr%C3%A2nsito+em+Julgado+%C3%A0s+partes+-+Proc.+em+Andamento">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-103239556" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=103239556&amp;nmRecursoAcessado=Tr%C3%A2nsito+em+Julgado+%C3%A0s+partes+-+Proc.+em+Andamento"> Trânsito em Julgado às partes - Proc. em Andamento
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Certidão - Trânsito em Julgado
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0891/2022
+Data da Publicação: 25/10/2022
+Número do Diário: 3617
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0891/2022
+Teor do ato: Vistos. Fl. 270: Certifique a Serventia acerca do trânsito em julgado. Int.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-103115277" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=103115277&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-103115277" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=103115277&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fl. 270: Certifique a Serventia acerca do trânsito em julgado. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.41884157-0
+Tipo da Petição: Petições Diversas
+Data: 21/10/2022 09:54
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0795/2022
+Data da Publicação: 28/09/2022
+Número do Diário: 3599
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0795/2022
+Teor do ato: Vistos. Fls. 240/242 e 246/249: Tratam-se de embargos de declaração. Não vislumbro no pronunciamento judicial proferido nenhum vício, razão pela qual rejeito os embargos de declaração opostos. Em que pesem as respeitáveis ponderações da parte embargante, a decisão não possui vícios a serem sanados pela via dos embargos de declaração, existindo a via recursal própria para tal mister. Ademais, no caso em tela, verifica-se que os embargos de declaração tem caráter eminentemente infringentes, o que não se admite: EMBARGOS DE DECLARAÇÃO - Pressupostos legais - CPC, artigo 535 - Inexistência de omissão - Pretensão a novo julgamento da causa - Caráter infringente. A jurisprudência do Supremo Tribunal Federal não admite o uso da via recursal dos embargos para obter novo julgamento da causa, sob alegação de erro ou desacerto do julgado. Embargos de declaração rejeitados dado que apresentam caráter de infringentes (STF - E-Decl. em Rec. Extr. nº 202.036-2 - SP - 1ª T - Rel. Min. Ilmar Galvão - J. 04.08.98 - DJ 11.12.98 - v.u) (g.m.). EMBARGOS DE DECLARAÇÃO - Inexistência de omissão, de dúvida ou de contrariedade que os justificasse - O Juiz não está obrigado a responder todas as alegações das partes, quando já tenha encontrado motivo suficiente para fundamentos indicados por elas e tampouco a responder um a todos os argumentos - Embargos Rejeitados. A decisão sobre embargos de declaração não pode, a pretexto de suprir omissão ou corrigir obscuridade ou contradição, alterar, na substância, a decisão embargada, não como se acolher os embargos de declaração com essência de Embargos Infringentes (TJSP - EDecl. nº 30.648-4 - Campinas - 5ª Câmara de Direito Privado - Rel. Christiano Kuntz - J. 20.08.98 - v.u.) (g.m.). "Os embargos declaratórios não constituem meio hábil ao reexame do julgado, por isso que constituem apelos de integração e não de substituição. Assim, não há como serem acolhidos se nítido seu caráter infringente e ausentes quaisquer dos pressupostos indispensáveis elencados no CPC, art. 535" (STJ - Emb. Decl. no Ag. Reg. na Petição n. 1.649-RS - Corte Especial - Min. Edson Vidigal - j. 19.05.2004-RSTJ 181/44). "Processual civil. Embargos de declaração. Omissão e contradição. Ausência. Consoante o disposto no artigo 535, I e II, do Código de Processo Civil, os embargos de declaração se prestam a expungir do julgado eventual obscuridade, omissão ou contradição, admitindo-se só excepcionalmente o efeito modificativo. Ausente omissão ou contradição no julgado, inadmissíveis são os declaratórios, que visam ao rejulgamento da causa, apresentando caráter infringente. Embargos de declaração rejeitados" (STJ - Ag. Reg. nos Emb.Decl. n. 188.623-BA - 3a T - Rel. Min. Castro Filho - j . 27.06.2002). "Os embargos de declaração devem atender aos seus requisitos, quais sejam, suprir omissão, contradição ou obscuridade; não havendo qualquer um desses pressupostos, rejeitam-se os mesmos, mormente quando o ponto fulcral da controvérsia reside na insatisfação do ora embargante com o deslinde da controvérsia. Inviável, em sede de embargos declaratórios, a concessão do excepcional efeito infringente, quando a oposição dos mesmos cinge-se a repisar todos os fundamentos anteriormente já tecidos" (STJ -Ag. Reg. nos Emb. Decl. n. 525.617-DF - 5a T -Rel. Min. Gilson Dipp-j. 18.11.2003). "RECURSO. Embargos de declaração. Vícios não existentes. Caráter infringente manifesto. Rejeição. A função do tribunal, nos embargos declaratórios, não é responder a questionários sobre meros pontos de fato, mas, sim, remediar obscuridades, contradições ou omissões" (TJSP - Emb. Decl. n. 079.909-4 - 2a Câmara de Direito Privado - Rel. Cezar Peluso). "Os embargos de declaração não constituem recurso idôneo para corrigir os fundamentos de uma decisão" (Bol. AASP 1.536/122). "Os embargos de declaração não assumem caráter infringente da decisão embargada, nem se destinam a obter o rejulgamento da causa ou mera corrigenda dos fundamentos do acórdão, quando deficientes, insuficientes ou até errôneos. As eventuais incorreções na apreciação dos fatos, da prova existente nos autos ou ainda na aplicação do direito, devem ser atacadas pelos recursos adequados, jamais por embargos declaratórios." (Embargos âe Declaração nas 348.538-01/7, 361.200-01/8 e 475.511-01/3, 1ª Câmara, extinto II TAC - Rel. Juiz Renato Sartorelli). A despeito da redação do art. 489, § 1º, do CPC, não houve substancial modificação na ideia de que o órgão julgador não está obrigado a se manifestar sobre todos os argumentos colacionados pelas partes para expressar o seu convencimento, bastando, para tanto, pronunciar-se de forma geral sobre as questões pertinentes para a formação de sua convicção, de modo que desde que os fundamentos adotados sejam bastantes para justificar o concluído na decisão, o órgão jurisdicional não está obrigado a rebater, um a um, todos os argumentos utilizados pela parte (STJ, AgRg no Ag nº 738.892/DF, Rel. Min. Aldir Passarinho Junior, 4ª Turma; AgRg no REsp nº 783.856/GO, Rel. Min. Barros Monteiro, 4ª Turma; AgRg no REsp nº 259141, Rel. Min. Nancy Andrighi, 3ª Turma; AgRg no Ag nº 186.231, Rel. Min. Carlos Alberto Menezes Direito, 3ª Turma). É dizer: a função do julgador é decidir a lide e apontar direta e objetivamente os fundamentos que, para tal, lhe foram suficientes, não havendo necessidade de apreciar todos os argumentos deduzidos pelas partes, ao contrário do que sucede com os peritos judiciais, que respondem individualmente aos quesitos ofertados nos autos (TJSP, Apelação nº 0007163-87.2009.8.26.0625; 10ª Câmara de Direito Privado, Rel. Des.Roberto Maia, com invocação de precedentes: STF, 1ª Turma, ED no Ag.Reg. no RE nº 739.369/SC, Rel. Min. Luiz Fux; STF, 2ª Turma, Ag.Reg. no RE nº 724.151/MS, Rel. Min. Cármen Lúcia; STJ, 2ª Turma, AgRg no REsp nº 383.837/RS, Rel. Min. Humberto Martins; e STJ, 3ª Turma, AgRg no REsp nº 354.527/RJ, Rel. Min. Sidnei Beneti). Frisa-se que Não ofende a norma extraível do inciso IV do § 1º do art. 489 do CPC/2015 a decisão que deixar de apreciar questões cujo exame tenha ficado prejudicado em razão da análise anterior de questão subordinante (Enunciado nº 12 aprovado no Seminário O Poder Judiciário e o Novo Código de Processo Civil, organizado pela Escola Nacional de Formação e Aperfeiçoamento de Magistrados ENFAM). Além disso, recorda-se que A fundamentação sucinta não se confunde com a ausência de fundamentação e não acarreta a nulidade da decisão se forem enfrentadas todas as questões cuja resolução, em tese, influencie a decisão da causa (Enunciado nº 10 aprovado no Seminário O Poder Judiciário e o Novo Código de Processo Civil, organizado pela Escola Nacional de Formação e Aperfeiçoamento de Magistrados ENFAM). Convém ainda acentuar que O art. 489, § 1º, IV, do CPC/2015 não obriga o juiz a enfrentar os fundamentos jurídicos invocados pela parte, quando já tenham sido enfrentados na formação dos precedentes obrigatórios (Enunciado nº 13 aprovado no Seminário O Poder Judiciário e o Novo Código de Processo Civil, organizado pela Escola Nacional de Formação e Aperfeiçoamento de Magistrados - ENFAM. Em paralelo, lembra-se que a contradição que autoriza os embargos declaratórios é a interna, entre as proposições da própria decisão, ou seja, é aquela existente entre a fundamentação e o dispositivo, relatório e fundamentação, dispositivo e ementa ou ainda entre seus tópicos internos (STJ, EDcl no AREsp 169.105/RS, 4ª Turma, Rel. Ministro Luis Felipe Salomão) e não aquela decorrente do confronto entre o decisum e disposições legais ou argumentos da parte. Acaso a hipótese seja essa última, o recurso cabível é outro (TJSP, ED na Apelação nº 0018690-12.2012.8.26.0114/50000, 8ª Câmara de Direito Público, Rel. Des. João Carlos Garcia. Desse modo, relembra-se sempre para evitar o reconhecimento de embargos de declaração como mecanismo de protelação que nesse tipo de recurso, não se pede que se redecida; pede-se que se reexprima (PONTES DE MIRANDA, Comentários ao Código de Processo Civil, Tomo VII, Rio de Janeiro, Forense, 1975, p. 400) e diante do que se contém no art. 1.022 do Código de Processo Civil, somente são admissíveis quando destinados a obter pronunciamento tendente a eliminar omissão, obscuridade ou contradição interna do provimento jurisdicional. Não servem portanto para obtenção de nova decisão sobre tema já examinado pelo julgado, por inconformismo da parte. Assim, conheço dos embargos e NEGO-LHES PROVIMENTO. Intime-se.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-102246718" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=102246718&amp;nmRecursoAcessado=Embargos+de+Declara%C3%A7%C3%A3o+N%C3%A3o-Acolhidos">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-102246718" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=102246718&amp;nmRecursoAcessado=Embargos+de+Declara%C3%A7%C3%A3o+N%C3%A3o-Acolhidos"> Embargos de Declaração Não-Acolhidos
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 240/242 e 246/249: Tratam-se de embargos de declaração. Não vislumbro no pronunciamento judicial proferido nenhum vício, razão pela qual rejeito os embargos de declaração opostos. Em que pesem as respeitáveis ponderações da parte embargante, a decisão não possui vícios a serem sanados pela via dos embargos de declaração, existindo a via recursal própria para tal mister. Ademais, no caso em tela, verifica-se que os embargos de declaração tem caráter eminentemente infringentes, o que não se admite: EMBARGOS DE DECLARAÇÃO - Pressupostos legais - CPC, artigo 535 - Inexistência de omissão - Pretensão a novo julgamento da causa - Caráter infringente. A jurisprudência do Supremo Tribunal Federal não admite o uso da via recursal dos embargos para obter novo julgamento da causa, sob alegação de erro ou desacerto do julgado. Embargos de declaração rejeitados dado que apresentam caráter de infringentes (STF - E-Decl. em Rec. Extr. nº 202.036-2 - SP - 1ª T - Rel. Min. Ilmar Galvão - J. 04.08.98 - DJ 11.12.98 - v.u) (g.m.). EMBARGOS DE DECLARAÇÃO - Inexistência de omissão, de dúvida ou de contrariedade que os justificasse - O Juiz não está obrigado a responder todas as alegações das partes, quando já tenha encontrado motivo suficiente para fundamentos indicados por elas e tampouco a responder um a todos os argumentos - Embargos Rejeitados. A decisão sobre embargos de declaração não pode, a pretexto de suprir omissão ou corrigir obscuridade ou contradição, alterar, na substância, a decisão embargada, não como se acolher os embargos de declaração com essência de Embargos Infringentes (TJSP - EDecl. nº 30.648-4 - Campinas - 5ª Câmara de Direito Privado - Rel. Christiano Kuntz - J. 20.08.98 - v.u.) (g.m.). "Os embargos declaratórios não constituem meio hábil ao reexame do julgado, por isso que constituem apelos de integração e não de substituição. Assim, não há como serem acolhidos se nítido seu caráter infringente e ausentes quaisquer dos pressupostos indispensáveis elencados no CPC, art. 535" (STJ - Emb. Decl. no Ag. Reg. na Petição n. 1.649-RS - Corte Especial - Min. Edson Vidigal - j. 19.05.2004-RSTJ 181/44). "Processual civil. Embargos de declaração. Omissão e contradição. Ausência. Consoante o disposto no artigo 535, I e II, do Código de Processo Civil, os embargos de declaração se prestam a expungir do julgado eventual obscuridade, omissão ou contradição, admitindo-se só excepcionalmente o efeito modificativo. Ausente omissão ou contradição no julgado, inadmissíveis são os declaratórios, que visam ao rejulgamento da causa, apresentando caráter infringente. Embargos de declaração rejeitados" (STJ - Ag. Reg. nos Emb.Decl. n. 188.623-BA - 3a T - Rel. Min. Castro Filho - j . 27.06.2002). "Os embargos de declaração devem atender aos seus requisitos, quais sejam, suprir omissão, contradição ou obscuridade; não havendo qualquer um desses pressupostos, rejeitam-se os mesmos, mormente quando o ponto fulcral da controvérsia reside na insatisfação do ora embargante com o deslinde da controvérsia. Inviável, em sede de embargos declaratórios, a concessão do excepcional efeito infringente, quando a oposição dos mesmos cinge-se a repisar todos os fundamentos anteriormente já tecidos" (STJ -Ag. Reg. nos Emb. Decl. n. 525.617-DF - 5a T -Rel. Min. Gilson Dipp-j. 18.11.2003). "RECURSO. Embargos de declaração. Vícios não existentes. Caráter infringente manifesto. Rejeição. A função do tribunal, nos embargos declaratórios, não é responder a questionários sobre meros pontos de fato, mas, sim, remediar obscuridades, contradições ou omissões" (TJSP - Emb. Decl. n. 079.909-4 - 2a Câmara de Direito Privado - Rel. Cezar Peluso). "Os embargos de declaração não constituem recurso idôneo para corrigir os fundamentos de uma decisão" (Bol. AASP 1.536/122). "Os embargos de declaração não assumem caráter infringente da decisão embargada, nem se destinam a obter o rejulgamento da causa ou mera corrigenda dos fundamentos do acórdão, quando deficientes, insuficientes ou até errôneos. As eventuais incorreções na apreciação dos fatos, da prova existente nos autos ou ainda na aplicação do direito, devem ser atacadas pelos recursos adequados, jamais por embargos declaratórios." (Embargos âe Declaração nas 348.538-01/7, 361.200-01/8 e 475.511-01/3, 1ª Câmara, extinto II TAC - Rel. Juiz Renato Sartorelli). A despeito da redação do art. 489, § 1º, do CPC, não houve substancial modificação na ideia de que o órgão julgador não está obrigado a se manifestar sobre todos os argumentos colacionados pelas partes para expressar o seu convencimento, bastando, para tanto, pronunciar-se de forma geral sobre as questões pertinentes para a formação de sua convicção, de modo que desde que os fundamentos adotados sejam bastantes para justificar o concluído na decisão, o órgão jurisdicional não está obrigado a rebater, um a um, todos os argumentos utilizados pela parte (STJ, AgRg no Ag nº 738.892/DF, Rel. Min. Aldir Passarinho Junior, 4ª Turma; AgRg no REsp nº 783.856/GO, Rel. Min. Barros Monteiro, 4ª Turma; AgRg no REsp nº 259141, Rel. Min. Nancy Andrighi, 3ª Turma; AgRg no Ag nº 186.231, Rel. Min. Carlos Alberto Menezes Direito, 3ª Turma). É dizer: a função do julgador é decidir a lide e apontar direta e objetivamente os fundamentos que, para tal, lhe foram suficientes, não havendo necessidade de apreciar todos os argumentos deduzidos pelas partes, ao contrário do que sucede com os peritos judiciais, que respondem individualmente aos quesitos ofertados nos autos (TJSP, Apelação nº 0007163-87.2009.8.26.0625; 10ª Câmara de Direito Privado, Rel. Des.Roberto Maia, com invocação de precedentes: STF, 1ª Turma, ED no Ag.Reg. no RE nº 739.369/SC, Rel. Min. Luiz Fux; STF, 2ª Turma, Ag.Reg. no RE nº 724.151/MS, Rel. Min. Cármen Lúcia; STJ, 2ª Turma, AgRg no REsp nº 383.837/RS, Rel. Min. Humberto Martins; e STJ, 3ª Turma, AgRg no REsp nº 354.527/RJ, Rel. Min. Sidnei Beneti). Frisa-se que Não ofende a norma extraível do inciso IV do § 1º do art. 489 do CPC/2015 a decisão que deixar de apreciar questões cujo exame tenha ficado prejudicado em razão da análise anterior de questão subordinante (Enunciado nº 12 aprovado no Seminário O Poder Judiciário e o Novo Código de Processo Civil, organizado pela Escola Nacional de Formação e Aperfeiçoamento de Magistrados ENFAM). Além disso, recorda-se que A fundamentação sucinta não se confunde com a ausência de fundamentação e não acarreta a nulidade da decisão se forem enfrentadas todas as questões cuja resolução, em tese, influencie a decisão da causa (Enunciado nº 10 aprovado no Seminário O Poder Judiciário e o Novo Código de Processo Civil, organizado pela Escola Nacional de Formação e Aperfeiçoamento de Magistrados ENFAM). Convém ainda acentuar que O art. 489, § 1º, IV, do CPC/2015 não obriga o juiz a enfrentar os fundamentos jurídicos invocados pela parte, quando já tenham sido enfrentados na formação dos precedentes obrigatórios (Enunciado nº 13 aprovado no Seminário O Poder Judiciário e o Novo Código de Processo Civil, organizado pela Escola Nacional de Formação e Aperfeiçoamento de Magistrados - ENFAM. Em paralelo, lembra-se que a contradição que autoriza os embargos declaratórios é a interna, entre as proposições da própria decisão, ou seja, é aquela existente entre a fundamentação e o dispositivo, relatório e fundamentação, dispositivo e ementa ou ainda entre seus tópicos internos (STJ, EDcl no AREsp 169.105/RS, 4ª Turma, Rel. Ministro Luis Felipe Salomão) e não aquela decorrente do confronto entre o decisum e disposições legais ou argumentos da parte. Acaso a hipótese seja essa última, o recurso cabível é outro (TJSP, ED na Apelação nº 0018690-12.2012.8.26.0114/50000, 8ª Câmara de Direito Público, Rel. Des. João Carlos Garcia. Desse modo, relembra-se sempre para evitar o reconhecimento de embargos de declaração como mecanismo de protelação que nesse tipo de recurso, não se pede que se redecida; pede-se que se reexprima (PONTES DE MIRANDA, Comentários ao Código de Processo Civil, Tomo VII, Rio de Janeiro, Forense, 1975, p. 400) e diante do que se contém no art. 1.022 do Código de Processo Civil, somente são admissíveis quando destinados a obter pronunciamento tendente a eliminar omissão, obscuridade ou contradição interna do provimento jurisdicional. Não servem portanto para obtenção de nova decisão sobre tema já examinado pelo julgado, por inconformismo da parte. Assim, conheço dos embargos e NEGO-LHES PROVIMENTO. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-102237326" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=102237326&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-102237326" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=102237326&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida"> Certidão de Cartório Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Certidão - Genérica
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0605/2022
+Data da Publicação: 29/07/2022
+Número do Diário: 3557
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			27/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0605/2022
+Teor do ato: Vistos. Fls. 255/256: Anotei a habilitação do patrono do Requerido; No mais, aguarde-se a manifestação da parte Requerida nos Autos. Após, tornem conclusos. Int.
+Advogados(s): Bernardo Buosi (OAB 227541/SP), FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-100255686" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=100255686&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-100255686" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=100255686&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 255/256: Anotei a habilitação do patrono do Requerido; No mais, aguarde-se a manifestação da parte Requerida nos Autos. Após, tornem conclusos. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Pedido de Habilitação Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.41266950-3
+Tipo da Petição: Pedido de Habilitação
+Data: 25/07/2022 22:23
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.41031928-9
+Tipo da Petição: Petição Intermediária
+Data: 21/06/2022 16:41
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0463/2022
+Data da Publicação: 21/06/2022
+Número do Diário: 3529
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0463/2022
+Teor do ato: Vistos. Fls. 246/248: Intime-se o embargado, para, querendo, manifestar-se, no prazo de 5 (cinco) dias, sobre os embargos opostos, nos termos do § 2º do art. 1.023 do Código de Processo Civil. Após, tornem conclusos para decisão. Intime-se.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-99053386" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=99053386&amp;nmRecursoAcessado=Decis%C3%A3o+Determina%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-99053386" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=99053386&amp;nmRecursoAcessado=Decis%C3%A3o+Determina%C3%A7%C3%A3o"> Decisão Determinação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 246/248: Intime-se o embargado, para, querendo, manifestar-se, no prazo de 5 (cinco) dias, sobre os embargos opostos, nos termos do § 2º do art. 1.023 do Código de Processo Civil. Após, tornem conclusos para decisão. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			14/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Embargos de Declaração Juntados
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40994660-7
+Tipo da Petição: Embargos de Declaração
+Data: 14/06/2022 17:08
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0449/2022
+Data da Publicação: 14/06/2022
+Número do Diário: 3526
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0449/2022
+Teor do ato: Vistos. Fls. 240/242: Intime-se o Embargado para, querendo, manifestar-se no prazo de 5 (cinco) dias, sobre os embargos opostos. Int.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-98896272" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=98896272&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-98896272" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=98896272&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 240/242: Intime-se o Embargado para, querendo, manifestar-se no prazo de 5 (cinco) dias, sobre os embargos opostos. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Embargos de Declaração Juntados
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40962232-1
+Tipo da Petição: Embargos de Declaração
+Data: 09/06/2022 12:22
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0418/2022
+Data da Publicação: 06/06/2022
+Número do Diário: 3520
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0418/2022
+Teor do ato: Em que pesem as ponderações da requerida em sede de contestação, não havendo vícios a serem sanados e considerando a natureza da ação, julgo por sentença, a fim de que produza seus jurídicos e legais efeitos, a presente produção antecipada de provas requerida, declarando findo este processo cautelar. Julgo procedentes os pedidos, nos termos do art.487, I, do CPC. Em virtude da sucumbência, condeno a requerida no pagamento de custas, despesas e honorários, fixados em 10% sobre o valor da causa, nos termos do art.85, § 2º, do CPC. P.R.I.C.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-98643803" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=98643803&amp;nmRecursoAcessado=Julgada+Procedente+a+A%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-98643803" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=98643803&amp;nmRecursoAcessado=Julgada+Procedente+a+A%C3%A7%C3%A3o"> Julgada Procedente a Ação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Em que pesem as ponderações da requerida em sede de contestação, não havendo vícios a serem sanados e considerando a natureza da ação, julgo por sentença, a fim de que produza seus jurídicos e legais efeitos, a presente produção antecipada de provas requerida, declarando findo este processo cautelar. Julgo procedentes os pedidos, nos termos do art.487, I, do CPC. Em virtude da sucumbência, condeno a requerida no pagamento de custas, despesas e honorários, fixados em 10% sobre o valor da causa, nos termos do art.85, § 2º, do CPC. P.R.I.C.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/06/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40899966-9
+Tipo da Petição: Petição Intermediária
+Data: 01/06/2022 10:06
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0378/2022
+Data da Publicação: 25/05/2022
+Número do Diário: 3512
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			23/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0378/2022
+Teor do ato: Vistos. Fls. 231: Diga o requerente, tornando conclusos em seguida. Int.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-98274791" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=98274791&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-98274791" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=98274791&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 231: Diga o requerente, tornando conclusos em seguida. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40825412-4
+Tipo da Petição: Petição Intermediária
+Data: 20/05/2022 16:01
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0337/2022
+Data da Publicação: 13/05/2022
+Número do Diário: 3504
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0337/2022
+Teor do ato: Vistos. Fls. 226/227: Manifeste-se o requerido. Int.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-97907193" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=97907193&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-97907193" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=97907193&amp;nmRecursoAcessado=Proferidas+Outras+Decis%C3%B5es+n%C3%A3o+Especificadas"> Proferidas Outras Decisões não Especificadas
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 226/227: Manifeste-se o requerido. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40743428-5
+Tipo da Petição: Petição Intermediária
+Data: 10/05/2022 10:04
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/05/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0298/2022
+Data da Publicação: 03/05/2022
+Número do Diário: 3496
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0298/2022
+Teor do ato: Vistos. Fls. 211/222: Abra-se vista à parte autora, anotando-se o sigilo da documentação apresentada. Intime-se.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-97546873" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=97546873&amp;nmRecursoAcessado=Decis%C3%A3o+Determina%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-97546873" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=97546873&amp;nmRecursoAcessado=Decis%C3%A3o+Determina%C3%A7%C3%A3o"> Decisão Determinação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 211/222: Abra-se vista à parte autora, anotando-se o sigilo da documentação apresentada. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40671209-5
+Tipo da Petição: Petição Intermediária
+Data: 28/04/2022 15:01
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0273/2022
+Data da Publicação: 27/04/2022
+Número do Diário: 3492
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			21/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0273/2022
+Teor do ato: Vistos. Fls. 206/207: Manifeste-se a requerida. Int.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-97343432" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=97343432&amp;nmRecursoAcessado=Decis%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-97343432" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=97343432&amp;nmRecursoAcessado=Decis%C3%A3o"> Decisão
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 206/207: Manifeste-se a requerida. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40629440-4
+Tipo da Petição: Petições Diversas
+Data: 20/04/2022 15:32
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/04/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0171/2022
+Data da Publicação: 13/04/2022
+Número do Diário: 3486
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0171/2022
+Teor do ato: Vistos. Fls. 200/202: Manifeste-se a parte autora. Após, tornem conclusos. Intime-se.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-96211971" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=96211971&amp;nmRecursoAcessado=Decis%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-96211971" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=96211971&amp;nmRecursoAcessado=Decis%C3%A3o"> Decisão
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 200/202: Manifeste-se a parte autora. Após, tornem conclusos. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40387474-4
+Tipo da Petição: Petições Diversas
+Data: 15/03/2022 11:36
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0160/2022
+Data da Publicação: 10/03/2022
+Número do Diário: 3462
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0160/2022
+Teor do ato: Vistos. Fls. 195: Manifeste-se o requerido. Int.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-95923783" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95923783&amp;nmRecursoAcessado=Decis%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-95923783" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95923783&amp;nmRecursoAcessado=Decis%C3%A3o"> Decisão
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 195: Manifeste-se o requerido. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/03/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40328088-7
+Tipo da Petição: Petições Diversas
+Data: 07/03/2022 11:55
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0122/2022
+Data da Publicação: 21/02/2022
+Número do Diário: 3451
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			17/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0122/2022
+Teor do ato: Vistos. Fls. 119/122: Manifeste-se a parte autora em réplica. Int.
+Advogados(s): FELICIANO LYRA MOURA (OAB 21714/PE), Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-95453157" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95453157&amp;nmRecursoAcessado=Decis%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-95453157" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95453157&amp;nmRecursoAcessado=Decis%C3%A3o"> Decisão
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 119/122: Manifeste-se a parte autora em réplica. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.40226376-8
+Tipo da Petição: Petição Intermediária
+Data: 16/02/2022 17:42
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					AR Positivo Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Juntada de AR : AA349288815TJ
+Situação : Cumprido
+Modelo : Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+Destinatário : BANCO PAN S/A
+Diligência : 11/02/2022
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0091/2022
+Data da Publicação: 09/02/2022
+Número do Diário: 3443
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			07/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0091/2022
+Teor do ato: Vistos. Diante das especificidades da causa e de modo a adequar o rito processual às necessidades do conflito, deixo para momento oportuno a análise da conveniência da audiência de conciliação. (CPC, art.139, VI e Enunciado n.35 da ENFAM). Cite-se e intime-se a parte Ré para contestar o feito no prazo de 15 (quinze) dias úteis. A ausência de contestação implicará revelia e presunção de veracidade da matéria fática apresentada na petição inicial.A presente citação é acompanhada de senha para acesso ao processo digital, que contém a íntegra da petição inicial e dos documentos. Intime-se.
+Advogados(s): Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-95062421" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95062421&amp;nmRecursoAcessado=Carta+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-95062421" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95062421&amp;nmRecursoAcessado=Carta+Expedida"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-95059409" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95059409&amp;nmRecursoAcessado=Recebida+a+Peti%C3%A7%C3%A3o+Inicial">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-95059409" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95059409&amp;nmRecursoAcessado=Recebida+a+Peti%C3%A7%C3%A3o+Inicial"> Recebida a Petição Inicial
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Diante das especificidades da causa e de modo a adequar o rito processual às necessidades do conflito, deixo para momento oportuno a análise da conveniência da audiência de conciliação. (CPC, art.139, VI e Enunciado n.35 da ENFAM). Cite-se e intime-se a parte Ré para contestar o feito no prazo de 15 (quinze) dias úteis. A ausência de contestação implicará revelia e presunção de veracidade da matéria fática apresentada na petição inicial.A presente citação é acompanhada de senha para acesso ao processo digital, que contém a íntegra da petição inicial e dos documentos. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Redistribuído Livremente (por Sorteio) (movimentação exclusiva do distribuidor)
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Cf. r. decisão de fls. 110.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetidos os Autos para o Cartório Distribuidor Local para Redistribuição
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/02/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-95048525" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95048525&amp;nmRecursoAcessado=Decurso+de+Prazo">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-95048525" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=95048525&amp;nmRecursoAcessado=Decurso+de+Prazo"> Decurso de Prazo
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				14 Decurso de prazo genérico
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/12/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0781/2021
+Data da Publicação: 03/12/2021
+Número do Diário: 3411
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/12/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0781/2021
+Teor do ato: Vistos. Fls. 101/102: Ao Distribuidor para livre distribuição. Intimem-se.
+Advogados(s): Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-93717934" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=93717934&amp;nmRecursoAcessado=Proferido+Despacho+de+Mero+Expediente">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-93717934" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=93717934&amp;nmRecursoAcessado=Proferido+Despacho+de+Mero+Expediente"> Proferido Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 101/102: Ao Distribuidor para livre distribuição. Intimem-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.21.41947000-0
+Tipo da Petição: Petições Diversas
+Data: 26/11/2021 19:33
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação :0738/2021
+Data da Disponibilização: 11/11/2021
+Data da Publicação: 12/11/2021
+Número do Diário: 3397
+Página: 285/294
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0738/2021
+Teor do ato: Vistos. Providencie a parte autora a emenda da inicial, nos termos do artigo 321 do Código de Processo Civil para esclarecer se há diferença entre esse processo e o anteriormente proposto sob nº 1117738-51.2021.8.26.0100, no prazo de 15 (quinze) dias, sob pena de reconhecimento de litispendência.
+Advogados(s): Cauê Tauan de Souza Yaegashi (OAB 357590/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-92936252" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=92936252&amp;nmRecursoAcessado=Determinada+a+Emenda+%C3%A0+Peti%C3%A7%C3%A3o+Inicial">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-92936252" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001HMXN0000&amp;cdDocumento=92936252&amp;nmRecursoAcessado=Determinada+a+Emenda+%C3%A0+Peti%C3%A7%C3%A3o+Inicial"> Determinada a Emenda à Petição Inicial
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Providencie a parte autora a emenda da inicial, nos termos do artigo 321 do Código de Processo Civil para esclarecer se há diferença entre esse processo e o anteriormente proposto sob nº 1117738-51.2021.8.26.0100, no prazo de 15 (quinze) dias, sob pena de reconhecimento de litispendência.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/11/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/10/2021
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído por Direcionamento (movimentação exclusiva do distribuidor)
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Há suspeita de repetição da ação. Confronte os dados do processo distribuído com os dados do processo : 1117738-51.2021.8.26.0100.
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+</table>
+<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value=""><input id="linkNaoExibidomovimentacoes" type="hidden" value="Recolher"><span id="mensagensExibindomovimentacoes" class="mensagemExibindo">
+
+</span>  
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+        <span id="setasDireitamovimentacoes" class="setasDireita">
+            <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+        </span>
+        Mais
+    </a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+<thead>
+<tr class="label">
+<th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								26/11/2021
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								16/02/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								07/03/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								15/03/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								20/04/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								28/04/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								10/05/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								20/05/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								01/06/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								09/06/2022
+							</td>
+							<td width="*">
+								Embargos de Declaração <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								14/06/2022
+							</td>
+							<td width="*">
+								Embargos de Declaração <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								21/06/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								25/07/2022
+							</td>
+							<td width="*">
+								Pedido de Habilitação <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								21/10/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								02/12/2022
+							</td>
+							<td width="*">
+								Pedido de Homologação de Acordo <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								21/12/2022
+							</td>
+							<td width="*">
+								Petição Intermediária <br>
+</td>
+						</tr>
+</tbody>
+</table>
+<!--  Tabela de petições diversas --><script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+<tr class="label">
+<th width="140">
+				Recebido em
+			</th>
+			<th width="*" class="label">
+				Classe
+			</th>
+	    </tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+<td></td>
+		</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+			    07/11/2022
+			  </td>
+			<td width="*">
+				
+					
+						<a class="incidente" href="/cpopg/show.do?localPesquisa.cdLocal=100&amp;processo.codigo=2S001MO0G0000&amp;processo.foro=100" target="_top">
+							Cumprimento de sentença
+							
+							
+								 (0048197-11.2022.8.26.0100)
+							
+						</a>
+					
+					
+				
+			</td>
+		</tr>
+</table>
+<!--  Incidentes --><script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tbody id="dadosApensosNaoDisponiveis"><tr>
+<td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr></tbody></table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+            
+                
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tr>
+<td id="processoSemAudiencias" colspan="3" align="left">
+                    
+                        
+                        
+                            Não há Audiências futuras vinculadas a este processo.
+                        
+                    
+                </td>
+            </tr></table>
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+<thead>
+<tr class="fundoClaro">
+<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td colspan="6"></td>
+				</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=2S001HMXN0000&amp;processo.foro=100&amp;processo.numero=1118387-16.2021.8.26.0100" id="popupSenha" style="display: none;" method="POST">
+		
+		<table role="document">
+<tr>
+<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+<tr align="center">
+<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso"><input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+<tr>
+<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha"><input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+</td>
+			</tr>
+</table>
+</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer><nav class="navbar__footer"><div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+<li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ"></a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan"></a>
+                </li>
+            </ul>
+<ul class="navbar__footer__list-actions"></ul>
+</div>
+    </nav></footer>
+</body>
+</html>

@@ -1,0 +1,1874 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Portal de Serviços e-SAJ</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=700001LGU0000&processo.foro=252&processo.numero=1001064-82.2022.8.26.0252';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=5560b6f0-f08c-4c04-8b8f-a4d1afc40cdf"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=1bc1f261-79f4-4d85-bb3b-841640f42801"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=b356b281-a290-4ee5-be4b-5cac52d11216"></script><script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.5/lodash.js?n=7c43fb40-c492-4529-a88c-d72b6b829587"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=faa4e604-119c-4c73-aae7-76d0a5993031"></script><script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=13577c34-a8ec-4418-9578-68951cb93e25"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=4192496e-c67f-44a4-a3c1-4e0d38ccc83f"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=dcb31eb8-b217-4576-9525-e41333228427"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=c3e2a135-67be-4db1-8c41-d69485bdd482"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=c9dedce0-8216-4b43-b7b2-150a63bff307"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=3236211a-0ed2-4f29-81c3-f614fa62cf71"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=9f6aa096-d777-4707-a641-e496ce5e04dc"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=26c33a8c-8055-4531-a865-a567be048b32"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=686458821"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=98ed0563-76b0-4961-a878-6c90fc9e341b"></script><script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=88149fee-fdac-4ab0-8e15-ec168dd83d31" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script><script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script><script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos à pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script><script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=1814283828"></script><script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+				
+			})
+		})(jQuery);
+	</script><script src="https://fast.conpass.io/H1xuDQHJ8X.js"></script><script type="text/javascript">
+            Conpass.init({
+                email: "277519",
+            });
+        </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script><!-- HEADER--><div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions__barra">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="/cpopg/abrirPastaDigital.do?processo.codigo=700001LGU0000">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="/cpopg/abrirPastaDigital.do?processo.codigo=700001LGU0000&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                            <button class="btn btn-primary btn-space" id="pbPeticionar" name="pbPeticionar" onclick="window.location.href = '/cpopg/peticionarIntermediariaParaProcesso.do?cdProcesso=700001LGU0000&amp;cdForo=252&amp;peticionanteResponsavel=277519-277519'">
+                                Peticionar
+                            </button>
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary__barra">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        1001064-82.2022.8.26.0252
+                    </span>
+                    
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Interpretação / Revisão de Contrato">Interpretação / Revisão de Contrato</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro de Ipaussu">Foro de Ipaussu</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="Vara Única">Vara Única</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="ALESSANDRA MENDES SPALDING">ALESSANDRA MENDES SPALDING</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details__barra">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">06/07/2022 às 15:08 - Livre</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2022/001373</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span>
+</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         16.311,49</div>
+                    </div>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left aside-nav--acessibilidade"><div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--light.png" alt=""></a>
+        </header><nav class="aside-nav__main-menu"><ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"></ul></nav><div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside><aside class="aside-nav aside-nav--right aside-nav__user"><div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/aside/brasoes/br-tjsp.jpg" alt="">
+</div>
+            <ul class="aside-nav__user__sign__list">
+<li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de São Paulo</span></li>
+            </ul>
+<a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--dark.png" alt=""></a>
+        </div>
+        <hr>
+<div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+<li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+<ul class="aside-nav__user__info__list-access">
+<li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+</div>
+    </div>
+</aside><header><link rel="shortcut icon" href="https://esaj.tjsp.jus.br/esaj/tema/padrao/clientes/SP/imagens/favicon.ico" type="image/x-icon">
+<link href="https://esaj.tjsp.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+<nav class="header__navbar--barra"><div class="header__navbar__barra-acessibilidade">
+                <a class="header__navbar__barra-acessibilidade-anchor" target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes"><span>Acessibilidade</span></a>
+                <a target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes">
+                    <img onmouseover="exibirLibras()" onmouseleave="ocultarLibras()" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/mao.png" alt="MAO"></a>
+            </div>
+            <img id="gifLibras" class="header__navbar__barra-acessibilidade-libras" style="display: none" height="100" width="100" border="0" alt="LIBRAS" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/libras.gif"><a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href="">
+<a class="linkLogo" href="https://esaj.tjsp.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos do 1ºGrau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+<li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjsp.jus.br/"> TJSP </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text"></span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul></nav></header><div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script><script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://esaj.tjsp.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://esaj.tjsp.jus.br/sajcas/conteudoIdentificacaoJson?script=1677308505871&retorno=' + encodeURIComponent(location.href);
+</script><script src="https://esaj.tjsp.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script><script src="https://esaj.tjsp.jus.br/sajcas/seletorVersaoBeta.js?n=3fc713ba-90c0-4172-a138-2e539a6e6819&amp;versao=2"></script><script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqte </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Jonatan Lucas Januário
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Mario Andre de Souza
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqdo </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Aymoré Crédito, Financiamento e Investimento S/A
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Henrique José Parada Simão
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+</table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<thead>
+<tr>
+<th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true"> </th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody id="tabelaUltimasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Apelação/Razões Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WIAC.23.70000435-4
+Tipo da Petição: Razões de Apelação
+Data: 13/01/2023 09:00
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Disponibilização: 09/01/2023
+Data da Publicação: 23/01/2023
+Número do Diário: 
+Página: 
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Vistos. Trata-se de ação declaratória de nulidade e revisão de contrato ajuizada por Jonatan Lucas Januário em face de Aymoré Crédito, Financiamento e Investimento S/A. Afirma o autor que firmou contrato com a requerida para aquisição de veículo (VW/Parati 2007/2008), sendo a taxa de juros de 2,75% ao mês e 38,40% ao ano, em 48parcelas de R$623,27, totalizando R$16.311,49; pretende a revisão para que seja aplicada taxa de juros na média do mercado; que seja afastada a cobrança de seguro, por ser prática indevida de venda casada; que seja expurgada a capitalização diária/mensal dos juros remuneratórios, compensando valores pagos a maior nas prestações. Busca a antecipação de tutela para impedir a inscrição em cadastros de proteção ao crédito e manutenção da posse do veículo; e ao final, a revisão das cláusulas contratuais, com abatimento do que foi pago a maior. A tutela antecipada foi indeferida, fls. 30/31. Citada, a requerida apresentou contestação às fls. 36/67, sustentando que o autor não faz jus à gratuidade judiciária e que não há comprovante de residência da parte atualizado. Suscita a prescrição. No mérito, defende que os juros cobrados não são superiores aos pactuados, que inexiste tabelamento dos juros e que os juros pactuados não são excessivos e o autor tinha pleno conhecimento das taxas contratadas não havendo cobrança abusiva. Sustenta ainda a legalidade da cobrança do seguro prestamista, cuja contratação foi por opção do autor; ausência de pressupostos para concessão da liminar pretendida. Requer a improcedência do pedido e refuta a pretendida inversão do ônus da prova. Não houve Réplica, fls. 167. Instadas a especificar provas, apenas o réu manifestou-se (fls.171/172). É o relatório. Fundamento e decido. Julgo o feito no estado em que se encontra, pois as partes não requereram a dilação probatória. Mantenho a gratuidade ao autor, pois o réu nada trouxe o que infirme a presunção de pobreza que milita em favor do consumidor pessoa natural. Desnecessária a vinda de comprovante de residência atualizado do autor. Não há prescrição. Segundo o entendimento jurisprudencial firmado pela C. STJ, o prazo prescricional é decenal, cujo termo inicial para as ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas é a partir da data da assinatura do contrato. Nesse sentido: PROCESSUAL CIVIL. AGRAVO INTERNO NOS EMBARGOS DE DECLARAÇÃO NO RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO. MÚTUO BANCÁRIO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. 1. Ação revisional de contrato 2. O termo inicial do prazo prescricional decenal nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Súmula 568/STJ. 3. Agravo interno não provido. (AgInt nos EDcl no REsp n. 1.897.309/RS, Relatora Ministra Nancy Andrighi, Terceira Turma, julgado em 15/3/2021, DJe 18/3/2021). PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. CONTRATO BANCÁRIO. AÇÃO REVISIONAL CUMULADA COM REPETIÇÃO DE INDÉBITO. PRESCRIÇÃO. PRAZO. DECISÃO MANTIDA. 1. A jurisprudência do STJ entende que a pretensão de repetição de valores pagos indevidamente em função de contrato bancário está sujeita ao prazo prescricional vintenário na vigência do CC/1916 e ao decenal na vigência do CC/2002, contado da efetiva lesão, ou seja, do pagamento. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.234.635/SP, Relator Ministro Antonio Carlos, Quarta Turma, julgado em 1º/3/2021, DJe 3/3/2021). AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO BANCÁRIO. CONTRATO DE MÚTUO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. AGRAVO INTERNO IMPROVIDO. 1. Consoante entendimento desta Corte Superior, o termo inicial do prazo prescricional nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Precedentes. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.444.255/MS, Relator Ministro Raul Araújo, Quarta Turma, julgado em 20/4/2020, DJe 4/5/2020) O ponto controvertido gira em torno de apurar se a parte autora faz jus à revisão contratual por conter cláusulas abusivas ou ilegais, com a condenação da instituição financeira ao indébito. As ilegalidades apontadas pela parte autora foram: taxa de juros acima da de mercado; capitalização de juros mensal que não foi expressamente contratada e pretende que seja utilizada a efetivamente contratada de 2,75% a.m. e 38,40% a.a.; ilegalidade na cobrança de Seguro: R$865,68; Trata-se de financiamento de crédito direto ao consumidor (CDC) para aquisição de veículo, tendo sido liberado ao requerente o valor de R$13.629,38, que acrescido dos encargos contratados, perfaz um total financiado de R$16.311,49, a ser pago em 48 parcelas de R$623,27. Anoto inicialmente, que o banco trouxe o contrato questionado e quanto a esse documento não houve impugnação do autor (fls. 81/83). Pois bem a relação atribuída às partes foi considerada como de consumo e assim preenchidos os requisitos dos artigos 2º e 3º do Código de Defesa do Consumidor, atraindo a incidência desta Lei. Observo, além disso, que o negócio jurídico é do tipo de adesão, em que ao contratante consumidor não é permitida a discussão das cláusulas contratuais, devendo ser relativizado o princípio do pacta sunt servanda. Dessa forma é forte a jurisprudência no sentido de que é prescindível a instrução da petição inicial com o contrato bancário a ser revisado, pois, tratando-se de documento comum às partes, de que a instituição financeira tem o dever legal de guarda, admite-se seja a ela ordenada a exibição incidental do contrato, a teor do art. 396 e seguintes do Código de Processo Civil:(TJSP, Apelação nº 991.09.081637-5, Rel. Des. José Reynaldo, 12ª Câmara de Dir. Privado, j. em31/03/2010). Isto porque, em se tratando de direito do consumidor pode a parte caso entenda necessário, postular de forma incidental a exibição do documento ou postular no bojo da própria ação na fase de especificação de provas, fundamentando seu pedido na inversão do ônus da prova com fundamento no artigo 6º, VIII e 83, do CDC. Acontece que conforme se verifica dos autos este pedido não foi formulado, seja na petição inicial ou na fase de especificação de provas. Não resta dúvida alguma, como acima afirmado que em contratos bancários aplica-se o Código Consumerista, invertendo-se o ônus da prova. Contudo, também entendo que a parte deve formular, de forma clara, precisa e objetiva quais os tipos de prova pretende produzir cujos ônus não consegue em razão das diversas dificuldades encontradas. Assim, passo apreciar os pedidos da parte autora segundo a prova produzida nos autos pelas partes, levando em consideração as regras contidas no Código de Defesa do Consumidor e a luz da Súmula 381 editada pela Segunda Turma do Colendo Superior Tribunal de Justiça, com o seguinte enunciado: "Nos contratos bancários, é vedado ao julgador conhecer, de ofício, da abusividade das cláusulas". Dos Juros remuneratórios Sob tal título serão examinadas três alegações distintas: 1) cobrança de juros remuneratórios acima do limite legal de 12% ao ano; 2) capitalização mensal de juros; e 3) anatocismo. Primeiro, cumpre afastar a distinção entre anatocismo e capitalização de juros. Isto porque o anatocismo é, justamente, a capitalização de juros, ou seja, a incidência de juros sobre juros já acrescidos ao capital. Contrariamente ao que se aduz, o anatocismo não é mera forma da capitalização que, no seu entender, respeitante à periodização. O anatocismo é a forma capitalizada de calcular juros, podendo assumir periodizações variadas. A questão a ser respondida é se a capitalização é lícita. A chamada Lei da Usura (Dec. n° 22.626/33), assim dispôs: Art. 4º. E proibido contar juros dos juros: esta proibição não compreende a acumulação de juros vencidos aos saldos líquidos em conta corrente de ano a ano. Como se vê, a própria lei excepcionou a capitalização anual, isto é, o cálculo de juros sobre juros vencidos ano a ano. Apesar da exceção, a jurisprudência do STF firmou-se no sentido de ser vedada a capitalização. Mais importante, no entanto, o fato de entender-se referida proibição como ius cogens, inafastável pela vontade das partes. Neste sentido foram os precedentes (RE n° 17.785/51, RE n° 19.352/51, RE n° 19.533/53, RE n° 20.653/52) do enunciado n° 121, da Súmula de Jurisprudência do STF:É vedada a capitalização de juros, ainda que expressamente convencionada. Ocorre que a Lei de Usura continha norma genérica, a par da qual seriam editadas leis específicas, abrindo a possibilidade dos contratantes legitimamente pactuarem a capitalização de juros, inclusive em períodos inferiores a um ano. Assim, viria a Lei n° 4.595/64 dispor sobre a Política Monetária e o Sistema Financeiro Nacional, estabelecendo a regulamentação e a fiscalização das instituições financeiras pelo BACEN e pelo Conselho Monetário Nacional. Dispunha a lei em sua redação original: Art 4º Compete privativamente ao Conselho Monetário Nacional:...IX - Limitar, sempre que necessário, as taxas de juros, descontos comissões e qualquer outra forma de remuneração de operações e serviços bancários ou financeiros, inclusive os prestados pelo Banco Central da República do Brasil, assegurando taxas favorecidas aos financiamentos que se destinem a promover:(...) À luz da nova legislação, o Supremo Tribunal Federal passou a afastar a aplicabilidade da Lei de Usura quando se tratasse de operações realizadas por instituições do Sistema Financeiro, sobretudo por estarem tais instituições sob a regulamentação e fiscalização do BACEN e do Conselho Monetário Nacional, este último competente para estabelecer limitações às taxas de juros. Neste sentido foram os precedentes (RE n° 78.953, RE n° 80.115, RE n° 81.658,RE n° 81.680, RE n° 81.692, RE n° 81.693, RE n° 82.196, RE n° 82.216 e RE n° 82.439, todos do ano de 1975) do enunciado n° 596 da Súmula de Jurisprudência do STF: As disposições do Decreto 22626/1933 não se aplicam às taxas de juros e aos outros encargos cobrados nas operações realizadas por instituições públicas ou privadas, que integram o Sistema Financeiro Nacional. Cumpre ressaltar que a matéria versada nos autos tipifica relação jurídica de consumo, pois se sujeitam os contratos bancários aos ditames do Código de Defesa do Consumidor, que, como é cediço, contempla normas de ordem pública, que devem ser aplicadas até mesmo de ofício pelo juiz, consoante preconiza a Súmula n° 297, do Superior Tribunal de Justiça, cujo enunciado preconiza que "o Código de Defesa do Consumidor é aplicável às instituições financeiras". Contudo, a alegação genérica de nulidade de cláusulas contratuais não é capaz de desconstituir o negócio jurídico celebrado entre as partes. Mister se faz consignar que o contrato em questão se trata de empréstimos bancários para aquisição de bem móvel com prestações fixas e juros. Desta feita, a alegação da parte autora de que não ficou expressamente contratado juros capitalizados mensalmente não se sustenta, porque no quadro apresentado no orçamento essa questão é muito clara, pois é fácil observar que houve contratação de capitalização mensal, uma vez que a taxa anual do contrato é maior que doze vezes a taxa mensal, sendo suficiente para prova nesse sentido. No tocante ao patamar dos juros cobrados, cumpre notar que a Constituição da República de 1988 havia estipulado, no § 3º do art. 192 na redação original, o limite de 12% ao ano para as taxas de juros a serem cobradas pelas instituições do sistema financeiro. Acerca da aplicação deste limite, o STF fixou o entendimento de se tratar de norma dependente de complementação legal, não sendo dotada de aplicabilidade imediata. Neste sentido editou o enunciado n° 648 em sua Súmula de Jurisprudência: A norma do § 3º do art. 192 da constituição, revogada pela emenda constitucional40/2003, que limitava a taxa de juros reais a 12% ao ano, tinha sua aplicabilidade condicionada à edição de Lei Complementar. Mais recentemente a referida Súmula 648 do STF foi erigida a status de Súmula Vinculante (nº 7 - STF), não permitindo a qualquer órgão judicial ou administrativo aplicação em sentido contrário. Inaplicável a limitação de juros, o autor arguiu a ilegalidade na taxa efetivamente contratada por ser bem superior àquela indicada como média pelo Banco Central. É certo que, as instituições financeiras levam em conta para o cálculo das taxas os fatores de riscos em contratos semelhantes (características e condições dos contratantes) e bem como, quando se trata de aquisição de bens (compra de veículo), as condições de uso, ano de fabricação e aceitação no mercado, pois todos esses fatores são contabilizados por ocasião da celebração do contrato e não simplesmente considerar a média generalizada aplicada pelas várias instituições de crédito, todavia, deve estar sempre dentro da média do mercado praticada pelas instituições financeiras. Esses fatores para celebração do contrato não são ilegais, pois se por um lado o contrato é do tipo de adesão, por outro, o consumidor tem a faculdade de escolher qual instituição financeira melhor se adequa ao seu perfil financeiro. A parte autora discordou do percentual aplicado no contrato para o mês da sua celebração, pois considerou ser muito além daquele autorizado pelo Banco Central, fls. 28/29, e por isso, entendeu como abusiva as cláusulas de juros remuneratórios. Em que pese suas alegações, não prospera sua irresignação haja vista que de acordo com os dados da cédula de crédito, o valor financiado foi de R$16.311,49, a ser pago em 48 parcelas de R$623,27, a taxa de juros mensal de 2,75% ao mês e taxa CET de 3,72% ao mês, não podem ser consideradas como excessiva ao ponto de causar desequilíbrio ao contrato. Desse modo não se sustenta a sua pretensão, primeiro, porque foi efetivamente contratada e segundo, o percentual aplicado pelo banco não se mostra ilegal, pois a abusividade, segundo entendimento da jurisprudência do STJ, deve conter elementos capaz de colocar o consumidor em desvantagem exagerada (art. 51, §1º, do CDC), cuja demonstração deve ser cabal. Não me parece abusiva a taxa questionada de juros mensal constante das cláusulas contratuais, embora acima da média. Isso porque, considerando que o Banco Central fornece somente diretrizes acerca das taxas de juros para as instituições financeiras, não ficou bem demonstrado a alegada abusividade na taxa questionada pois ao contrário, encontra-se dentro dos parâmetros da normalidade para comercialização no mercado financeiro, levando-se em consideração as características da cédula emitida, que contém cláusula de alienação fiduciária de veículo usado com mais de 10 anos de uso. Ademais, a taxa CET é composta de todas as despesas e encargos incidentes nas operações de crédito, o que não é ilegal. E, nesse sentido foi o posicionamento do Superior Tribunal de Justiça ao proferir julgamento, em questão correlata, acerca da limitação dos juros remuneratórios e a taxa média de mercado, ficando assim consignado: "A jurisprudência, conforme registrado anteriormente, tem considerado abusivas taxas superiores a uma vez e meia (voto proferido pelo Min. Ari Pargendler no REsp 271.214/RS, Rel. p. Acórdão Min. Menezes Direito, DJ de 04.08.2003), ao dobro (Resp 1.036.818, Terceira Turma, minha relatoria, DJe de 20.06.2008) ou ao triplo (REsp 971.853/RS, Quarta Turma, Min. Pádua Ribeiro, DJ de 24.09.2007) da média. Todavia, esta perquirição acerca da abusividade não é estanque, o que impossibilita a adoção de critérios genéricos e universais. A taxa média de mercado, divulgada pelo Banco Central, constitui um valioso referencial, mas cabe somente ao juiz, no exame das peculiaridades do caso concreto, avaliar se os juros contratados foram ou não abusivos". (REsp n. 1.061.530-RS, Rel. Ministra Nancy Andrighi). Nos autos, não ficou evidenciado que os juros contratados são exorbitantes ou muito superiores da média de mercado, pois os juros contratados não são duas ou três vezes a média comercializada pelo mercado financeiro, conforme se observa a fls. 28. Nessa linha de raciocínio, é bom lembrar que a natureza jurídica do contrato de adesão é válida e por si só não gera nulidade. A ilicitude consiste no desequilíbrio contratual gerado ou o lucro excessivo, que deve ficar amplamente comprovado pela parte que alega. Observo do aludido contrato, como afirmado pela parte autora, a previsão de duas taxas mensais, uma de 2,75% ao mês e outra 3,72% ao mês. Contudo, entendo que não há ilegalidade nesse sentido, haja vista que para a composição do custo efetivo total (CET) são inseridos tributos (IOF) e tarifas administrativas (Avaliação, Seguro e Registro) além dos encargos do financiamento contrato. Isso, portanto, não se trata de excesso, mas, ao contrário informação ao consumidor a respeito da modalidade de contratação e o que representará a título de custo ao final do contrato. Por isso, improcedente o pedido no que toca à taxa de juros remuneratórios e sua capitalização ou eventual abusividade. Seguro O contrato de seguro juntado pela instituição financeira foi celebrado com Zurich Santander Brasil, participante do mesmo grupo econômico do banco requerido. Assim, a contratação do seguro protegido vida/emprego, a partir de 30/04/2008, Resolução 3518/2017, não é ilegal, desde que o consumidor possa escolher a seguradora que melhor atenda seus interesses, nos moldes da Súmula 473 do STJ, portanto, quando contratada pela parte incumbe ao banco trazer cópia da proposta de adesão do seguro de proteção, aceitação pelo consumidor dos seus termos e provar que outra foi ofertada. A falta desses requisitos coloca-se em dúvida se houve liberdade de escolha do consumidor. No caso em questão, o banco trouxe o contrato de seguro com apólice do mesmo grupo econômico, configurando venda casada, o que é vedado conforme posicionamento pelo Colendo Superior Tribunal de Justiça, no REsp 1.639.259/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018): SEGURO DE PROTEÇÃO FINANCEIRA. VENDA CASADA. RESTRIÇÃO À ESCOLHA DA SEGURADORA. ANALOGIA COM O ENTENDIMENTO DA SÚMULA 473/STJ. (...) 2.2 - Nos contratos bancários em geral, o consumidor não pode ser compelido a contratar seguro com a instituição financeira ou com seguradora por ela indicada. (...) (REsp. 1639320/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018). Dessa forma, com razão a parte autora pois o conjunto probatório aponta que o consumidor não teve a opção de não contratar ou de contrata-lo com companhia da sua preferência, portanto, configurada a venda casada, prática vedada pelo artigo 39, I, do Código de Defesa do Consumidor. Nesse sentido foram as decisões proferidas pelo E. TJ-SP: Embargos à execução. Busca e apreensão convertida em execução. Alegação de abusividade que leva a ausência de liquidez e inexigibilidade do título que embasa a execução. Descabimento. Possibilidade de capitalização mensal. Anatocismo. Inocorrência. Possibilidade de cobrança após a edição da Medida Provisória nº 1963/2000. Ausência de limitação dos juros contratuais. Norma determinada pela Súmula Vinculante nº 07 do STF. Pretensão de reconhecimento da abusividade da cobrança das tarifas de Registro de Contrato, Avaliação do bem e cobrança de Seguro. Matérias objeto dos recursos repetitivos nº 1.578.553/SP, 1.639.230/SP e 1.639.259/SP junto ao Superior Tribunal de Justiça. Tarifas atinentes ao registro do contrato e avaliação que se mostram abusivas sem a prova da efetiva prestação dos serviços. Cobrança de seguro pela ré que se trata nitidamente de venda casada ante a não opção pelo consumidor de seguradora de sua confiança. Devolução mediante compensação e recálculo do valor das parcelas devidas. Recurso parcialmente provido". (TJSP; Apelação Cível 1016837-67.2020.8.26.0114; Relator (a): Ruy Coppola; Órgão Julgador: 32ª Câmara de Direito Privado; Data do Julgamento: 16/08/2021). REVISIONAL DE CONTRATO Contrato de financiamento de veículo Parcial procedência da ação Inconformismo Pretensão de validade da cobrança de seguro prestamista autorizado pela legislação e Banco Central - Aplicação das regras do Código de Defesa do Consumidor Reconhecida a ilegalidade da cobrança do seguro prestamista - Sentença mantida Recurso não provido. (TJSP; Apelação Cível 1000407-14.2022.8.26.0003; Relator (a): Heraldo de Oliveira; Órgão Julgador: 13ª Câmara de Direito Privado; Foro Regional III Jabaquara - 2ª Vara Cível; Data do Julgamento: 05/07/2022; Data de Registro: 05/07/2022) ALIENAÇÃO FIDUCIÁRIA. BUSCA E APREENSÃO. REVISÃO DE CLÁUSULAS CONTRATUAIS. Instituição financeira que ajuizou a presente demanda pretendendo a concessão de liminar de busca e apreensão e, ao final, a procedência da demanda para tornar definitiva a consolidação da posse e propriedade do bem em seu favor. Sentença de procedência. Insurgência do réu. 1. Capitalização dos juros. Pacto firmado sob a égide da Medida Provisória 1.963-17/2000, reeditada sob o nº 2.170-36/01, que permite a capitalização dos juros no caso ora em análise. O C. Superior Tribunal de Justiça também consolidou o entendimento, admitindo a capitalização de juros, desde que expressamente pactuada, entendendo que a previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança contratada, como no caso dos autos. 2. Tabela Price. O fato desse sistema de amortização englobar premissas que impliquem capitalização da taxa de juros não denota, por si só, irregularidade, uma vez a capitalização é permitida no caso concreto. A sua utilização, por conseguinte, é legítima, não configurando ilegalidade. Precedentes deste E. Tribunal de Justiça. 3. Tarifa de registro do contrato e de avaliação do bem. Tema julgado sob a sistemática dos recursos repetitivos. REsp 1.578.553/SP. Ausência de demonstração da prestação dos serviços pela instituição financeira autora. Abusividade configurada. Tarifas afastadas. 4. Seguro de proteção financeira. O C. STJ se pronunciou sobre o tema, em sede de recursos repetitivos. REsp 1.639.259/SP. Seguradora integrante do mesmo grupo econômico do credor fiduciário. Nítida venda casada. Cobrança afastada. 5. Comissão de permanência. Não há qualquer indício de cobrança de comissão de permanência no contrato entabulado entre as partes, tampouco o réu faz prova de sua exigência. O pacto prevê, em caso de mora, apenas os juros remuneratórios à taxa contratual, moratórios de 1% ao mês e multa de 2%, o que é admissível, nos termos da Súmula 472, do C. Superior Tribunal de Justiça. Sentença parcialmente reformada. 6. Recurso provido em parte. (TJSP; Apelação Cível 1007428-66.2021.8.26.0006; Relator (a): Mary Grün; Órgão Julgador: 32ª Câmara de Direito Privado; Foro Regional VI - Penha de França - 2ª Vara Cível; Data do Julgamento: 01/07/2022; Data de Registro: 01/07/2022) Assim, acolho a ilegalidade da cobrança quanto ao seguro prestamista. Pedido de indébito. Como já mencionado, incumbia a parte ré provar a licitude da contratação a fim de legitimar o valor do seguro prestamista cobrado na cédula de crédito bancário, o que de fato não ocorreu. Ausente essa prova, denota-se a má prestação dos serviços, tendo como consequência ofensa aos direitos básicos do consumidor, insertos no art. 6º do CDC, cuja responsabilidade pela prestação do serviço é objetiva, nos termos do art. 14, §, 1º, II, da mesma lei. Portanto, a procedência da primeira parte deste pedido (venda casada do seguro prestamista) implica na devolução pela instituição financeira dos valores das parcelas efetivamente pagas sob pena de locupletamento ilícito. Quanto a devolução de forma simples ou dobrada, o Colendo Superior Tribunal de Justiça através da sua Corte Especial, no julgamento em conjunto dos Embargos de Divergências EAResps 676.608/RS, 664.888/RS, 600.663/RS;622.897/RS e ERESp 1.413.542/RS firmou o entendimento de que em se tratando de ofensa ao direito do consumidor é cabível a devolução em dobro, independentemente do elemento volitivo, ou seja, não se exige a prova do dolo ou da má-fé, mas a simples cobrança de quantia indevida: "28. Com essas considerações, conhece-se dos Embargos de Divergência para, no mérito, fixar-se a seguinte tese: A REPETIÇÃO EM DOBRO, PREVISTA NO PARÁGRAFO ÚNICO DO ART. 42 DO CDC, É CABÍVEL QUANDO A COBRANÇA INDEVIDA CONSUBSTANCIAR CONDUTA CONTRÁRIA À BOA-FÉ OBJETIVA, OU SEJA, DEVE OCORRER INDEPENDENTEMENTE DA NATUREZA DO ELEMENTO VOLITIVO. MODULAÇÃO DOS EFEITOS 29. Impõe-se MODULAR OS EFEITOS da presente decisão para que o entendimento aqui fixado quanto a indébitos não decorrentes de prestação de serviço público se aplique somente a cobranças realizadas após a data da publicação do presente acórdão". A fim de dar segurança jurídica, o Colendo Superior Tribunal de Justiça modulou os efeitos da decisão, determinando sua aplicação somente após a publicação do V. Acórdão que se deu em 30.03.2021. No caso dos autos, o contrato foi firmado em novembro/2018, antes da publicação do V. Acórdão e dessa forma a devolução deve ser da forma simples. Entendo que é o caso de se aplicar esse novo entendimento, ainda que o Tema 929 não tenha sido julgado, pois recentemente a Corte Especial decidiu afetar o processo ao rito do art. 1.036 do CPC (Tema 929/STJ), nos termos do voto do Sr. MINISTRO RELATOR PAULO DE TARSO SANSEVERINO, no RECURSO ESPECIAL Nº 1.823.218 - AC (2019/0187097-6), julgado em 22/04/2021, conforme a seguinte ementa: "PROPOSTA DE AFETAÇÃO À CORTE ESPECIAL. TEMA 929/STJ. RITO DOS RECURSOS ESPECIAIS REPETITIVOS. DIREITO DO CONSUMIDOR E PROCESSUAL CIVIL. EN. 3/STJ. REPETIÇÃO EM DOBRO. ART. 42, PARÁGRAFO ÚNICO, DO CÓDIGO DE DEFESA DO CONSUMIDOR - CDC. CONTROVÉRSIA ACERCA DA EXIGÊNCIA DE PROVA DA MÁ-FÉ DO FORNECEDOR. CASO CONCRETO. CONTRATO DE CRÉDITO CONSIGNADO COM PESSOA ANALFABETA. CONSIGNAÇÃO DE DÉBITOS SEM BASE CONTRATUAL. PLEITO DE REPETIÇÃO EM DOBRO. 1. Controvérsia acerca do pleito de repetição em dobro de débitos consignados, sem base contratual, nos proventos de aposentadoria da demandante. 2. Desafetação do recurso especial vinculado ao Tema 929/STJ pelo colegiado da Corte Especial em face do julgamento em curso de embargos de divergência acerca da mesma questão. 3. Necessidade de nova afetação do presente recurso especial vinculado ao Tema 929/STJ ("discussão quanto às hipóteses de aplicação da repetição em dobro prevista no art. 42, parágrafo único, do CDC"), em face da existência de milhares de recursos sobrestados nos tribunais de origem e da ausência de eficácia vinculativa da decisão dos embargos de divergência semelhante à atribuída pela legislação processual aos recursos repetitivos. 4. RECURSO ESPECIAL AFETADO AO RITO DO ART. 1.036 DO CPC/2015." Assim, a instituição financeira deve proceder a devolução do eventual indébito na forma simples e não dobrada referente ao seguro prestamista considerado como ilegal. Por fim, procede em parte o pedido inicial. Ante o exposto, JULGO PARCIALMENTE PROCEDENTE os pedidos da inicial, para CONDENAR a instituição financeira requerida restituir, de forma simples, o valor de R$ 865,68, que deverá ser atualizado pela tabela do Eg. Tribunal de Justiça a partir do desembolso por considerar que se trata de relação consumerista e acrescido de juros da mora de 1% ao mês a partir da citação. Extingo o feito, nos termos do artigo 487, I do CPC. Em razão da sucumbência a parte requerida deverá responder integralmente pelas custas processuais e honorários advocatícios que fixo em 15% sobre o valor da condenação. Publique-se e intimem-se.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Mario Andre de Souza (OAB 45622/PR)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-102113727" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=102113727&amp;nmRecursoAcessado=Julgada+Procedente+em+Parte+a+A%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-102113727" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=102113727&amp;nmRecursoAcessado=Julgada+Procedente+em+Parte+a+A%C3%A7%C3%A3o"> Julgada Procedente em Parte a Ação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Trata-se de ação declaratória de nulidade e revisão de contrato ajuizada por Jonatan Lucas Januário em face de Aymoré Crédito, Financiamento e Investimento S/A. Afirma o autor que firmou contrato com a requerida para aquisição de veículo (VW/Parati 2007/2008), sendo a taxa de juros de 2,75% ao mês e 38,40% ao ano, em 48parcelas de R$623,27, totalizando R$16.311,49; pretende a revisão para que seja aplicada taxa de juros na média do mercado; que seja afastada a cobrança de seguro, por ser prática indevida de venda casada; que seja expurgada a capitalização diária/mensal dos juros remuneratórios, compensando valores pagos a maior nas prestações. Busca a antecipação de tutela para impedir a inscrição em cadastros de proteção ao crédito e manutenção da posse do veículo; e ao final, a revisão das cláusulas contratuais, com abatimento do que foi pago a maior. A tutela antecipada foi indeferida, fls. 30/31. Citada, a requerida apresentou contestação às fls. 36/67, sustentando que o autor não faz jus à gratuidade judiciária e que não há comprovante de residência da parte atualizado. Suscita a prescrição. No mérito, defende que os juros cobrados não são superiores aos pactuados, que inexiste tabelamento dos juros e que os juros pactuados não são excessivos e o autor tinha pleno conhecimento das taxas contratadas não havendo cobrança abusiva. Sustenta ainda a legalidade da cobrança do seguro prestamista, cuja contratação foi por opção do autor; ausência de pressupostos para concessão da liminar pretendida. Requer a improcedência do pedido e refuta a pretendida inversão do ônus da prova. Não houve Réplica, fls. 167. Instadas a especificar provas, apenas o réu manifestou-se (fls.171/172). É o relatório. Fundamento e decido. Julgo o feito no estado em que se encontra, pois as partes não requereram a dilação probatória. Mantenho a gratuidade ao autor, pois o réu nada trouxe o que infirme a presunção de pobreza que milita em favor do consumidor pessoa natural. Desnecessária a vinda de comprovante de residência atualizado do autor. Não há prescrição. Segundo o entendimento jurisprudencial firmado pela C. STJ, o prazo prescricional é decenal, cujo termo inicial para as ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas é a partir da data da assinatura do contrato. Nesse sentido: PROCESSUAL CIVIL. AGRAVO INTERNO NOS EMBARGOS DE DECLARAÇÃO NO RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO. MÚTUO BANCÁRIO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. 1. Ação revisional de contrato 2. O termo inicial do prazo prescricional decenal nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Súmula 568/STJ. 3. Agravo interno não provido. (AgInt nos EDcl no REsp n. 1.897.309/RS, Relatora Ministra Nancy Andrighi, Terceira Turma, julgado em 15/3/2021, DJe 18/3/2021). PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. CONTRATO BANCÁRIO. AÇÃO REVISIONAL CUMULADA COM REPETIÇÃO DE INDÉBITO. PRESCRIÇÃO. PRAZO. DECISÃO MANTIDA. 1. A jurisprudência do STJ entende que a pretensão de repetição de valores pagos indevidamente em função de contrato bancário está sujeita ao prazo prescricional vintenário na vigência do CC/1916 e ao decenal na vigência do CC/2002, contado da efetiva lesão, ou seja, do pagamento. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.234.635/SP, Relator Ministro Antonio Carlos, Quarta Turma, julgado em 1º/3/2021, DJe 3/3/2021). AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO BANCÁRIO. CONTRATO DE MÚTUO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. AGRAVO INTERNO IMPROVIDO. 1. Consoante entendimento desta Corte Superior, o termo inicial do prazo prescricional nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Precedentes. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.444.255/MS, Relator Ministro Raul Araújo, Quarta Turma, julgado em 20/4/2020, DJe 4/5/2020) O ponto controvertido gira em torno de apurar se a parte autora faz jus à revisão contratual por conter cláusulas abusivas ou ilegais, com a condenação da instituição financeira ao indébito. As ilegalidades apontadas pela parte autora foram: taxa de juros acima da de mercado; capitalização de juros mensal que não foi expressamente contratada e pretende que seja utilizada a efetivamente contratada de 2,75% a.m. e 38,40% a.a.; ilegalidade na cobrança de Seguro: R$865,68; Trata-se de financiamento de crédito direto ao consumidor (CDC) para aquisição de veículo, tendo sido liberado ao requerente o valor de R$13.629,38, que acrescido dos encargos contratados, perfaz um total financiado de R$16.311,49, a ser pago em 48 parcelas de R$623,27. Anoto inicialmente, que o banco trouxe o contrato questionado e quanto a esse documento não houve impugnação do autor (fls. 81/83). Pois bem a relação atribuída às partes foi considerada como de consumo e assim preenchidos os requisitos dos artigos 2º e 3º do Código de Defesa do Consumidor, atraindo a incidência desta Lei. Observo, além disso, que o negócio jurídico é do tipo de adesão, em que ao contratante consumidor não é permitida a discussão das cláusulas contratuais, devendo ser relativizado o princípio do pacta sunt servanda. Dessa forma é forte a jurisprudência no sentido de que é prescindível a instrução da petição inicial com o contrato bancário a ser revisado, pois, tratando-se de documento comum às partes, de que a instituição financeira tem o dever legal de guarda, admite-se seja a ela ordenada a exibição incidental do contrato, a teor do art. 396 e seguintes do Código de Processo Civil:(TJSP, Apelação nº 991.09.081637-5, Rel. Des. José Reynaldo, 12ª Câmara de Dir. Privado, j. em31/03/2010). Isto porque, em se tratando de direito do consumidor pode a parte caso entenda necessário, postular de forma incidental a exibição do documento ou postular no bojo da própria ação na fase de especificação de provas, fundamentando seu pedido na inversão do ônus da prova com fundamento no artigo 6º, VIII e 83, do CDC. Acontece que conforme se verifica dos autos este pedido não foi formulado, seja na petição inicial ou na fase de especificação de provas. Não resta dúvida alguma, como acima afirmado que em contratos bancários aplica-se o Código Consumerista, invertendo-se o ônus da prova. Contudo, também entendo que a parte deve formular, de forma clara, precisa e objetiva quais os tipos de prova pretende produzir cujos ônus não consegue em razão das diversas dificuldades encontradas. Assim, passo apreciar os pedidos da parte autora segundo a prova produzida nos autos pelas partes, levando em consideração as regras contidas no Código de Defesa do Consumidor e a luz da Súmula 381 editada pela Segunda Turma do Colendo Superior Tribunal de Justiça, com o seguinte enunciado: "Nos contratos bancários, é vedado ao julgador conhecer, de ofício, da abusividade das cláusulas". Dos Juros remuneratórios Sob tal título serão examinadas três alegações distintas: 1) cobrança de juros remuneratórios acima do limite legal de 12% ao ano; 2) capitalização mensal de juros; e 3) anatocismo. Primeiro, cumpre afastar a distinção entre anatocismo e capitalização de juros. Isto porque o anatocismo é, justamente, a capitalização de juros, ou seja, a incidência de juros sobre juros já acrescidos ao capital. Contrariamente ao que se aduz, o anatocismo não é mera forma da capitalização que, no seu entender, respeitante à periodização. O anatocismo é a forma capitalizada de calcular juros, podendo assumir periodizações variadas. A questão a ser respondida é se a capitalização é lícita. A chamada Lei da Usura (Dec. n° 22.626/33), assim dispôs: Art. 4º. E proibido contar juros dos juros: esta proibição não compreende a acumulação de juros vencidos aos saldos líquidos em conta corrente de ano a ano. Como se vê, a própria lei excepcionou a capitalização anual, isto é, o cálculo de juros sobre juros vencidos ano a ano. Apesar da exceção, a jurisprudência do STF firmou-se no sentido de ser vedada a capitalização. Mais importante, no entanto, o fato de entender-se referida proibição como ius cogens, inafastável pela vontade das partes. Neste sentido foram os precedentes (RE n° 17.785/51, RE n° 19.352/51, RE n° 19.533/53, RE n° 20.653/52) do enunciado n° 121, da Súmula de Jurisprudência do STF:É vedada a capitalização de juros, ainda que expressamente convencionada. Ocorre que a Lei de Usura continha norma genérica, a par da qual seriam editadas leis específicas, abrindo a possibilidade dos contratantes legitimamente pactuarem a capitalização de juros, inclusive em períodos inferiores a um ano. Assim, viria a Lei n° 4.595/64 dispor sobre a Política Monetária e o Sistema Financeiro Nacional, estabelecendo a regulamentação e a fiscalização das instituições financeiras pelo BACEN e pelo Conselho Monetário Nacional. Dispunha a lei em sua redação original: Art 4º Compete privativamente ao Conselho Monetário Nacional:...IX - Limitar, sempre que necessário, as taxas de juros, descontos comissões e qualquer outra forma de remuneração de operações e serviços bancários ou financeiros, inclusive os prestados pelo Banco Central da República do Brasil, assegurando taxas favorecidas aos financiamentos que se destinem a promover:(...) À luz da nova legislação, o Supremo Tribunal Federal passou a afastar a aplicabilidade da Lei de Usura quando se tratasse de operações realizadas por instituições do Sistema Financeiro, sobretudo por estarem tais instituições sob a regulamentação e fiscalização do BACEN e do Conselho Monetário Nacional, este último competente para estabelecer limitações às taxas de juros. Neste sentido foram os precedentes (RE n° 78.953, RE n° 80.115, RE n° 81.658,RE n° 81.680, RE n° 81.692, RE n° 81.693, RE n° 82.196, RE n° 82.216 e RE n° 82.439, todos do ano de 1975) do enunciado n° 596 da Súmula de Jurisprudência do STF: As disposições do Decreto 22626/1933 não se aplicam às taxas de juros e aos outros encargos cobrados nas operações realizadas por instituições públicas ou privadas, que integram o Sistema Financeiro Nacional. Cumpre ressaltar que a matéria versada nos autos tipifica relação jurídica de consumo, pois se sujeitam os contratos bancários aos ditames do Código de Defesa do Consumidor, que, como é cediço, contempla normas de ordem pública, que devem ser aplicadas até mesmo de ofício pelo juiz, consoante preconiza a Súmula n° 297, do Superior Tribunal de Justiça, cujo enunciado preconiza que "o Código de Defesa do Consumidor é aplicável às instituições financeiras". Contudo, a alegação genérica de nulidade de cláusulas contratuais não é capaz de desconstituir o negócio jurídico celebrado entre as partes. Mister se faz consignar que o contrato em questão se trata de empréstimos bancários para aquisição de bem móvel com prestações fixas e juros. Desta feita, a alegação da parte autora de que não ficou expressamente contratado juros capitalizados mensalmente não se sustenta, porque no quadro apresentado no orçamento essa questão é muito clara, pois é fácil observar que houve contratação de capitalização mensal, uma vez que a taxa anual do contrato é maior que doze vezes a taxa mensal, sendo suficiente para prova nesse sentido. No tocante ao patamar dos juros cobrados, cumpre notar que a Constituição da República de 1988 havia estipulado, no § 3º do art. 192 na redação original, o limite de 12% ao ano para as taxas de juros a serem cobradas pelas instituições do sistema financeiro. Acerca da aplicação deste limite, o STF fixou o entendimento de se tratar de norma dependente de complementação legal, não sendo dotada de aplicabilidade imediata. Neste sentido editou o enunciado n° 648 em sua Súmula de Jurisprudência: A norma do § 3º do art. 192 da constituição, revogada pela emenda constitucional40/2003, que limitava a taxa de juros reais a 12% ao ano, tinha sua aplicabilidade condicionada à edição de Lei Complementar. Mais recentemente a referida Súmula 648 do STF foi erigida a status de Súmula Vinculante (nº 7 - STF), não permitindo a qualquer órgão judicial ou administrativo aplicação em sentido contrário. Inaplicável a limitação de juros, o autor arguiu a ilegalidade na taxa efetivamente contratada por ser bem superior àquela indicada como média pelo Banco Central. É certo que, as instituições financeiras levam em conta para o cálculo das taxas os fatores de riscos em contratos semelhantes (características e condições dos contratantes) e bem como, quando se trata de aquisição de bens (compra de veículo), as condições de uso, ano de fabricação e aceitação no mercado, pois todos esses fatores são contabilizados por ocasião da celebração do contrato e não simplesmente considerar a média generalizada aplicada pelas várias instituições de crédito, todavia, deve estar sempre dentro da média do mercado praticada pelas instituições financeiras. Esses fatores para celebração do contrato não são ilegais, pois se por um lado o contrato é do tipo de adesão, por outro, o consumidor tem a faculdade de escolher qual instituição financeira melhor se adequa ao seu perfil financeiro. A parte autora discordou do percentual aplicado no contrato para o mês da sua celebração, pois considerou ser muito além daquele autorizado pelo Banco Central, fls. 28/29, e por isso, entendeu como abusiva as cláusulas de juros remuneratórios. Em que pese suas alegações, não prospera sua irresignação haja vista que de acordo com os dados da cédula de crédito, o valor financiado foi de R$16.311,49, a ser pago em 48 parcelas de R$623,27, a taxa de juros mensal de 2,75% ao mês e taxa CET de 3,72% ao mês, não podem ser consideradas como excessiva ao ponto de causar desequilíbrio ao contrato. Desse modo não se sustenta a sua pretensão, primeiro, porque foi efetivamente contratada e segundo, o percentual aplicado pelo banco não se mostra ilegal, pois a abusividade, segundo entendimento da jurisprudência do STJ, deve conter elementos capaz de colocar o consumidor em desvantagem exagerada (art. 51, §1º, do CDC), cuja demonstração deve ser cabal. Não me parece abusiva a taxa questionada de juros mensal constante das cláusulas contratuais, embora acima da média. Isso porque, considerando que o Banco Central fornece somente diretrizes acerca das taxas de juros para as instituições financeiras, não ficou bem demonstrado a alegada abusividade na taxa questionada pois ao contrário, encontra-se dentro dos parâmetros da normalidade para comercialização no mercado financeiro, levando-se em consideração as características da cédula emitida, que contém cláusula de alienação fiduciária de veículo usado com mais de 10 anos de uso. Ademais, a taxa CET é composta de todas as despesas e encargos incidentes nas operações de crédito, o que não é ilegal. E, nesse sentido foi o posicionamento do Superior Tribunal de Justiça ao proferir julgamento, em questão correlata, acerca da limitação dos juros remuneratórios e a taxa média de mercado, ficando assim consignado: "A jurisprudência, conforme registrado anteriormente, tem considerado abusivas taxas superiores a uma vez e meia (voto proferido pelo Min. Ari Pargendler no REsp 271.214/RS, Rel. p. Acórdão Min. Menezes Direito, DJ de 04.08.2003), ao dobro (Resp 1.036.818, Terceira Turma, minha relatoria, DJe de 20.06.2008) ou ao triplo (REsp 971.853/RS, Quarta Turma, Min. Pádua Ribeiro, DJ de 24.09.2007) da média. Todavia, esta perquirição acerca da abusividade não é estanque, o que impossibilita a adoção de critérios genéricos e universais. A taxa média de mercado, divulgada pelo Banco Central, constitui um valioso referencial, mas cabe somente ao juiz, no exame das peculiaridades do caso concreto, avaliar se os juros contratados foram ou não abusivos". (REsp n. 1.061.530-RS, Rel. Ministra Nancy Andrighi). Nos autos, não ficou evidenciado que os juros contratados são exorbitantes ou muito superiores da média de mercado, pois os juros contratados não são duas ou três vezes a média comercializada pelo mercado financeiro, conforme se observa a fls. 28. Nessa linha de raciocínio, é bom lembrar que a natureza jurídica do contrato de adesão é válida e por si só não gera nulidade. A ilicitude consiste no desequilíbrio contratual gerado ou o lucro excessivo, que deve ficar amplamente comprovado pela parte que alega. Observo do aludido contrato, como afirmado pela parte autora, a previsão de duas taxas mensais, uma de 2,75% ao mês e outra 3,72% ao mês. Contudo, entendo que não há ilegalidade nesse sentido, haja vista que para a composição do custo efetivo total (CET) são inseridos tributos (IOF) e tarifas administrativas (Avaliação, Seguro e Registro) além dos encargos do financiamento contrato. Isso, portanto, não se trata de excesso, mas, ao contrário informação ao consumidor a respeito da modalidade de contratação e o que representará a título de custo ao final do contrato. Por isso, improcedente o pedido no que toca à taxa de juros remuneratórios e sua capitalização ou eventual abusividade. Seguro O contrato de seguro juntado pela instituição financeira foi celebrado com Zurich Santander Brasil, participante do mesmo grupo econômico do banco requerido. Assim, a contratação do seguro protegido vida/emprego, a partir de 30/04/2008, Resolução 3518/2017, não é ilegal, desde que o consumidor possa escolher a seguradora que melhor atenda seus interesses, nos moldes da Súmula 473 do STJ, portanto, quando contratada pela parte incumbe ao banco trazer cópia da proposta de adesão do seguro de proteção, aceitação pelo consumidor dos seus termos e provar que outra foi ofertada. A falta desses requisitos coloca-se em dúvida se houve liberdade de escolha do consumidor. No caso em questão, o banco trouxe o contrato de seguro com apólice do mesmo grupo econômico, configurando venda casada, o que é vedado conforme posicionamento pelo Colendo Superior Tribunal de Justiça, no REsp 1.639.259/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018): SEGURO DE PROTEÇÃO FINANCEIRA. VENDA CASADA. RESTRIÇÃO À ESCOLHA DA SEGURADORA. ANALOGIA COM O ENTENDIMENTO DA SÚMULA 473/STJ. (...) 2.2 - Nos contratos bancários em geral, o consumidor não pode ser compelido a contratar seguro com a instituição financeira ou com seguradora por ela indicada. (...) (REsp. 1639320/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018). Dessa forma, com razão a parte autora pois o conjunto probatório aponta que o consumidor não teve a opção de não contratar ou de contrata-lo com companhia da sua preferência, portanto, configurada a venda casada, prática vedada pelo artigo 39, I, do Código de Defesa do Consumidor. Nesse sentido foram as decisões proferidas pelo E. TJ-SP: Embargos à execução. Busca e apreensão convertida em execução. Alegação de abusividade que leva a ausência de liquidez e inexigibilidade do título que embasa a execução. Descabimento. Possibilidade de capitalização mensal. Anatocismo. Inocorrência. Possibilidade de cobrança após a edição da Medida Provisória nº 1963/2000. Ausência de limitação dos juros contratuais. Norma determinada pela Súmula Vinculante nº 07 do STF. Pretensão de reconhecimento da abusividade da cobrança das tarifas de Registro de Contrato, Avaliação do bem e cobrança de Seguro. Matérias objeto dos recursos repetitivos nº 1.578.553/SP, 1.639.230/SP e 1.639.259/SP junto ao Superior Tribunal de Justiça. Tarifas atinentes ao registro do contrato e avaliação que se mostram abusivas sem a prova da efetiva prestação dos serviços. Cobrança de seguro pela ré que se trata nitidamente de venda casada ante a não opção pelo consumidor de seguradora de sua confiança. Devolução mediante compensação e recálculo do valor das parcelas devidas. Recurso parcialmente provido". (TJSP; Apelação Cível 1016837-67.2020.8.26.0114; Relator (a): Ruy Coppola; Órgão Julgador: 32ª Câmara de Direito Privado; Data do Julgamento: 16/08/2021). REVISIONAL DE CONTRATO Contrato de financiamento de veículo Parcial procedência da ação Inconformismo Pretensão de validade da cobrança de seguro prestamista autorizado pela legislação e Banco Central - Aplicação das regras do Código de Defesa do Consumidor Reconhecida a ilegalidade da cobrança do seguro prestamista - Sentença mantida Recurso não provido. (TJSP; Apelação Cível 1000407-14.2022.8.26.0003; Relator (a): Heraldo de Oliveira; Órgão Julgador: 13ª Câmara de Direito Privado; Foro Regional III Jabaquara - 2ª Vara Cível; Data do Julgamento: 05/07/2022; Data de Registro: 05/07/2022) ALIENAÇÃO FIDUCIÁRIA. BUSCA E APREENSÃO. REVISÃO DE CLÁUSULAS CONTRATUAIS. Instituição financeira que ajuizou a presente demanda pretendendo a concessão de liminar de busca e apreensão e, ao final, a procedência da demanda para tornar definitiva a consolidação da posse e propriedade do bem em seu favor. Sentença de procedência. Insurgência do réu. 1. Capitalização dos juros. Pacto firmado sob a égide da Medida Provisória 1.963-17/2000, reeditada sob o nº 2.170-36/01, que permite a capitalização dos juros no caso ora em análise. O C. Superior Tribunal de Justiça também consolidou o entendimento, admitindo a capitalização de juros, desde que expressamente pactuada, entendendo que a previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança contratada, como no caso dos autos. 2. Tabela Price. O fato desse sistema de amortização englobar premissas que impliquem capitalização da taxa de juros não denota, por si só, irregularidade, uma vez a capitalização é permitida no caso concreto. A sua utilização, por conseguinte, é legítima, não configurando ilegalidade. Precedentes deste E. Tribunal de Justiça. 3. Tarifa de registro do contrato e de avaliação do bem. Tema julgado sob a sistemática dos recursos repetitivos. REsp 1.578.553/SP. Ausência de demonstração da prestação dos serviços pela instituição financeira autora. Abusividade configurada. Tarifas afastadas. 4. Seguro de proteção financeira. O C. STJ se pronunciou sobre o tema, em sede de recursos repetitivos. REsp 1.639.259/SP. Seguradora integrante do mesmo grupo econômico do credor fiduciário. Nítida venda casada. Cobrança afastada. 5. Comissão de permanência. Não há qualquer indício de cobrança de comissão de permanência no contrato entabulado entre as partes, tampouco o réu faz prova de sua exigência. O pacto prevê, em caso de mora, apenas os juros remuneratórios à taxa contratual, moratórios de 1% ao mês e multa de 2%, o que é admissível, nos termos da Súmula 472, do C. Superior Tribunal de Justiça. Sentença parcialmente reformada. 6. Recurso provido em parte. (TJSP; Apelação Cível 1007428-66.2021.8.26.0006; Relator (a): Mary Grün; Órgão Julgador: 32ª Câmara de Direito Privado; Foro Regional VI - Penha de França - 2ª Vara Cível; Data do Julgamento: 01/07/2022; Data de Registro: 01/07/2022) Assim, acolho a ilegalidade da cobrança quanto ao seguro prestamista. Pedido de indébito. Como já mencionado, incumbia a parte ré provar a licitude da contratação a fim de legitimar o valor do seguro prestamista cobrado na cédula de crédito bancário, o que de fato não ocorreu. Ausente essa prova, denota-se a má prestação dos serviços, tendo como consequência ofensa aos direitos básicos do consumidor, insertos no art. 6º do CDC, cuja responsabilidade pela prestação do serviço é objetiva, nos termos do art. 14, §, 1º, II, da mesma lei. Portanto, a procedência da primeira parte deste pedido (venda casada do seguro prestamista) implica na devolução pela instituição financeira dos valores das parcelas efetivamente pagas sob pena de locupletamento ilícito. Quanto a devolução de forma simples ou dobrada, o Colendo Superior Tribunal de Justiça através da sua Corte Especial, no julgamento em conjunto dos Embargos de Divergências EAResps 676.608/RS, 664.888/RS, 600.663/RS;622.897/RS e ERESp 1.413.542/RS firmou o entendimento de que em se tratando de ofensa ao direito do consumidor é cabível a devolução em dobro, independentemente do elemento volitivo, ou seja, não se exige a prova do dolo ou da má-fé, mas a simples cobrança de quantia indevida: "28. Com essas considerações, conhece-se dos Embargos de Divergência para, no mérito, fixar-se a seguinte tese: A REPETIÇÃO EM DOBRO, PREVISTA NO PARÁGRAFO ÚNICO DO ART. 42 DO CDC, É CABÍVEL QUANDO A COBRANÇA INDEVIDA CONSUBSTANCIAR CONDUTA CONTRÁRIA À BOA-FÉ OBJETIVA, OU SEJA, DEVE OCORRER INDEPENDENTEMENTE DA NATUREZA DO ELEMENTO VOLITIVO. MODULAÇÃO DOS EFEITOS 29. Impõe-se MODULAR OS EFEITOS da presente decisão para que o entendimento aqui fixado quanto a indébitos não decorrentes de prestação de serviço público se aplique somente a cobranças realizadas após a data da publicação do presente acórdão". A fim de dar segurança jurídica, o Colendo Superior Tribunal de Justiça modulou os efeitos da decisão, determinando sua aplicação somente após a publicação do V. Acórdão que se deu em 30.03.2021. No caso dos autos, o contrato foi firmado em novembro/2018, antes da publicação do V. Acórdão e dessa forma a devolução deve ser da forma simples. Entendo que é o caso de se aplicar esse novo entendimento, ainda que o Tema 929 não tenha sido julgado, pois recentemente a Corte Especial decidiu afetar o processo ao rito do art. 1.036 do CPC (Tema 929/STJ), nos termos do voto do Sr. MINISTRO RELATOR PAULO DE TARSO SANSEVERINO, no RECURSO ESPECIAL Nº 1.823.218 - AC (2019/0187097-6), julgado em 22/04/2021, conforme a seguinte ementa: "PROPOSTA DE AFETAÇÃO À CORTE ESPECIAL. TEMA 929/STJ. RITO DOS RECURSOS ESPECIAIS REPETITIVOS. DIREITO DO CONSUMIDOR E PROCESSUAL CIVIL. EN. 3/STJ. REPETIÇÃO EM DOBRO. ART. 42, PARÁGRAFO ÚNICO, DO CÓDIGO DE DEFESA DO CONSUMIDOR - CDC. CONTROVÉRSIA ACERCA DA EXIGÊNCIA DE PROVA DA MÁ-FÉ DO FORNECEDOR. CASO CONCRETO. CONTRATO DE CRÉDITO CONSIGNADO COM PESSOA ANALFABETA. CONSIGNAÇÃO DE DÉBITOS SEM BASE CONTRATUAL. PLEITO DE REPETIÇÃO EM DOBRO. 1. Controvérsia acerca do pleito de repetição em dobro de débitos consignados, sem base contratual, nos proventos de aposentadoria da demandante. 2. Desafetação do recurso especial vinculado ao Tema 929/STJ pelo colegiado da Corte Especial em face do julgamento em curso de embargos de divergência acerca da mesma questão. 3. Necessidade de nova afetação do presente recurso especial vinculado ao Tema 929/STJ ("discussão quanto às hipóteses de aplicação da repetição em dobro prevista no art. 42, parágrafo único, do CDC"), em face da existência de milhares de recursos sobrestados nos tribunais de origem e da ausência de eficácia vinculativa da decisão dos embargos de divergência semelhante à atribuída pela legislação processual aos recursos repetitivos. 4. RECURSO ESPECIAL AFETADO AO RITO DO ART. 1.036 DO CPC/2015." Assim, a instituição financeira deve proceder a devolução do eventual indébito na forma simples e não dobrada referente ao seguro prestamista considerado como ilegal. Por fim, procede em parte o pedido inicial. Ante o exposto, JULGO PARCIALMENTE PROCEDENTE os pedidos da inicial, para CONDENAR a instituição financeira requerida restituir, de forma simples, o valor de R$ 865,68, que deverá ser atualizado pela tabela do Eg. Tribunal de Justiça a partir do desembolso por considerar que se trata de relação consumerista e acrescido de juros da mora de 1% ao mês a partir da citação. Extingo o feito, nos termos do artigo 487, I do CPC. Em razão da sucumbência a parte requerida deverá responder integralmente pelas custas processuais e honorários advocatícios que fixo em 15% sobre o valor da condenação. Publique-se e intimem-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Sentença
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+<tbody style="display: none;" id="tabelaTodasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			13/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Apelação/Razões Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WIAC.23.70000435-4
+Tipo da Petição: Razões de Apelação
+Data: 13/01/2023 09:00
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Disponibilização: 09/01/2023
+Data da Publicação: 23/01/2023
+Número do Diário: 
+Página: 
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Vistos. Trata-se de ação declaratória de nulidade e revisão de contrato ajuizada por Jonatan Lucas Januário em face de Aymoré Crédito, Financiamento e Investimento S/A. Afirma o autor que firmou contrato com a requerida para aquisição de veículo (VW/Parati 2007/2008), sendo a taxa de juros de 2,75% ao mês e 38,40% ao ano, em 48parcelas de R$623,27, totalizando R$16.311,49; pretende a revisão para que seja aplicada taxa de juros na média do mercado; que seja afastada a cobrança de seguro, por ser prática indevida de venda casada; que seja expurgada a capitalização diária/mensal dos juros remuneratórios, compensando valores pagos a maior nas prestações. Busca a antecipação de tutela para impedir a inscrição em cadastros de proteção ao crédito e manutenção da posse do veículo; e ao final, a revisão das cláusulas contratuais, com abatimento do que foi pago a maior. A tutela antecipada foi indeferida, fls. 30/31. Citada, a requerida apresentou contestação às fls. 36/67, sustentando que o autor não faz jus à gratuidade judiciária e que não há comprovante de residência da parte atualizado. Suscita a prescrição. No mérito, defende que os juros cobrados não são superiores aos pactuados, que inexiste tabelamento dos juros e que os juros pactuados não são excessivos e o autor tinha pleno conhecimento das taxas contratadas não havendo cobrança abusiva. Sustenta ainda a legalidade da cobrança do seguro prestamista, cuja contratação foi por opção do autor; ausência de pressupostos para concessão da liminar pretendida. Requer a improcedência do pedido e refuta a pretendida inversão do ônus da prova. Não houve Réplica, fls. 167. Instadas a especificar provas, apenas o réu manifestou-se (fls.171/172). É o relatório. Fundamento e decido. Julgo o feito no estado em que se encontra, pois as partes não requereram a dilação probatória. Mantenho a gratuidade ao autor, pois o réu nada trouxe o que infirme a presunção de pobreza que milita em favor do consumidor pessoa natural. Desnecessária a vinda de comprovante de residência atualizado do autor. Não há prescrição. Segundo o entendimento jurisprudencial firmado pela C. STJ, o prazo prescricional é decenal, cujo termo inicial para as ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas é a partir da data da assinatura do contrato. Nesse sentido: PROCESSUAL CIVIL. AGRAVO INTERNO NOS EMBARGOS DE DECLARAÇÃO NO RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO. MÚTUO BANCÁRIO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. 1. Ação revisional de contrato 2. O termo inicial do prazo prescricional decenal nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Súmula 568/STJ. 3. Agravo interno não provido. (AgInt nos EDcl no REsp n. 1.897.309/RS, Relatora Ministra Nancy Andrighi, Terceira Turma, julgado em 15/3/2021, DJe 18/3/2021). PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. CONTRATO BANCÁRIO. AÇÃO REVISIONAL CUMULADA COM REPETIÇÃO DE INDÉBITO. PRESCRIÇÃO. PRAZO. DECISÃO MANTIDA. 1. A jurisprudência do STJ entende que a pretensão de repetição de valores pagos indevidamente em função de contrato bancário está sujeita ao prazo prescricional vintenário na vigência do CC/1916 e ao decenal na vigência do CC/2002, contado da efetiva lesão, ou seja, do pagamento. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.234.635/SP, Relator Ministro Antonio Carlos, Quarta Turma, julgado em 1º/3/2021, DJe 3/3/2021). AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO BANCÁRIO. CONTRATO DE MÚTUO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. AGRAVO INTERNO IMPROVIDO. 1. Consoante entendimento desta Corte Superior, o termo inicial do prazo prescricional nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Precedentes. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.444.255/MS, Relator Ministro Raul Araújo, Quarta Turma, julgado em 20/4/2020, DJe 4/5/2020) O ponto controvertido gira em torno de apurar se a parte autora faz jus à revisão contratual por conter cláusulas abusivas ou ilegais, com a condenação da instituição financeira ao indébito. As ilegalidades apontadas pela parte autora foram: taxa de juros acima da de mercado; capitalização de juros mensal que não foi expressamente contratada e pretende que seja utilizada a efetivamente contratada de 2,75% a.m. e 38,40% a.a.; ilegalidade na cobrança de Seguro: R$865,68; Trata-se de financiamento de crédito direto ao consumidor (CDC) para aquisição de veículo, tendo sido liberado ao requerente o valor de R$13.629,38, que acrescido dos encargos contratados, perfaz um total financiado de R$16.311,49, a ser pago em 48 parcelas de R$623,27. Anoto inicialmente, que o banco trouxe o contrato questionado e quanto a esse documento não houve impugnação do autor (fls. 81/83). Pois bem a relação atribuída às partes foi considerada como de consumo e assim preenchidos os requisitos dos artigos 2º e 3º do Código de Defesa do Consumidor, atraindo a incidência desta Lei. Observo, além disso, que o negócio jurídico é do tipo de adesão, em que ao contratante consumidor não é permitida a discussão das cláusulas contratuais, devendo ser relativizado o princípio do pacta sunt servanda. Dessa forma é forte a jurisprudência no sentido de que é prescindível a instrução da petição inicial com o contrato bancário a ser revisado, pois, tratando-se de documento comum às partes, de que a instituição financeira tem o dever legal de guarda, admite-se seja a ela ordenada a exibição incidental do contrato, a teor do art. 396 e seguintes do Código de Processo Civil:(TJSP, Apelação nº 991.09.081637-5, Rel. Des. José Reynaldo, 12ª Câmara de Dir. Privado, j. em31/03/2010). Isto porque, em se tratando de direito do consumidor pode a parte caso entenda necessário, postular de forma incidental a exibição do documento ou postular no bojo da própria ação na fase de especificação de provas, fundamentando seu pedido na inversão do ônus da prova com fundamento no artigo 6º, VIII e 83, do CDC. Acontece que conforme se verifica dos autos este pedido não foi formulado, seja na petição inicial ou na fase de especificação de provas. Não resta dúvida alguma, como acima afirmado que em contratos bancários aplica-se o Código Consumerista, invertendo-se o ônus da prova. Contudo, também entendo que a parte deve formular, de forma clara, precisa e objetiva quais os tipos de prova pretende produzir cujos ônus não consegue em razão das diversas dificuldades encontradas. Assim, passo apreciar os pedidos da parte autora segundo a prova produzida nos autos pelas partes, levando em consideração as regras contidas no Código de Defesa do Consumidor e a luz da Súmula 381 editada pela Segunda Turma do Colendo Superior Tribunal de Justiça, com o seguinte enunciado: "Nos contratos bancários, é vedado ao julgador conhecer, de ofício, da abusividade das cláusulas". Dos Juros remuneratórios Sob tal título serão examinadas três alegações distintas: 1) cobrança de juros remuneratórios acima do limite legal de 12% ao ano; 2) capitalização mensal de juros; e 3) anatocismo. Primeiro, cumpre afastar a distinção entre anatocismo e capitalização de juros. Isto porque o anatocismo é, justamente, a capitalização de juros, ou seja, a incidência de juros sobre juros já acrescidos ao capital. Contrariamente ao que se aduz, o anatocismo não é mera forma da capitalização que, no seu entender, respeitante à periodização. O anatocismo é a forma capitalizada de calcular juros, podendo assumir periodizações variadas. A questão a ser respondida é se a capitalização é lícita. A chamada Lei da Usura (Dec. n° 22.626/33), assim dispôs: Art. 4º. E proibido contar juros dos juros: esta proibição não compreende a acumulação de juros vencidos aos saldos líquidos em conta corrente de ano a ano. Como se vê, a própria lei excepcionou a capitalização anual, isto é, o cálculo de juros sobre juros vencidos ano a ano. Apesar da exceção, a jurisprudência do STF firmou-se no sentido de ser vedada a capitalização. Mais importante, no entanto, o fato de entender-se referida proibição como ius cogens, inafastável pela vontade das partes. Neste sentido foram os precedentes (RE n° 17.785/51, RE n° 19.352/51, RE n° 19.533/53, RE n° 20.653/52) do enunciado n° 121, da Súmula de Jurisprudência do STF:É vedada a capitalização de juros, ainda que expressamente convencionada. Ocorre que a Lei de Usura continha norma genérica, a par da qual seriam editadas leis específicas, abrindo a possibilidade dos contratantes legitimamente pactuarem a capitalização de juros, inclusive em períodos inferiores a um ano. Assim, viria a Lei n° 4.595/64 dispor sobre a Política Monetária e o Sistema Financeiro Nacional, estabelecendo a regulamentação e a fiscalização das instituições financeiras pelo BACEN e pelo Conselho Monetário Nacional. Dispunha a lei em sua redação original: Art 4º Compete privativamente ao Conselho Monetário Nacional:...IX - Limitar, sempre que necessário, as taxas de juros, descontos comissões e qualquer outra forma de remuneração de operações e serviços bancários ou financeiros, inclusive os prestados pelo Banco Central da República do Brasil, assegurando taxas favorecidas aos financiamentos que se destinem a promover:(...) À luz da nova legislação, o Supremo Tribunal Federal passou a afastar a aplicabilidade da Lei de Usura quando se tratasse de operações realizadas por instituições do Sistema Financeiro, sobretudo por estarem tais instituições sob a regulamentação e fiscalização do BACEN e do Conselho Monetário Nacional, este último competente para estabelecer limitações às taxas de juros. Neste sentido foram os precedentes (RE n° 78.953, RE n° 80.115, RE n° 81.658,RE n° 81.680, RE n° 81.692, RE n° 81.693, RE n° 82.196, RE n° 82.216 e RE n° 82.439, todos do ano de 1975) do enunciado n° 596 da Súmula de Jurisprudência do STF: As disposições do Decreto 22626/1933 não se aplicam às taxas de juros e aos outros encargos cobrados nas operações realizadas por instituições públicas ou privadas, que integram o Sistema Financeiro Nacional. Cumpre ressaltar que a matéria versada nos autos tipifica relação jurídica de consumo, pois se sujeitam os contratos bancários aos ditames do Código de Defesa do Consumidor, que, como é cediço, contempla normas de ordem pública, que devem ser aplicadas até mesmo de ofício pelo juiz, consoante preconiza a Súmula n° 297, do Superior Tribunal de Justiça, cujo enunciado preconiza que "o Código de Defesa do Consumidor é aplicável às instituições financeiras". Contudo, a alegação genérica de nulidade de cláusulas contratuais não é capaz de desconstituir o negócio jurídico celebrado entre as partes. Mister se faz consignar que o contrato em questão se trata de empréstimos bancários para aquisição de bem móvel com prestações fixas e juros. Desta feita, a alegação da parte autora de que não ficou expressamente contratado juros capitalizados mensalmente não se sustenta, porque no quadro apresentado no orçamento essa questão é muito clara, pois é fácil observar que houve contratação de capitalização mensal, uma vez que a taxa anual do contrato é maior que doze vezes a taxa mensal, sendo suficiente para prova nesse sentido. No tocante ao patamar dos juros cobrados, cumpre notar que a Constituição da República de 1988 havia estipulado, no § 3º do art. 192 na redação original, o limite de 12% ao ano para as taxas de juros a serem cobradas pelas instituições do sistema financeiro. Acerca da aplicação deste limite, o STF fixou o entendimento de se tratar de norma dependente de complementação legal, não sendo dotada de aplicabilidade imediata. Neste sentido editou o enunciado n° 648 em sua Súmula de Jurisprudência: A norma do § 3º do art. 192 da constituição, revogada pela emenda constitucional40/2003, que limitava a taxa de juros reais a 12% ao ano, tinha sua aplicabilidade condicionada à edição de Lei Complementar. Mais recentemente a referida Súmula 648 do STF foi erigida a status de Súmula Vinculante (nº 7 - STF), não permitindo a qualquer órgão judicial ou administrativo aplicação em sentido contrário. Inaplicável a limitação de juros, o autor arguiu a ilegalidade na taxa efetivamente contratada por ser bem superior àquela indicada como média pelo Banco Central. É certo que, as instituições financeiras levam em conta para o cálculo das taxas os fatores de riscos em contratos semelhantes (características e condições dos contratantes) e bem como, quando se trata de aquisição de bens (compra de veículo), as condições de uso, ano de fabricação e aceitação no mercado, pois todos esses fatores são contabilizados por ocasião da celebração do contrato e não simplesmente considerar a média generalizada aplicada pelas várias instituições de crédito, todavia, deve estar sempre dentro da média do mercado praticada pelas instituições financeiras. Esses fatores para celebração do contrato não são ilegais, pois se por um lado o contrato é do tipo de adesão, por outro, o consumidor tem a faculdade de escolher qual instituição financeira melhor se adequa ao seu perfil financeiro. A parte autora discordou do percentual aplicado no contrato para o mês da sua celebração, pois considerou ser muito além daquele autorizado pelo Banco Central, fls. 28/29, e por isso, entendeu como abusiva as cláusulas de juros remuneratórios. Em que pese suas alegações, não prospera sua irresignação haja vista que de acordo com os dados da cédula de crédito, o valor financiado foi de R$16.311,49, a ser pago em 48 parcelas de R$623,27, a taxa de juros mensal de 2,75% ao mês e taxa CET de 3,72% ao mês, não podem ser consideradas como excessiva ao ponto de causar desequilíbrio ao contrato. Desse modo não se sustenta a sua pretensão, primeiro, porque foi efetivamente contratada e segundo, o percentual aplicado pelo banco não se mostra ilegal, pois a abusividade, segundo entendimento da jurisprudência do STJ, deve conter elementos capaz de colocar o consumidor em desvantagem exagerada (art. 51, §1º, do CDC), cuja demonstração deve ser cabal. Não me parece abusiva a taxa questionada de juros mensal constante das cláusulas contratuais, embora acima da média. Isso porque, considerando que o Banco Central fornece somente diretrizes acerca das taxas de juros para as instituições financeiras, não ficou bem demonstrado a alegada abusividade na taxa questionada pois ao contrário, encontra-se dentro dos parâmetros da normalidade para comercialização no mercado financeiro, levando-se em consideração as características da cédula emitida, que contém cláusula de alienação fiduciária de veículo usado com mais de 10 anos de uso. Ademais, a taxa CET é composta de todas as despesas e encargos incidentes nas operações de crédito, o que não é ilegal. E, nesse sentido foi o posicionamento do Superior Tribunal de Justiça ao proferir julgamento, em questão correlata, acerca da limitação dos juros remuneratórios e a taxa média de mercado, ficando assim consignado: "A jurisprudência, conforme registrado anteriormente, tem considerado abusivas taxas superiores a uma vez e meia (voto proferido pelo Min. Ari Pargendler no REsp 271.214/RS, Rel. p. Acórdão Min. Menezes Direito, DJ de 04.08.2003), ao dobro (Resp 1.036.818, Terceira Turma, minha relatoria, DJe de 20.06.2008) ou ao triplo (REsp 971.853/RS, Quarta Turma, Min. Pádua Ribeiro, DJ de 24.09.2007) da média. Todavia, esta perquirição acerca da abusividade não é estanque, o que impossibilita a adoção de critérios genéricos e universais. A taxa média de mercado, divulgada pelo Banco Central, constitui um valioso referencial, mas cabe somente ao juiz, no exame das peculiaridades do caso concreto, avaliar se os juros contratados foram ou não abusivos". (REsp n. 1.061.530-RS, Rel. Ministra Nancy Andrighi). Nos autos, não ficou evidenciado que os juros contratados são exorbitantes ou muito superiores da média de mercado, pois os juros contratados não são duas ou três vezes a média comercializada pelo mercado financeiro, conforme se observa a fls. 28. Nessa linha de raciocínio, é bom lembrar que a natureza jurídica do contrato de adesão é válida e por si só não gera nulidade. A ilicitude consiste no desequilíbrio contratual gerado ou o lucro excessivo, que deve ficar amplamente comprovado pela parte que alega. Observo do aludido contrato, como afirmado pela parte autora, a previsão de duas taxas mensais, uma de 2,75% ao mês e outra 3,72% ao mês. Contudo, entendo que não há ilegalidade nesse sentido, haja vista que para a composição do custo efetivo total (CET) são inseridos tributos (IOF) e tarifas administrativas (Avaliação, Seguro e Registro) além dos encargos do financiamento contrato. Isso, portanto, não se trata de excesso, mas, ao contrário informação ao consumidor a respeito da modalidade de contratação e o que representará a título de custo ao final do contrato. Por isso, improcedente o pedido no que toca à taxa de juros remuneratórios e sua capitalização ou eventual abusividade. Seguro O contrato de seguro juntado pela instituição financeira foi celebrado com Zurich Santander Brasil, participante do mesmo grupo econômico do banco requerido. Assim, a contratação do seguro protegido vida/emprego, a partir de 30/04/2008, Resolução 3518/2017, não é ilegal, desde que o consumidor possa escolher a seguradora que melhor atenda seus interesses, nos moldes da Súmula 473 do STJ, portanto, quando contratada pela parte incumbe ao banco trazer cópia da proposta de adesão do seguro de proteção, aceitação pelo consumidor dos seus termos e provar que outra foi ofertada. A falta desses requisitos coloca-se em dúvida se houve liberdade de escolha do consumidor. No caso em questão, o banco trouxe o contrato de seguro com apólice do mesmo grupo econômico, configurando venda casada, o que é vedado conforme posicionamento pelo Colendo Superior Tribunal de Justiça, no REsp 1.639.259/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018): SEGURO DE PROTEÇÃO FINANCEIRA. VENDA CASADA. RESTRIÇÃO À ESCOLHA DA SEGURADORA. ANALOGIA COM O ENTENDIMENTO DA SÚMULA 473/STJ. (...) 2.2 - Nos contratos bancários em geral, o consumidor não pode ser compelido a contratar seguro com a instituição financeira ou com seguradora por ela indicada. (...) (REsp. 1639320/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018). Dessa forma, com razão a parte autora pois o conjunto probatório aponta que o consumidor não teve a opção de não contratar ou de contrata-lo com companhia da sua preferência, portanto, configurada a venda casada, prática vedada pelo artigo 39, I, do Código de Defesa do Consumidor. Nesse sentido foram as decisões proferidas pelo E. TJ-SP: Embargos à execução. Busca e apreensão convertida em execução. Alegação de abusividade que leva a ausência de liquidez e inexigibilidade do título que embasa a execução. Descabimento. Possibilidade de capitalização mensal. Anatocismo. Inocorrência. Possibilidade de cobrança após a edição da Medida Provisória nº 1963/2000. Ausência de limitação dos juros contratuais. Norma determinada pela Súmula Vinculante nº 07 do STF. Pretensão de reconhecimento da abusividade da cobrança das tarifas de Registro de Contrato, Avaliação do bem e cobrança de Seguro. Matérias objeto dos recursos repetitivos nº 1.578.553/SP, 1.639.230/SP e 1.639.259/SP junto ao Superior Tribunal de Justiça. Tarifas atinentes ao registro do contrato e avaliação que se mostram abusivas sem a prova da efetiva prestação dos serviços. Cobrança de seguro pela ré que se trata nitidamente de venda casada ante a não opção pelo consumidor de seguradora de sua confiança. Devolução mediante compensação e recálculo do valor das parcelas devidas. Recurso parcialmente provido". (TJSP; Apelação Cível 1016837-67.2020.8.26.0114; Relator (a): Ruy Coppola; Órgão Julgador: 32ª Câmara de Direito Privado; Data do Julgamento: 16/08/2021). REVISIONAL DE CONTRATO Contrato de financiamento de veículo Parcial procedência da ação Inconformismo Pretensão de validade da cobrança de seguro prestamista autorizado pela legislação e Banco Central - Aplicação das regras do Código de Defesa do Consumidor Reconhecida a ilegalidade da cobrança do seguro prestamista - Sentença mantida Recurso não provido. (TJSP; Apelação Cível 1000407-14.2022.8.26.0003; Relator (a): Heraldo de Oliveira; Órgão Julgador: 13ª Câmara de Direito Privado; Foro Regional III Jabaquara - 2ª Vara Cível; Data do Julgamento: 05/07/2022; Data de Registro: 05/07/2022) ALIENAÇÃO FIDUCIÁRIA. BUSCA E APREENSÃO. REVISÃO DE CLÁUSULAS CONTRATUAIS. Instituição financeira que ajuizou a presente demanda pretendendo a concessão de liminar de busca e apreensão e, ao final, a procedência da demanda para tornar definitiva a consolidação da posse e propriedade do bem em seu favor. Sentença de procedência. Insurgência do réu. 1. Capitalização dos juros. Pacto firmado sob a égide da Medida Provisória 1.963-17/2000, reeditada sob o nº 2.170-36/01, que permite a capitalização dos juros no caso ora em análise. O C. Superior Tribunal de Justiça também consolidou o entendimento, admitindo a capitalização de juros, desde que expressamente pactuada, entendendo que a previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança contratada, como no caso dos autos. 2. Tabela Price. O fato desse sistema de amortização englobar premissas que impliquem capitalização da taxa de juros não denota, por si só, irregularidade, uma vez a capitalização é permitida no caso concreto. A sua utilização, por conseguinte, é legítima, não configurando ilegalidade. Precedentes deste E. Tribunal de Justiça. 3. Tarifa de registro do contrato e de avaliação do bem. Tema julgado sob a sistemática dos recursos repetitivos. REsp 1.578.553/SP. Ausência de demonstração da prestação dos serviços pela instituição financeira autora. Abusividade configurada. Tarifas afastadas. 4. Seguro de proteção financeira. O C. STJ se pronunciou sobre o tema, em sede de recursos repetitivos. REsp 1.639.259/SP. Seguradora integrante do mesmo grupo econômico do credor fiduciário. Nítida venda casada. Cobrança afastada. 5. Comissão de permanência. Não há qualquer indício de cobrança de comissão de permanência no contrato entabulado entre as partes, tampouco o réu faz prova de sua exigência. O pacto prevê, em caso de mora, apenas os juros remuneratórios à taxa contratual, moratórios de 1% ao mês e multa de 2%, o que é admissível, nos termos da Súmula 472, do C. Superior Tribunal de Justiça. Sentença parcialmente reformada. 6. Recurso provido em parte. (TJSP; Apelação Cível 1007428-66.2021.8.26.0006; Relator (a): Mary Grün; Órgão Julgador: 32ª Câmara de Direito Privado; Foro Regional VI - Penha de França - 2ª Vara Cível; Data do Julgamento: 01/07/2022; Data de Registro: 01/07/2022) Assim, acolho a ilegalidade da cobrança quanto ao seguro prestamista. Pedido de indébito. Como já mencionado, incumbia a parte ré provar a licitude da contratação a fim de legitimar o valor do seguro prestamista cobrado na cédula de crédito bancário, o que de fato não ocorreu. Ausente essa prova, denota-se a má prestação dos serviços, tendo como consequência ofensa aos direitos básicos do consumidor, insertos no art. 6º do CDC, cuja responsabilidade pela prestação do serviço é objetiva, nos termos do art. 14, §, 1º, II, da mesma lei. Portanto, a procedência da primeira parte deste pedido (venda casada do seguro prestamista) implica na devolução pela instituição financeira dos valores das parcelas efetivamente pagas sob pena de locupletamento ilícito. Quanto a devolução de forma simples ou dobrada, o Colendo Superior Tribunal de Justiça através da sua Corte Especial, no julgamento em conjunto dos Embargos de Divergências EAResps 676.608/RS, 664.888/RS, 600.663/RS;622.897/RS e ERESp 1.413.542/RS firmou o entendimento de que em se tratando de ofensa ao direito do consumidor é cabível a devolução em dobro, independentemente do elemento volitivo, ou seja, não se exige a prova do dolo ou da má-fé, mas a simples cobrança de quantia indevida: "28. Com essas considerações, conhece-se dos Embargos de Divergência para, no mérito, fixar-se a seguinte tese: A REPETIÇÃO EM DOBRO, PREVISTA NO PARÁGRAFO ÚNICO DO ART. 42 DO CDC, É CABÍVEL QUANDO A COBRANÇA INDEVIDA CONSUBSTANCIAR CONDUTA CONTRÁRIA À BOA-FÉ OBJETIVA, OU SEJA, DEVE OCORRER INDEPENDENTEMENTE DA NATUREZA DO ELEMENTO VOLITIVO. MODULAÇÃO DOS EFEITOS 29. Impõe-se MODULAR OS EFEITOS da presente decisão para que o entendimento aqui fixado quanto a indébitos não decorrentes de prestação de serviço público se aplique somente a cobranças realizadas após a data da publicação do presente acórdão". A fim de dar segurança jurídica, o Colendo Superior Tribunal de Justiça modulou os efeitos da decisão, determinando sua aplicação somente após a publicação do V. Acórdão que se deu em 30.03.2021. No caso dos autos, o contrato foi firmado em novembro/2018, antes da publicação do V. Acórdão e dessa forma a devolução deve ser da forma simples. Entendo que é o caso de se aplicar esse novo entendimento, ainda que o Tema 929 não tenha sido julgado, pois recentemente a Corte Especial decidiu afetar o processo ao rito do art. 1.036 do CPC (Tema 929/STJ), nos termos do voto do Sr. MINISTRO RELATOR PAULO DE TARSO SANSEVERINO, no RECURSO ESPECIAL Nº 1.823.218 - AC (2019/0187097-6), julgado em 22/04/2021, conforme a seguinte ementa: "PROPOSTA DE AFETAÇÃO À CORTE ESPECIAL. TEMA 929/STJ. RITO DOS RECURSOS ESPECIAIS REPETITIVOS. DIREITO DO CONSUMIDOR E PROCESSUAL CIVIL. EN. 3/STJ. REPETIÇÃO EM DOBRO. ART. 42, PARÁGRAFO ÚNICO, DO CÓDIGO DE DEFESA DO CONSUMIDOR - CDC. CONTROVÉRSIA ACERCA DA EXIGÊNCIA DE PROVA DA MÁ-FÉ DO FORNECEDOR. CASO CONCRETO. CONTRATO DE CRÉDITO CONSIGNADO COM PESSOA ANALFABETA. CONSIGNAÇÃO DE DÉBITOS SEM BASE CONTRATUAL. PLEITO DE REPETIÇÃO EM DOBRO. 1. Controvérsia acerca do pleito de repetição em dobro de débitos consignados, sem base contratual, nos proventos de aposentadoria da demandante. 2. Desafetação do recurso especial vinculado ao Tema 929/STJ pelo colegiado da Corte Especial em face do julgamento em curso de embargos de divergência acerca da mesma questão. 3. Necessidade de nova afetação do presente recurso especial vinculado ao Tema 929/STJ ("discussão quanto às hipóteses de aplicação da repetição em dobro prevista no art. 42, parágrafo único, do CDC"), em face da existência de milhares de recursos sobrestados nos tribunais de origem e da ausência de eficácia vinculativa da decisão dos embargos de divergência semelhante à atribuída pela legislação processual aos recursos repetitivos. 4. RECURSO ESPECIAL AFETADO AO RITO DO ART. 1.036 DO CPC/2015." Assim, a instituição financeira deve proceder a devolução do eventual indébito na forma simples e não dobrada referente ao seguro prestamista considerado como ilegal. Por fim, procede em parte o pedido inicial. Ante o exposto, JULGO PARCIALMENTE PROCEDENTE os pedidos da inicial, para CONDENAR a instituição financeira requerida restituir, de forma simples, o valor de R$ 865,68, que deverá ser atualizado pela tabela do Eg. Tribunal de Justiça a partir do desembolso por considerar que se trata de relação consumerista e acrescido de juros da mora de 1% ao mês a partir da citação. Extingo o feito, nos termos do artigo 487, I do CPC. Em razão da sucumbência a parte requerida deverá responder integralmente pelas custas processuais e honorários advocatícios que fixo em 15% sobre o valor da condenação. Publique-se e intimem-se.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Mario Andre de Souza (OAB 45622/PR)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-102113727" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=102113727&amp;nmRecursoAcessado=Julgada+Procedente+em+Parte+a+A%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-102113727" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=102113727&amp;nmRecursoAcessado=Julgada+Procedente+em+Parte+a+A%C3%A7%C3%A3o"> Julgada Procedente em Parte a Ação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Trata-se de ação declaratória de nulidade e revisão de contrato ajuizada por Jonatan Lucas Januário em face de Aymoré Crédito, Financiamento e Investimento S/A. Afirma o autor que firmou contrato com a requerida para aquisição de veículo (VW/Parati 2007/2008), sendo a taxa de juros de 2,75% ao mês e 38,40% ao ano, em 48parcelas de R$623,27, totalizando R$16.311,49; pretende a revisão para que seja aplicada taxa de juros na média do mercado; que seja afastada a cobrança de seguro, por ser prática indevida de venda casada; que seja expurgada a capitalização diária/mensal dos juros remuneratórios, compensando valores pagos a maior nas prestações. Busca a antecipação de tutela para impedir a inscrição em cadastros de proteção ao crédito e manutenção da posse do veículo; e ao final, a revisão das cláusulas contratuais, com abatimento do que foi pago a maior. A tutela antecipada foi indeferida, fls. 30/31. Citada, a requerida apresentou contestação às fls. 36/67, sustentando que o autor não faz jus à gratuidade judiciária e que não há comprovante de residência da parte atualizado. Suscita a prescrição. No mérito, defende que os juros cobrados não são superiores aos pactuados, que inexiste tabelamento dos juros e que os juros pactuados não são excessivos e o autor tinha pleno conhecimento das taxas contratadas não havendo cobrança abusiva. Sustenta ainda a legalidade da cobrança do seguro prestamista, cuja contratação foi por opção do autor; ausência de pressupostos para concessão da liminar pretendida. Requer a improcedência do pedido e refuta a pretendida inversão do ônus da prova. Não houve Réplica, fls. 167. Instadas a especificar provas, apenas o réu manifestou-se (fls.171/172). É o relatório. Fundamento e decido. Julgo o feito no estado em que se encontra, pois as partes não requereram a dilação probatória. Mantenho a gratuidade ao autor, pois o réu nada trouxe o que infirme a presunção de pobreza que milita em favor do consumidor pessoa natural. Desnecessária a vinda de comprovante de residência atualizado do autor. Não há prescrição. Segundo o entendimento jurisprudencial firmado pela C. STJ, o prazo prescricional é decenal, cujo termo inicial para as ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas é a partir da data da assinatura do contrato. Nesse sentido: PROCESSUAL CIVIL. AGRAVO INTERNO NOS EMBARGOS DE DECLARAÇÃO NO RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO. MÚTUO BANCÁRIO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. 1. Ação revisional de contrato 2. O termo inicial do prazo prescricional decenal nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Súmula 568/STJ. 3. Agravo interno não provido. (AgInt nos EDcl no REsp n. 1.897.309/RS, Relatora Ministra Nancy Andrighi, Terceira Turma, julgado em 15/3/2021, DJe 18/3/2021). PROCESSUAL CIVIL. AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. CONTRATO BANCÁRIO. AÇÃO REVISIONAL CUMULADA COM REPETIÇÃO DE INDÉBITO. PRESCRIÇÃO. PRAZO. DECISÃO MANTIDA. 1. A jurisprudência do STJ entende que a pretensão de repetição de valores pagos indevidamente em função de contrato bancário está sujeita ao prazo prescricional vintenário na vigência do CC/1916 e ao decenal na vigência do CC/2002, contado da efetiva lesão, ou seja, do pagamento. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.234.635/SP, Relator Ministro Antonio Carlos, Quarta Turma, julgado em 1º/3/2021, DJe 3/3/2021). AGRAVO INTERNO NO AGRAVO EM RECURSO ESPECIAL. AÇÃO REVISIONAL DE CONTRATO BANCÁRIO. CONTRATO DE MÚTUO. PRESCRIÇÃO. TERMO A QUO. DATA DA ASSINATURA DO AJUSTE. AGRAVO INTERNO IMPROVIDO. 1. Consoante entendimento desta Corte Superior, o termo inicial do prazo prescricional nas ações de revisão de contrato bancário, em que se discute a legalidade das cláusulas pactuadas, é a data da assinatura do contrato. Precedentes. 2. Agravo interno a que se nega provimento. (AgInt no AREsp n. 1.444.255/MS, Relator Ministro Raul Araújo, Quarta Turma, julgado em 20/4/2020, DJe 4/5/2020) O ponto controvertido gira em torno de apurar se a parte autora faz jus à revisão contratual por conter cláusulas abusivas ou ilegais, com a condenação da instituição financeira ao indébito. As ilegalidades apontadas pela parte autora foram: taxa de juros acima da de mercado; capitalização de juros mensal que não foi expressamente contratada e pretende que seja utilizada a efetivamente contratada de 2,75% a.m. e 38,40% a.a.; ilegalidade na cobrança de Seguro: R$865,68; Trata-se de financiamento de crédito direto ao consumidor (CDC) para aquisição de veículo, tendo sido liberado ao requerente o valor de R$13.629,38, que acrescido dos encargos contratados, perfaz um total financiado de R$16.311,49, a ser pago em 48 parcelas de R$623,27. Anoto inicialmente, que o banco trouxe o contrato questionado e quanto a esse documento não houve impugnação do autor (fls. 81/83). Pois bem a relação atribuída às partes foi considerada como de consumo e assim preenchidos os requisitos dos artigos 2º e 3º do Código de Defesa do Consumidor, atraindo a incidência desta Lei. Observo, além disso, que o negócio jurídico é do tipo de adesão, em que ao contratante consumidor não é permitida a discussão das cláusulas contratuais, devendo ser relativizado o princípio do pacta sunt servanda. Dessa forma é forte a jurisprudência no sentido de que é prescindível a instrução da petição inicial com o contrato bancário a ser revisado, pois, tratando-se de documento comum às partes, de que a instituição financeira tem o dever legal de guarda, admite-se seja a ela ordenada a exibição incidental do contrato, a teor do art. 396 e seguintes do Código de Processo Civil:(TJSP, Apelação nº 991.09.081637-5, Rel. Des. José Reynaldo, 12ª Câmara de Dir. Privado, j. em31/03/2010). Isto porque, em se tratando de direito do consumidor pode a parte caso entenda necessário, postular de forma incidental a exibição do documento ou postular no bojo da própria ação na fase de especificação de provas, fundamentando seu pedido na inversão do ônus da prova com fundamento no artigo 6º, VIII e 83, do CDC. Acontece que conforme se verifica dos autos este pedido não foi formulado, seja na petição inicial ou na fase de especificação de provas. Não resta dúvida alguma, como acima afirmado que em contratos bancários aplica-se o Código Consumerista, invertendo-se o ônus da prova. Contudo, também entendo que a parte deve formular, de forma clara, precisa e objetiva quais os tipos de prova pretende produzir cujos ônus não consegue em razão das diversas dificuldades encontradas. Assim, passo apreciar os pedidos da parte autora segundo a prova produzida nos autos pelas partes, levando em consideração as regras contidas no Código de Defesa do Consumidor e a luz da Súmula 381 editada pela Segunda Turma do Colendo Superior Tribunal de Justiça, com o seguinte enunciado: "Nos contratos bancários, é vedado ao julgador conhecer, de ofício, da abusividade das cláusulas". Dos Juros remuneratórios Sob tal título serão examinadas três alegações distintas: 1) cobrança de juros remuneratórios acima do limite legal de 12% ao ano; 2) capitalização mensal de juros; e 3) anatocismo. Primeiro, cumpre afastar a distinção entre anatocismo e capitalização de juros. Isto porque o anatocismo é, justamente, a capitalização de juros, ou seja, a incidência de juros sobre juros já acrescidos ao capital. Contrariamente ao que se aduz, o anatocismo não é mera forma da capitalização que, no seu entender, respeitante à periodização. O anatocismo é a forma capitalizada de calcular juros, podendo assumir periodizações variadas. A questão a ser respondida é se a capitalização é lícita. A chamada Lei da Usura (Dec. n° 22.626/33), assim dispôs: Art. 4º. E proibido contar juros dos juros: esta proibição não compreende a acumulação de juros vencidos aos saldos líquidos em conta corrente de ano a ano. Como se vê, a própria lei excepcionou a capitalização anual, isto é, o cálculo de juros sobre juros vencidos ano a ano. Apesar da exceção, a jurisprudência do STF firmou-se no sentido de ser vedada a capitalização. Mais importante, no entanto, o fato de entender-se referida proibição como ius cogens, inafastável pela vontade das partes. Neste sentido foram os precedentes (RE n° 17.785/51, RE n° 19.352/51, RE n° 19.533/53, RE n° 20.653/52) do enunciado n° 121, da Súmula de Jurisprudência do STF:É vedada a capitalização de juros, ainda que expressamente convencionada. Ocorre que a Lei de Usura continha norma genérica, a par da qual seriam editadas leis específicas, abrindo a possibilidade dos contratantes legitimamente pactuarem a capitalização de juros, inclusive em períodos inferiores a um ano. Assim, viria a Lei n° 4.595/64 dispor sobre a Política Monetária e o Sistema Financeiro Nacional, estabelecendo a regulamentação e a fiscalização das instituições financeiras pelo BACEN e pelo Conselho Monetário Nacional. Dispunha a lei em sua redação original: Art 4º Compete privativamente ao Conselho Monetário Nacional:...IX - Limitar, sempre que necessário, as taxas de juros, descontos comissões e qualquer outra forma de remuneração de operações e serviços bancários ou financeiros, inclusive os prestados pelo Banco Central da República do Brasil, assegurando taxas favorecidas aos financiamentos que se destinem a promover:(...) À luz da nova legislação, o Supremo Tribunal Federal passou a afastar a aplicabilidade da Lei de Usura quando se tratasse de operações realizadas por instituições do Sistema Financeiro, sobretudo por estarem tais instituições sob a regulamentação e fiscalização do BACEN e do Conselho Monetário Nacional, este último competente para estabelecer limitações às taxas de juros. Neste sentido foram os precedentes (RE n° 78.953, RE n° 80.115, RE n° 81.658,RE n° 81.680, RE n° 81.692, RE n° 81.693, RE n° 82.196, RE n° 82.216 e RE n° 82.439, todos do ano de 1975) do enunciado n° 596 da Súmula de Jurisprudência do STF: As disposições do Decreto 22626/1933 não se aplicam às taxas de juros e aos outros encargos cobrados nas operações realizadas por instituições públicas ou privadas, que integram o Sistema Financeiro Nacional. Cumpre ressaltar que a matéria versada nos autos tipifica relação jurídica de consumo, pois se sujeitam os contratos bancários aos ditames do Código de Defesa do Consumidor, que, como é cediço, contempla normas de ordem pública, que devem ser aplicadas até mesmo de ofício pelo juiz, consoante preconiza a Súmula n° 297, do Superior Tribunal de Justiça, cujo enunciado preconiza que "o Código de Defesa do Consumidor é aplicável às instituições financeiras". Contudo, a alegação genérica de nulidade de cláusulas contratuais não é capaz de desconstituir o negócio jurídico celebrado entre as partes. Mister se faz consignar que o contrato em questão se trata de empréstimos bancários para aquisição de bem móvel com prestações fixas e juros. Desta feita, a alegação da parte autora de que não ficou expressamente contratado juros capitalizados mensalmente não se sustenta, porque no quadro apresentado no orçamento essa questão é muito clara, pois é fácil observar que houve contratação de capitalização mensal, uma vez que a taxa anual do contrato é maior que doze vezes a taxa mensal, sendo suficiente para prova nesse sentido. No tocante ao patamar dos juros cobrados, cumpre notar que a Constituição da República de 1988 havia estipulado, no § 3º do art. 192 na redação original, o limite de 12% ao ano para as taxas de juros a serem cobradas pelas instituições do sistema financeiro. Acerca da aplicação deste limite, o STF fixou o entendimento de se tratar de norma dependente de complementação legal, não sendo dotada de aplicabilidade imediata. Neste sentido editou o enunciado n° 648 em sua Súmula de Jurisprudência: A norma do § 3º do art. 192 da constituição, revogada pela emenda constitucional40/2003, que limitava a taxa de juros reais a 12% ao ano, tinha sua aplicabilidade condicionada à edição de Lei Complementar. Mais recentemente a referida Súmula 648 do STF foi erigida a status de Súmula Vinculante (nº 7 - STF), não permitindo a qualquer órgão judicial ou administrativo aplicação em sentido contrário. Inaplicável a limitação de juros, o autor arguiu a ilegalidade na taxa efetivamente contratada por ser bem superior àquela indicada como média pelo Banco Central. É certo que, as instituições financeiras levam em conta para o cálculo das taxas os fatores de riscos em contratos semelhantes (características e condições dos contratantes) e bem como, quando se trata de aquisição de bens (compra de veículo), as condições de uso, ano de fabricação e aceitação no mercado, pois todos esses fatores são contabilizados por ocasião da celebração do contrato e não simplesmente considerar a média generalizada aplicada pelas várias instituições de crédito, todavia, deve estar sempre dentro da média do mercado praticada pelas instituições financeiras. Esses fatores para celebração do contrato não são ilegais, pois se por um lado o contrato é do tipo de adesão, por outro, o consumidor tem a faculdade de escolher qual instituição financeira melhor se adequa ao seu perfil financeiro. A parte autora discordou do percentual aplicado no contrato para o mês da sua celebração, pois considerou ser muito além daquele autorizado pelo Banco Central, fls. 28/29, e por isso, entendeu como abusiva as cláusulas de juros remuneratórios. Em que pese suas alegações, não prospera sua irresignação haja vista que de acordo com os dados da cédula de crédito, o valor financiado foi de R$16.311,49, a ser pago em 48 parcelas de R$623,27, a taxa de juros mensal de 2,75% ao mês e taxa CET de 3,72% ao mês, não podem ser consideradas como excessiva ao ponto de causar desequilíbrio ao contrato. Desse modo não se sustenta a sua pretensão, primeiro, porque foi efetivamente contratada e segundo, o percentual aplicado pelo banco não se mostra ilegal, pois a abusividade, segundo entendimento da jurisprudência do STJ, deve conter elementos capaz de colocar o consumidor em desvantagem exagerada (art. 51, §1º, do CDC), cuja demonstração deve ser cabal. Não me parece abusiva a taxa questionada de juros mensal constante das cláusulas contratuais, embora acima da média. Isso porque, considerando que o Banco Central fornece somente diretrizes acerca das taxas de juros para as instituições financeiras, não ficou bem demonstrado a alegada abusividade na taxa questionada pois ao contrário, encontra-se dentro dos parâmetros da normalidade para comercialização no mercado financeiro, levando-se em consideração as características da cédula emitida, que contém cláusula de alienação fiduciária de veículo usado com mais de 10 anos de uso. Ademais, a taxa CET é composta de todas as despesas e encargos incidentes nas operações de crédito, o que não é ilegal. E, nesse sentido foi o posicionamento do Superior Tribunal de Justiça ao proferir julgamento, em questão correlata, acerca da limitação dos juros remuneratórios e a taxa média de mercado, ficando assim consignado: "A jurisprudência, conforme registrado anteriormente, tem considerado abusivas taxas superiores a uma vez e meia (voto proferido pelo Min. Ari Pargendler no REsp 271.214/RS, Rel. p. Acórdão Min. Menezes Direito, DJ de 04.08.2003), ao dobro (Resp 1.036.818, Terceira Turma, minha relatoria, DJe de 20.06.2008) ou ao triplo (REsp 971.853/RS, Quarta Turma, Min. Pádua Ribeiro, DJ de 24.09.2007) da média. Todavia, esta perquirição acerca da abusividade não é estanque, o que impossibilita a adoção de critérios genéricos e universais. A taxa média de mercado, divulgada pelo Banco Central, constitui um valioso referencial, mas cabe somente ao juiz, no exame das peculiaridades do caso concreto, avaliar se os juros contratados foram ou não abusivos". (REsp n. 1.061.530-RS, Rel. Ministra Nancy Andrighi). Nos autos, não ficou evidenciado que os juros contratados são exorbitantes ou muito superiores da média de mercado, pois os juros contratados não são duas ou três vezes a média comercializada pelo mercado financeiro, conforme se observa a fls. 28. Nessa linha de raciocínio, é bom lembrar que a natureza jurídica do contrato de adesão é válida e por si só não gera nulidade. A ilicitude consiste no desequilíbrio contratual gerado ou o lucro excessivo, que deve ficar amplamente comprovado pela parte que alega. Observo do aludido contrato, como afirmado pela parte autora, a previsão de duas taxas mensais, uma de 2,75% ao mês e outra 3,72% ao mês. Contudo, entendo que não há ilegalidade nesse sentido, haja vista que para a composição do custo efetivo total (CET) são inseridos tributos (IOF) e tarifas administrativas (Avaliação, Seguro e Registro) além dos encargos do financiamento contrato. Isso, portanto, não se trata de excesso, mas, ao contrário informação ao consumidor a respeito da modalidade de contratação e o que representará a título de custo ao final do contrato. Por isso, improcedente o pedido no que toca à taxa de juros remuneratórios e sua capitalização ou eventual abusividade. Seguro O contrato de seguro juntado pela instituição financeira foi celebrado com Zurich Santander Brasil, participante do mesmo grupo econômico do banco requerido. Assim, a contratação do seguro protegido vida/emprego, a partir de 30/04/2008, Resolução 3518/2017, não é ilegal, desde que o consumidor possa escolher a seguradora que melhor atenda seus interesses, nos moldes da Súmula 473 do STJ, portanto, quando contratada pela parte incumbe ao banco trazer cópia da proposta de adesão do seguro de proteção, aceitação pelo consumidor dos seus termos e provar que outra foi ofertada. A falta desses requisitos coloca-se em dúvida se houve liberdade de escolha do consumidor. No caso em questão, o banco trouxe o contrato de seguro com apólice do mesmo grupo econômico, configurando venda casada, o que é vedado conforme posicionamento pelo Colendo Superior Tribunal de Justiça, no REsp 1.639.259/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018): SEGURO DE PROTEÇÃO FINANCEIRA. VENDA CASADA. RESTRIÇÃO À ESCOLHA DA SEGURADORA. ANALOGIA COM O ENTENDIMENTO DA SÚMULA 473/STJ. (...) 2.2 - Nos contratos bancários em geral, o consumidor não pode ser compelido a contratar seguro com a instituição financeira ou com seguradora por ela indicada. (...) (REsp. 1639320/SP, Rel. Ministro PAULO DE TARSO SANSEVERINO, SEGUNDA SEÇÃO, julgado em 12/12/2018, DJe 17/12/2018). Dessa forma, com razão a parte autora pois o conjunto probatório aponta que o consumidor não teve a opção de não contratar ou de contrata-lo com companhia da sua preferência, portanto, configurada a venda casada, prática vedada pelo artigo 39, I, do Código de Defesa do Consumidor. Nesse sentido foram as decisões proferidas pelo E. TJ-SP: Embargos à execução. Busca e apreensão convertida em execução. Alegação de abusividade que leva a ausência de liquidez e inexigibilidade do título que embasa a execução. Descabimento. Possibilidade de capitalização mensal. Anatocismo. Inocorrência. Possibilidade de cobrança após a edição da Medida Provisória nº 1963/2000. Ausência de limitação dos juros contratuais. Norma determinada pela Súmula Vinculante nº 07 do STF. Pretensão de reconhecimento da abusividade da cobrança das tarifas de Registro de Contrato, Avaliação do bem e cobrança de Seguro. Matérias objeto dos recursos repetitivos nº 1.578.553/SP, 1.639.230/SP e 1.639.259/SP junto ao Superior Tribunal de Justiça. Tarifas atinentes ao registro do contrato e avaliação que se mostram abusivas sem a prova da efetiva prestação dos serviços. Cobrança de seguro pela ré que se trata nitidamente de venda casada ante a não opção pelo consumidor de seguradora de sua confiança. Devolução mediante compensação e recálculo do valor das parcelas devidas. Recurso parcialmente provido". (TJSP; Apelação Cível 1016837-67.2020.8.26.0114; Relator (a): Ruy Coppola; Órgão Julgador: 32ª Câmara de Direito Privado; Data do Julgamento: 16/08/2021). REVISIONAL DE CONTRATO Contrato de financiamento de veículo Parcial procedência da ação Inconformismo Pretensão de validade da cobrança de seguro prestamista autorizado pela legislação e Banco Central - Aplicação das regras do Código de Defesa do Consumidor Reconhecida a ilegalidade da cobrança do seguro prestamista - Sentença mantida Recurso não provido. (TJSP; Apelação Cível 1000407-14.2022.8.26.0003; Relator (a): Heraldo de Oliveira; Órgão Julgador: 13ª Câmara de Direito Privado; Foro Regional III Jabaquara - 2ª Vara Cível; Data do Julgamento: 05/07/2022; Data de Registro: 05/07/2022) ALIENAÇÃO FIDUCIÁRIA. BUSCA E APREENSÃO. REVISÃO DE CLÁUSULAS CONTRATUAIS. Instituição financeira que ajuizou a presente demanda pretendendo a concessão de liminar de busca e apreensão e, ao final, a procedência da demanda para tornar definitiva a consolidação da posse e propriedade do bem em seu favor. Sentença de procedência. Insurgência do réu. 1. Capitalização dos juros. Pacto firmado sob a égide da Medida Provisória 1.963-17/2000, reeditada sob o nº 2.170-36/01, que permite a capitalização dos juros no caso ora em análise. O C. Superior Tribunal de Justiça também consolidou o entendimento, admitindo a capitalização de juros, desde que expressamente pactuada, entendendo que a previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança contratada, como no caso dos autos. 2. Tabela Price. O fato desse sistema de amortização englobar premissas que impliquem capitalização da taxa de juros não denota, por si só, irregularidade, uma vez a capitalização é permitida no caso concreto. A sua utilização, por conseguinte, é legítima, não configurando ilegalidade. Precedentes deste E. Tribunal de Justiça. 3. Tarifa de registro do contrato e de avaliação do bem. Tema julgado sob a sistemática dos recursos repetitivos. REsp 1.578.553/SP. Ausência de demonstração da prestação dos serviços pela instituição financeira autora. Abusividade configurada. Tarifas afastadas. 4. Seguro de proteção financeira. O C. STJ se pronunciou sobre o tema, em sede de recursos repetitivos. REsp 1.639.259/SP. Seguradora integrante do mesmo grupo econômico do credor fiduciário. Nítida venda casada. Cobrança afastada. 5. Comissão de permanência. Não há qualquer indício de cobrança de comissão de permanência no contrato entabulado entre as partes, tampouco o réu faz prova de sua exigência. O pacto prevê, em caso de mora, apenas os juros remuneratórios à taxa contratual, moratórios de 1% ao mês e multa de 2%, o que é admissível, nos termos da Súmula 472, do C. Superior Tribunal de Justiça. Sentença parcialmente reformada. 6. Recurso provido em parte. (TJSP; Apelação Cível 1007428-66.2021.8.26.0006; Relator (a): Mary Grün; Órgão Julgador: 32ª Câmara de Direito Privado; Foro Regional VI - Penha de França - 2ª Vara Cível; Data do Julgamento: 01/07/2022; Data de Registro: 01/07/2022) Assim, acolho a ilegalidade da cobrança quanto ao seguro prestamista. Pedido de indébito. Como já mencionado, incumbia a parte ré provar a licitude da contratação a fim de legitimar o valor do seguro prestamista cobrado na cédula de crédito bancário, o que de fato não ocorreu. Ausente essa prova, denota-se a má prestação dos serviços, tendo como consequência ofensa aos direitos básicos do consumidor, insertos no art. 6º do CDC, cuja responsabilidade pela prestação do serviço é objetiva, nos termos do art. 14, §, 1º, II, da mesma lei. Portanto, a procedência da primeira parte deste pedido (venda casada do seguro prestamista) implica na devolução pela instituição financeira dos valores das parcelas efetivamente pagas sob pena de locupletamento ilícito. Quanto a devolução de forma simples ou dobrada, o Colendo Superior Tribunal de Justiça através da sua Corte Especial, no julgamento em conjunto dos Embargos de Divergências EAResps 676.608/RS, 664.888/RS, 600.663/RS;622.897/RS e ERESp 1.413.542/RS firmou o entendimento de que em se tratando de ofensa ao direito do consumidor é cabível a devolução em dobro, independentemente do elemento volitivo, ou seja, não se exige a prova do dolo ou da má-fé, mas a simples cobrança de quantia indevida: "28. Com essas considerações, conhece-se dos Embargos de Divergência para, no mérito, fixar-se a seguinte tese: A REPETIÇÃO EM DOBRO, PREVISTA NO PARÁGRAFO ÚNICO DO ART. 42 DO CDC, É CABÍVEL QUANDO A COBRANÇA INDEVIDA CONSUBSTANCIAR CONDUTA CONTRÁRIA À BOA-FÉ OBJETIVA, OU SEJA, DEVE OCORRER INDEPENDENTEMENTE DA NATUREZA DO ELEMENTO VOLITIVO. MODULAÇÃO DOS EFEITOS 29. Impõe-se MODULAR OS EFEITOS da presente decisão para que o entendimento aqui fixado quanto a indébitos não decorrentes de prestação de serviço público se aplique somente a cobranças realizadas após a data da publicação do presente acórdão". A fim de dar segurança jurídica, o Colendo Superior Tribunal de Justiça modulou os efeitos da decisão, determinando sua aplicação somente após a publicação do V. Acórdão que se deu em 30.03.2021. No caso dos autos, o contrato foi firmado em novembro/2018, antes da publicação do V. Acórdão e dessa forma a devolução deve ser da forma simples. Entendo que é o caso de se aplicar esse novo entendimento, ainda que o Tema 929 não tenha sido julgado, pois recentemente a Corte Especial decidiu afetar o processo ao rito do art. 1.036 do CPC (Tema 929/STJ), nos termos do voto do Sr. MINISTRO RELATOR PAULO DE TARSO SANSEVERINO, no RECURSO ESPECIAL Nº 1.823.218 - AC (2019/0187097-6), julgado em 22/04/2021, conforme a seguinte ementa: "PROPOSTA DE AFETAÇÃO À CORTE ESPECIAL. TEMA 929/STJ. RITO DOS RECURSOS ESPECIAIS REPETITIVOS. DIREITO DO CONSUMIDOR E PROCESSUAL CIVIL. EN. 3/STJ. REPETIÇÃO EM DOBRO. ART. 42, PARÁGRAFO ÚNICO, DO CÓDIGO DE DEFESA DO CONSUMIDOR - CDC. CONTROVÉRSIA ACERCA DA EXIGÊNCIA DE PROVA DA MÁ-FÉ DO FORNECEDOR. CASO CONCRETO. CONTRATO DE CRÉDITO CONSIGNADO COM PESSOA ANALFABETA. CONSIGNAÇÃO DE DÉBITOS SEM BASE CONTRATUAL. PLEITO DE REPETIÇÃO EM DOBRO. 1. Controvérsia acerca do pleito de repetição em dobro de débitos consignados, sem base contratual, nos proventos de aposentadoria da demandante. 2. Desafetação do recurso especial vinculado ao Tema 929/STJ pelo colegiado da Corte Especial em face do julgamento em curso de embargos de divergência acerca da mesma questão. 3. Necessidade de nova afetação do presente recurso especial vinculado ao Tema 929/STJ ("discussão quanto às hipóteses de aplicação da repetição em dobro prevista no art. 42, parágrafo único, do CDC"), em face da existência de milhares de recursos sobrestados nos tribunais de origem e da ausência de eficácia vinculativa da decisão dos embargos de divergência semelhante à atribuída pela legislação processual aos recursos repetitivos. 4. RECURSO ESPECIAL AFETADO AO RITO DO ART. 1.036 DO CPC/2015." Assim, a instituição financeira deve proceder a devolução do eventual indébito na forma simples e não dobrada referente ao seguro prestamista considerado como ilegal. Por fim, procede em parte o pedido inicial. Ante o exposto, JULGO PARCIALMENTE PROCEDENTE os pedidos da inicial, para CONDENAR a instituição financeira requerida restituir, de forma simples, o valor de R$ 865,68, que deverá ser atualizado pela tabela do Eg. Tribunal de Justiça a partir do desembolso por considerar que se trata de relação consumerista e acrescido de juros da mora de 1% ao mês a partir da citação. Extingo o feito, nos termos do artigo 487, I do CPC. Em razão da sucumbência a parte requerida deverá responder integralmente pelas custas processuais e honorários advocatícios que fixo em 15% sobre o valor da condenação. Publique-se e intimem-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			19/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Sentença
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-100883315" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=100883315&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-100883315" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=100883315&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida"> Certidão de Cartório Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Certifico e dou fé que transcorreu in albis o prazo para que a parte autora se manifestasse.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WIAC.22.70018717-2
+Tipo da Petição: Petições Diversas
+Data: 06/10/2022 13:52
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0718/2022
+Data da Publicação: 05/10/2022
+Número do Diário: 3604
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			03/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0718/2022
+Teor do ato: Vistos. As partes deverão indicar, de forma específica e minudente, as provas que pretendem produzir, justificando sua pertinência, no prazo de 10 (dez) dias. Advirto que o protesto genérico ou sem justificativa será desconsiderado e interpretado como anuência ao julgamento antecipado da lide, e que o protesto pela dilação probatória deve ser acompanhado da adequada motivação, convencendo-se o Juízo da pertinência dos requerimentos. Sem prejuízo, digam as partes se possuem interesse na designação de audiência de tentativa de conciliação. Int.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Mario Andre de Souza (OAB 45622/PR)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			30/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-99542941" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=99542941&amp;nmRecursoAcessado=Proferido+Despacho+de+Mero+Expediente">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-99542941" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=99542941&amp;nmRecursoAcessado=Proferido+Despacho+de+Mero+Expediente"> Proferido Despacho de Mero Expediente
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. As partes deverão indicar, de forma específica e minudente, as provas que pretendem produzir, justificando sua pertinência, no prazo de 10 (dez) dias. Advirto que o protesto genérico ou sem justificativa será desconsiderado e interpretado como anuência ao julgamento antecipado da lide, e que o protesto pela dilação probatória deve ser acompanhado da adequada motivação, convencendo-se o Juízo da pertinência dos requerimentos. Sem prejuízo, digam as partes se possuem interesse na designação de audiência de tentativa de conciliação. Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			29/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/09/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-98750378" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=98750378&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-98750378" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=98750378&amp;nmRecursoAcessado=Certid%C3%A3o+de+Cart%C3%B3rio+Expedida"> Certidão de Cartório Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Certifico e dou fé que transcorreu in albis o prazo para que a parte autora se manifestasse.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0567/2022
+Data da Publicação: 11/08/2022
+Número do Diário: 3566
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/08/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0567/2022
+Teor do ato: Manifeste-se a parte autora em réplica, no prazo de 15 (quinze) dias, sobre a contestação apresentada, nos termos dos artigos 350 e 351 do Código de Processo Civil.
+Advogados(s): Henrique José Parada Simão (OAB 221386/SP), Mario Andre de Souza (OAB 45622/PR)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			08/08/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-97715461" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=97715461&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-97715461" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=97715461&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE"> Ato Ordinatório - Intimação - DJE
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Manifeste-se a parte autora em réplica, no prazo de 15 (quinze) dias, sobre a contestação apresentada, nos termos dos artigos 350 e 351 do Código de Processo Civil.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/08/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Contestação Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WIAC.22.70014442-2
+Tipo da Petição: Contestação
+Data: 05/08/2022 10:59
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			26/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					AR Negativo Juntado - Mudou-se
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Juntada de AR : AA397236549TJ
+Situação : Mudou-se
+Modelo : Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+Destinatário : Aymoré Crédito, Financiamento e Investimento S/A
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			18/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-96856027" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=96856027&amp;nmRecursoAcessado=Carta+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-96856027" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=96856027&amp;nmRecursoAcessado=Carta+Expedida"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0485/2022
+Data da Publicação: 14/07/2022
+Número do Diário: 3546
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0485/2022
+Teor do ato: Vistos. Fls. 19/23 - Concedo à parte autora a gratuidade judiciária. Anote-se. Trata-se de ação de revisão contratual de financiamento de veículo promovida promovida por JONATAN LUCAS JANUÁRIO em face de AYMORÉ CRÉDITO, FINANCIAMENTO E INVESTIMENTOS S/A.. O autor alega, em síntese, que celebrou com a requerida contrato de financiamento de veículo com alienação fiduciária. No entanto, entende que são abusivas (i) a cobrança de juros capitalizados mensais; (ii) o valor da taxa dos juros remuneratórios; (iii) a cobrança dos encargos moratórios e (iv) a venda casada do seguro prestamista. Assim, requerer a revisão do referido contrato, bem como a restituição/compensação em dobro dos valores que diz serem indevidos. Requer, liminarmente, que seja obstada a inscrição/manutenção de seu nome em cadastros de inadimplentes, que seja autorizado o depósito das parcelas no valor indicado como incontroverso e a manutenção na posse do veículo. Pois bem. Nos termos do art. 300 do CPC, a tutela de urgência será concedida quando houver elementos que evidenciem a probabilidade do direito alegado e o perigo de dano ou risco ao resultado útil do processo, não podendo ser concedida quando houver perigo de irreversibilidade dos efeitos da decisão. Numa análise sumária, condizente com a atual fase procedimental, as alegações unilaterais do autor não demonstram de plano o direito que alega, sendo necessária a instauração do contraditório. Da narrativa dos fatos, depreende-se que o contrato foi firmado de livre e espontânea vontade, sem qualquer menção sobre eventual vício de consentimento. Ademais, a simples discussão sobre irregularidades em cláusulas contratuais não justifica a alteração de plano das obrigações pactuadas, de modo que as prestações devem continuar sendo pagas diretamente ao credor e no valor contratado (art. 313 do Código Civil). Ante o exposto, ausentes os requisitos legais, indefiro o pedido de tutela antecipada. Diante do expresso desinteresse do autor, deixo de designar a audiência a que alude o art. 334 do Código de Processo Civil. Inviabilizada a citação/intimação eletrônica, pois a requerida e o seu CPNJ não constam da lista divulgada pelo Tribunal de Justiça de São, CITE-SE, por carta com aviso de recebimento, para, querendo, apresentar defesa, no prazo de 15 (quinze) dias, sob pena de serem considerados verdadeiros os fatos descritos na inicial (art. 335 e 344 do CPC). Int.
+Advogados(s): Mario Andre de Souza (OAB 45622/PR)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-96803461" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=96803461&amp;nmRecursoAcessado=N%C3%A3o+Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-96803461" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=700001LGU0000&amp;cdDocumento=96803461&amp;nmRecursoAcessado=N%C3%A3o+Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela"> Não Concedida a Antecipação de tutela
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Fls. 19/23 - Concedo à parte autora a gratuidade judiciária. Anote-se. Trata-se de ação de revisão contratual de financiamento de veículo promovida promovida por JONATAN LUCAS JANUÁRIO em face de AYMORÉ CRÉDITO, FINANCIAMENTO E INVESTIMENTOS S/A.. O autor alega, em síntese, que celebrou com a requerida contrato de financiamento de veículo com alienação fiduciária. No entanto, entende que são abusivas (i) a cobrança de juros capitalizados mensais; (ii) o valor da taxa dos juros remuneratórios; (iii) a cobrança dos encargos moratórios e (iv) a venda casada do seguro prestamista. Assim, requerer a revisão do referido contrato, bem como a restituição/compensação em dobro dos valores que diz serem indevidos. Requer, liminarmente, que seja obstada a inscrição/manutenção de seu nome em cadastros de inadimplentes, que seja autorizado o depósito das parcelas no valor indicado como incontroverso e a manutenção na posse do veículo. Pois bem. Nos termos do art. 300 do CPC, a tutela de urgência será concedida quando houver elementos que evidenciem a probabilidade do direito alegado e o perigo de dano ou risco ao resultado útil do processo, não podendo ser concedida quando houver perigo de irreversibilidade dos efeitos da decisão. Numa análise sumária, condizente com a atual fase procedimental, as alegações unilaterais do autor não demonstram de plano o direito que alega, sendo necessária a instauração do contraditório. Da narrativa dos fatos, depreende-se que o contrato foi firmado de livre e espontânea vontade, sem qualquer menção sobre eventual vício de consentimento. Ademais, a simples discussão sobre irregularidades em cláusulas contratuais não justifica a alteração de plano das obrigações pactuadas, de modo que as prestações devem continuar sendo pagas diretamente ao credor e no valor contratado (art. 313 do Código Civil). Ante o exposto, ausentes os requisitos legais, indefiro o pedido de tutela antecipada. Diante do expresso desinteresse do autor, deixo de designar a audiência a que alude o art. 334 do Código de Processo Civil. Inviabilizada a citação/intimação eletrônica, pois a requerida e o seu CPNJ não constam da lista divulgada pelo Tribunal de Justiça de São, CITE-SE, por carta com aviso de recebimento, para, querendo, apresentar defesa, no prazo de 15 (quinze) dias, sob pena de serem considerados verdadeiros os fatos descritos na inicial (art. 335 e 344 do CPC). Int.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Decisão
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Petição Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			12/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Documento Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/07/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído Livremente (por Sorteio) (movimentação exclusiva do distribuidor)
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+</table>
+<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value=""><input id="linkNaoExibidomovimentacoes" type="hidden" value="Recolher"><span id="mensagensExibindomovimentacoes" class="mensagemExibindo">
+
+</span>  
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+        <span id="setasDireitamovimentacoes" class="setasDireita">
+            <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+        </span>
+        Mais
+    </a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+<thead>
+<tr class="label">
+<th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								05/08/2022
+							</td>
+							<td width="*">
+								Contestação <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								06/10/2022
+							</td>
+							<td width="*">
+								Petições Diversas <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								13/01/2023
+							</td>
+							<td width="*">
+								Razões de Apelação <br>
+</td>
+						</tr>
+</tbody>
+</table>
+<!--  Tabela de petições diversas --><script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tr>
+<td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr></table>
+<!--  Incidentes --><script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tbody id="dadosApensosNaoDisponiveis"><tr>
+<td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr></tbody></table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+            
+                
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tr>
+<td id="processoSemAudiencias" colspan="3" align="left">
+                    
+                        
+                        
+                            Não há Audiências futuras vinculadas a este processo.
+                        
+                    
+                </td>
+            </tr></table>
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+<thead>
+<tr class="fundoClaro">
+<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td colspan="6"></td>
+				</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=700001LGU0000&amp;processo.foro=252&amp;processo.numero=1001064-82.2022.8.26.0252" id="popupSenha" style="display: none;" method="POST">
+		
+		<table role="document">
+<tr>
+<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+<tr align="center">
+<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso"><input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+<tr>
+<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha"><input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+</td>
+			</tr>
+</table>
+</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer><nav class="navbar__footer"><div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+<li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ"></a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan"></a>
+                </li>
+            </ul>
+<ul class="navbar__footer__list-actions"></ul>
+</div>
+    </nav></footer>
+</body>
+</html>

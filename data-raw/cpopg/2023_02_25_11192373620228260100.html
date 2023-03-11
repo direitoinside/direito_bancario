@@ -1,0 +1,2103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Portal de Serviços e-SAJ</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/cpopg/softheme/src/css/app.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/softheme/src/fonts/saj/styles.css?v=2.8.34-30">
+<link rel="stylesheet" href="/cpopg/css/formulario.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/webjars/select2/3.5.4/select2-bootstrap.css?v=2.8.34-30" type="text/css">
+<link rel="stylesheet" href="/cpopg/css/saj/select2/saj-select2.css">
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cpopg';
+	window.saj.env.css = '/cpopg/css';
+	window.saj.env.js = '/cpopg/js';
+	window.saj.env.imagens = '/cpopg/imagens';
+	window.saj.env.queryString = 'processo.codigo=2S001MJR10000&processo.foro=100&processo.numero=1119237-36.2022.8.26.0100';	
+
+	window.saj.cpo = window.saj.cpo || {};
+
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+</script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.min.js?n=1620728708"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/jquery/jquery.func_toggle.js?n=5560b6f0-f08c-4c04-8b8f-a4d1afc40cdf"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.blockUI.min.js?n=1bc1f261-79f4-4d85-bb3b-841640f42801"></script><script language="javascript" type="text/javascript" src="/cpopg/js/jquery/jquery.browser.min.js?n=b356b281-a290-4ee5-be4b-5cac52d11216"></script><script language="javascript" type="text/javascript" src="/cpopg/webjars/lodash/4.17.5/lodash.js?n=7c43fb40-c492-4529-a88c-d72b6b829587"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/select2/select2.js?n=faa4e604-119c-4c73-aae7-76d0a5993031"></script><script language="javascript" type="text/JavaScript" src="/cpopg/webjars/select2/3.5.4/select2_locale_pt-BR.js?n=13577c34-a8ec-4418-9578-68951cb93e25"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-select2.js?n=4192496e-c67f-44a4-a3c1-4e0d38ccc83f"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-web-2.2.41-4.js?n=dcb31eb8-b217-4576-9525-e41333228427"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-tooltip.js?n=c3e2a135-67be-4db1-8c41-d69485bdd482"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-popup-modal-1.0.0-1.js?n=c9dedce0-8216-4b43-b7b2-150a63bff307"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-browser.js?n=3236211a-0ed2-4f29-81c3-f614fa62cf71"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-mascara-input.js?n=9f6aa096-d777-4707-a641-e496ce5e04dc"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/saj-numeroProcesso.js?n=26c33a8c-8055-4531-a865-a567be048b32"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj-cpo-cbpesquisa.js?n=686458821"></script><script language="javascript" type="text/JavaScript" src="/cpopg/js/saj/acessibilidade/acessibilidade.js?n=98ed0563-76b0-4961-a878-6c90fc9e341b"></script><script language="javascript" type="text/JavaScript" src="/cpopg/softheme/src/js/app.js?n=789536343"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js?n=88149fee-fdac-4ab0-8e15-ec168dd83d31" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js?n=1791337263" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script><script>
+	(function($){
+		$(function(){
+			var intervalo = 1795000;
+			$.saj.manterSessao('/cpopg/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script><script language="javascript" type="text/JavaScript">
+        $.saj = $.saj || {};
+        $.saj.acessoRecurso = {
+            abrirPastaDigitalEmPopup: 'true' == 'true',
+            idRecursoQueProvocouLiberacaoPorSenha: '',
+            limitaAcessoPastaDigital: 'false',
+            popupSenha: {
+                mostrar: 'false' == 'true',
+                titulo: 'Senha do processo',
+                altura: 220 + Number("10"),
+                alturaAdicionalParaMensagemValidacao: Number("0"),
+                largura: 580
+            },
+            popupMensagem: {
+                titulo: 'Aviso:',
+                texto: 'Você atingiu o limite diário de acessos à pasta digital em processos que não está vinculado.'
+            }
+        };
+
+        $.saj.getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+    </script><script language="javascript" type="text/JavaScript" src="/cpopg/jsp/show-2.8.33-0.js?n=1814283828"></script><script type="text/javascript">
+		(function($) {
+			$(function(){
+				// Correção temporária do alinhamento do divisor de seção de formulário do SPW 
+				$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top');
+				
+				
+			})
+		})(jQuery);
+	</script><script src="https://fast.conpass.io/H1xuDQHJ8X.js"></script><script type="text/javascript">
+            Conpass.init({
+                email: "277519",
+            });
+        </script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if (!captcha) {
+                return;
+            }
+
+            if(!captcha){
+                return;
+            }
+            var $processoPrinc = $('.processoPrinc');
+            $processoPrinc.attr('href', $processoPrinc.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            $('.incidente').each(function () {
+                var $incidente = $(this);
+                var url = $incidente.attr('href');
+                $incidente.attr('href', url + '&uuidCaptcha=' + captcha);
+            });
+
+        })
+    })(jQuery);
+</script><!-- HEADER--><div class="unj-entity-header">
+    
+
+
+
+
+<div class="unj-entity-header__actions__barra">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i id="setaVoltar" class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <!-- CDAS -->
+                
+                <!-- Custas -->
+                
+                <!-- Pasta digital -->
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                        
+                        
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPasta" aria-hidden="true" title="Pasta digital" href="/cpopg/abrirPastaDigital.do?processo.codigo=2S001MJR10000">
+                                Visualizar autos
+                            </a>
+                            <!-- link da pasta digital exibido somente para leitores de tela (deficientes visuais), neste caso o link anterior é ignorado pelo leitor
+                            Obs: necessário manter a table devido aos atributos de acessibilidade se comportarem adequadamente com a tabela, comportamento que não é possível colocando
+                            os atributos somente na tag do link-->
+                            <a class="linkPasta btn btn-secondary btn-space" id="linkPastaAcessibilidade" style="font-size:0;height:0;width:0;padding:0;margin:0;border:none" href="/cpopg/abrirPastaDigital.do?processo.codigo=2S001MJR10000&amp;acessibilidade=true">
+                                Visualizar autos
+                            </a>
+                        
+                    
+                
+                
+                    
+                    
+                        <!-- Peticionar -->
+                        
+                            <button class="btn btn-primary btn-space" id="pbPeticionar" name="pbPeticionar" onclick="window.location.href = '/cpopg/peticionarIntermediariaParaProcesso.do?cdProcesso=2S001MJR10000&amp;cdForo=100&amp;peticionanteResponsavel=277519-277519'">
+                                Peticionar
+                            </button>
+                        
+                        
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+
+<div class="unj-entity-header__summary__barra">
+    <div id="containerDadosPrincipaisProcesso" class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-13">
+                <!--principal -->
+                
+                    <span id="numeroProcesso" class="unj-larger-1">
+                        1119237-36.2022.8.26.0100
+                    </span>
+                    
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+                    <span class="unj-tag">Tramitação prioritária</span>
+                
+                
+            </div>
+
+        </div>
+        <div class="row">
+            
+                <div class="col-lg-3 col-xl-3 mb-3">
+                    <span id="labelClasseProcesso" class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2"><span id="classeProcesso" title="Procedimento Comum Cível">Procedimento Comum Cível</span></div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-3 mb-3">
+                    <span id="labelAssuntoProcesso" class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="assuntoProcesso" title="Prescrição e Decadência">Prescrição e Decadência</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-2 col-xl-2 mb-2">
+                    <span id="labelForoProcesso" class="unj-label">
+                        Foro
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"> <span id="foroProcesso" title="Foro Central Cível">Foro Central Cível</span>
+</div>
+                </div>
+            
+            
+                <div class="col-lg-3 col-xl-2 mb-2">
+                    <span id="labelVaraProcesso" class="unj-label">
+                        Vara
+                    </span>
+                    <div class="lh-1-1 line-clamp__2"><span id="varaProcesso" title="33ª Vara Cível">33ª Vara Cível</span></div>
+                </div>
+            
+
+            
+                <div class="col-lg-3 mb-2">
+                    <span id="labelJuizProcesso" class="unj-label">Juiz</span>
+                    <div class="line-clamp__2"> <span id="juizProcesso" title="Sergio da Costa Leite">Sergio da Costa Leite</span> </div>
+                </div>
+            
+
+            <!-- Processo principal -->
+            
+
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="unj-entity-header__details__barra">
+    <div class="container">
+        <div class="unj-ta-r">
+            
+                <a href="#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                    <span class="unj-link-collapse__show">
+                        <i id="botaoExpandirDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                        Mais
+                    </span>
+                    <span class="unj-link-collapse__hide">
+                        <i id="botaoRecolherDadosSecundarios" class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                        Recolher
+                    </span>
+                </a>
+            
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelDistribuicaoProcesso" class="unj-label">Distribuição </span>
+                        <div id="dataHoraDistribuicaoProcesso">28/10/2022 às 02:01 - Livre</div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span id="labelControleProcesso" class="unj-label">Controle</span>
+                        <div id="numeroControleProcesso">2022/002246</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 col-xl-2 mb-2">
+                        <span id="labelAreaProcesso" class="unj-label">Área</span>
+                        <div id="areaProcesso" class="lh-1-1 line-clamp__2"> <span title="Cível">Cível</span>
+</div>
+                    </div>
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span id="lavelValorAcaoProcesso" class="unj-label">Valor da ação</span>
+                        <div id="valorAcaoProcesso">R$         33.798,47</div>
+                    </div>
+                
+                
+                
+                
+                    <div class="col-lg-2 mb-2">
+                        <span class="unj-label">Outros assuntos</span>
+                        <div class="line-clamp__2"> <span title="Indenização por Dano Moral">Indenização por Dano Moral</span>
+</div>
+                    </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+
+<div class="div-conteudo container mb-90">
+	
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left aside-nav--acessibilidade"><div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--light.png" alt=""></a>
+        </header><nav class="aside-nav__main-menu"><ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"></ul></nav><div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside><aside class="aside-nav aside-nav--right aside-nav__user"><div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/aside/brasoes/br-tjsp.jpg" alt="">
+</div>
+            <ul class="aside-nav__user__sign__list">
+<li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado de São Paulo</span></li>
+            </ul>
+<a href="#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="https://esaj.tjsp.jus.br/esaj/img/icons/icon-close--dark.png" alt=""></a>
+        </div>
+        <hr>
+<div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+<li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+<ul class="aside-nav__user__info__list-access">
+<li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjsp.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="#">Sair</a></li>
+            </ul>
+</div>
+    </div>
+</aside><header><link rel="shortcut icon" href="https://esaj.tjsp.jus.br/esaj/tema/padrao/clientes/SP/imagens/favicon.ico" type="image/x-icon">
+<link href="https://esaj.tjsp.jus.br/esaj/app.css" rel="stylesheet" type="text/css">
+<nav class="header__navbar--barra"><div class="header__navbar__barra-acessibilidade">
+                <a class="header__navbar__barra-acessibilidade-anchor" target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes"><span>Acessibilidade</span></a>
+                <a target="_blank" href="https://www.tjsp.jus.br/Acessibilidade/Orientacoes">
+                    <img onmouseover="exibirLibras()" onmouseleave="ocultarLibras()" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/mao.png" alt="MAO"></a>
+            </div>
+            <img id="gifLibras" class="header__navbar__barra-acessibilidade-libras" style="display: none" height="100" width="100" border="0" alt="LIBRAS" src="https://esaj.tjsp.jus.br/esaj/tema/padrao/imagens/layout/libras.gif"><a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href="">
+<a class="linkLogo" href="https://esaj.tjsp.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos do 1ºGrau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+<li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="http://www.tjsp.jus.br/"> TJSP </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text"></span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul></nav></header><div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script><script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://esaj.tjsp.jus.br/esaj/menuPortalV2Html.do?servico=190101';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://esaj.tjsp.jus.br/sajcas/conteudoIdentificacaoJson?script=1677308505871&retorno=' + encodeURIComponent(location.href);
+</script><script src="https://esaj.tjsp.jus.br/esaj/js/portalV2-bundle.js?n=806192629"></script><script src="https://esaj.tjsp.jus.br/sajcas/seletorVersaoBeta.js?n=3fc713ba-90c0-4172-a138-2e539a6e6819&amp;versao=2"></script><script>
+    function exibirLibras() {
+        document.getElementById("gifLibras").style.display = 'block';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'static');
+        mudarPosicao(cel2, 'static');
+    }
+    function ocultarLibras() {
+        document.getElementById("gifLibras").style.display = 'none';
+        var cel1 = document.getElementsByClassName('esajCelulaIdentificacao');
+        var cel2 = document.getElementsByClassName('esajCelulaIdentificacaoServico');
+        mudarPosicao(cel1, 'relative');
+        mudarPosicao(cel2, 'relative');
+    }
+
+    function mudarPosicao(coll, posicao) {
+        if (!coll) {
+            return;
+        }
+        for (var i = 0, len = coll.length; i < len; i++) {
+            coll[i].style["position"] = posicao;
+        }
+    }
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Partes do processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqte </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Ana Paula Mota de Araújo
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Max Canaverde dos Santos Soares
+					
+				 
+				
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Getúlio Santos Moreira
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqdo </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Fundo de Investimento em Direitos Creditórios Não Padronizados NPL II
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogada: </span>
+				
+					
+					
+						Mariana Denuzzo Salomão
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+</table>
+<!--  dados da lista todas as partes (partes) --><table id="tableTodasPartes" style="margin-left:15px; margin-top:1px; display: none; " align="center" width="98%" border="0" cellspacing="0" cellpadding="0">
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqte </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Ana Paula Mota de Araújo
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Max Canaverde dos Santos Soares
+					
+				 
+				
+			
+				<br><span class="mensagemExibindo">Advogado: </span>
+				
+					
+					
+						Getúlio Santos Moreira
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqdo </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Fundo de Investimento em Direitos Creditórios Não Padronizados NPL II
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogada: </span>
+				
+					
+					
+						Mariana Denuzzo Salomão
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+<tr class="fundoClaro">
+<td valign="top" width="141" style="padding-bottom: 5px" class="label">
+		<span class="mensagemExibindo tipoDeParticipacao">Reqdo </span>
+	</td>
+	<td class="nomeParteEAdvogado" width="*" align="left" style="padding-bottom: 5px">
+		
+			
+				
+				
+					Recovery do Brasil Consultoria S.A.
+				
+			
+
+			
+		 
+		
+			
+				<br><span class="mensagemExibindo">Advogada: </span>
+				
+					
+					
+						Mariana Denuzzo Salomão
+					
+				 
+				
+			
+		
+		
+	</td>
+</tr>
+</table>
+<div id="divLinksTituloBlocoPartes" style="text-align:right">
+        
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidapartes" type="hidden" value=""><input id="linkNaoExibidopartes" type="hidden" value="Recolher"><span id="mensagensExibindopartes" class="mensagemExibindo">
+
+</span>  
+
+    <a id="linkpartes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+        <span id="setasDireitapartes" class="setasDireita">
+            <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+        </span>
+        Mais
+    </a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidopartes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkpartes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidapartes');
+			var $spanMensagem = $('span#mensagensExibindopartes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tableTodasPartes').hide();
+			$('#tablePartesPrincipais').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tablePartesPrincipais').hide();
+			$('#tableTodasPartes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitapartes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidopartes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkpartes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+</div>
+
+
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                
+	                    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Movimentações</h2>
+		
+	
+</div>
+
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+<thead>
+<tr>
+<th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true"> </th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody id="tabelaUltimasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0105/2023
+Data da Publicação: 14/02/2023
+Número do Diário: 3677
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0105/2023
+Teor do ato: Às contrarrazões no prazo legal. Revisados, subam os autos ao Egrégio Tribunal de Justiça, observadas as formalidades legais. Esclareço que o peticionamento eletrônico das contrarrazões não deve ser feito no sistema e-SAJ de forma genérica como "petição intermediária" e sim como "CONTRARRAZÕES DE APELAÇÃO", a fim de otimizar a cadência do processo e os serviços afetos à z. Serventia, viabilizando a remessa à Egrégia Superior Instância, sob pena de comprometer a celeridade processual e o princípio constitucional do tempo razoável do processo.
+Advogados(s): Mariana Denuzzo Salomão (OAB 253384/SP), Max Canaverde dos Santos Soares (OAB 408389/SP), Getúlio Santos Moreira (OAB 448551/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-106068858" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=106068858&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-106068858" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=106068858&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE"> Ato Ordinatório - Intimação - DJE
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Às contrarrazões no prazo legal. Revisados, subam os autos ao Egrégio Tribunal de Justiça, observadas as formalidades legais. Esclareço que o peticionamento eletrônico das contrarrazões não deve ser feito no sistema e-SAJ de forma genérica como "petição intermediária" e sim como "CONTRARRAZÕES DE APELAÇÃO", a fim de otimizar a cadência do processo e os serviços afetos à z. Serventia, viabilizando a remessa à Egrégia Superior Instância, sob pena de comprometer a celeridade processual e o princípio constitucional do tempo razoável do processo.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Apelação/Razões Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.23.40206491-0
+Tipo da Petição: Razões de Apelação
+Data: 09/02/2023 12:58
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Suspensão do Prazo
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Prazo referente ao usuário foi alterado para 08/02/2023 devido à alteração da tabela de feriados
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+<tbody style="display: none;" id="tabelaTodasMovimentacoes">
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			11/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0105/2023
+Data da Publicação: 14/02/2023
+Número do Diário: 3677
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0105/2023
+Teor do ato: Às contrarrazões no prazo legal. Revisados, subam os autos ao Egrégio Tribunal de Justiça, observadas as formalidades legais. Esclareço que o peticionamento eletrônico das contrarrazões não deve ser feito no sistema e-SAJ de forma genérica como "petição intermediária" e sim como "CONTRARRAZÕES DE APELAÇÃO", a fim de otimizar a cadência do processo e os serviços afetos à z. Serventia, viabilizando a remessa à Egrégia Superior Instância, sob pena de comprometer a celeridade processual e o princípio constitucional do tempo razoável do processo.
+Advogados(s): Mariana Denuzzo Salomão (OAB 253384/SP), Max Canaverde dos Santos Soares (OAB 408389/SP), Getúlio Santos Moreira (OAB 448551/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-106068858" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=106068858&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-106068858" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=106068858&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE"> Ato Ordinatório - Intimação - DJE
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Às contrarrazões no prazo legal. Revisados, subam os autos ao Egrégio Tribunal de Justiça, observadas as formalidades legais. Esclareço que o peticionamento eletrônico das contrarrazões não deve ser feito no sistema e-SAJ de forma genérica como "petição intermediária" e sim como "CONTRARRAZÕES DE APELAÇÃO", a fim de otimizar a cadência do processo e os serviços afetos à z. Serventia, viabilizando a remessa à Egrégia Superior Instância, sob pena de comprometer a celeridade processual e o princípio constitucional do tempo razoável do processo.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/02/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Apelação/Razões Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.23.40206491-0
+Tipo da Petição: Razões de Apelação
+Data: 09/02/2023 12:58
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			24/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Suspensão do Prazo
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Prazo referente ao usuário foi alterado para 08/02/2023 devido à alteração da tabela de feriados
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Data da Publicação: 11/01/2023
+Número do Diário: 3654
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			09/01/2023
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0001/2023
+Teor do ato: Vistos, ANA PAULA MOTA DE ARAÚJO promoveu perante este Juízo a presente ação declaratória de inexistência de débitos, cumulada com a exclusão de apontamentos e indenização por danos morais em face do FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS NPL II e de RECOVERY DO BRASIL CONSULTORIA S.A., a alegar ter sido contatada pela segunda ré, que a convidou a se cadastrar na plataforma Serasa Limpa Nome, onde verificaria a existência de proposta de acordo para o pagamento de dívidas. Deparou-se, então, com débitos dos anos de 2013, relacionados aos contratos 4268000036610320155 (R$ 3.105,43) e 4268010631818000152 (R$ 693,05), de titularidade do primeiro réu. Desconhece a que se referem. Encontrando-se prescritas, não poderiam constar de qualquer banco de dados e tampouco ser objeto de cobrança judicial ou extrajudicial. Os referidos lançamentos reduzem o seu score de crédito. A inclusão indevida enseja a ocorrência de danos morais indenizáveis. Pretende, destarte, ver julgada procedente a presente ação: a) declarando-se a prescrição e a inexistência dos débitos prescritos; b) reconhecendo-se a nulidade dos apontamentos, que deverão ser excluídos; e c) condenando-se os réus ao pagamento de indenização por danos morais, no valor de R$ 20.000,00. Com a inicial vieram os documentos de folhas 33/86. A decisão de folha 87 deferiu a gratuidade em favor da autora, mas indeferiu a tutela de urgência. Os réus foram citados (folhas 92/93). O FUNDO DE INVESTIMENTO ofertou contestação a impugnar o valor atribuído à causa. Quanto ao mérito afirmou não ter sido lançado o nome da autora em rol de maus pagadores. Tampouco teve a autora seu score baixado por ato dele contestante. O lançamento referido está em site de negociações, acessível exclusivamente pela autora. Não houve qualquer exposição pública ou constrangimento. É cessionário dos créditos relativos aos contratos objeto da ação, antes titularizados pelo Banco Santander. As dívidas existem e podem ser cobradas extrajudicialmente. Apenas o direito de ação não pode mais ser exercido. Ausente negativação, não há dano moral indenizável. O ônus da prova cabe à autora, que litiga de má-fé. Não pode ser compelido a arcar com os ônus da sucumbência. Se acolhida a pretensão, a indenização deve ser fixada com observância dos critérios da razoabilidade e da proporcionalidade (folhas 94/112). Trouxe aos autos os documentos de folhas 113/223. A ré Recovery apresentou contestação a alegar, preliminarmente, a ilegitimidade passiva. Quanto ao mérito afirmou que não detém qualquer crédito em face da autora e não praticou qualquer ato em seu desfavor, tendo apenas realizado cobranças em nome do corréu. Inexistem ato ilícito e nexo causal. Inviável a inversão do ônus da prova. Não há dano moral a ser indenizado. Caso reconhecido, há de ser fixada a indenização em valor razoável e proporcional (folhas 224/228). Trouxe aos autos os documentos de folhas 229/245. A réplica está às folhas 250/251. É O RELATÓRIO. FUNDAMENTO E DECIDO. Afasto a alegação de ilegitimidade passiva. Nos termos da teoria da asserção, tal condição da ação é analisada segundo a exposição fática constante da petição inicial e não segundo o que consta da contestação. Havendo pertinência subjetiva segundo a narrativa realizada pela autora, presente estará a legitimidade passiva. Há indicação, no site acessado pela autora (folha 38), que a dívida seria titularizada pela ré Recovery, a responsável, pois, pela inclusão, donde não há como dizer ser parte ilegítima. Admitiram os réus, ainda, que tal empresa realiza as cobranças administrativas, donde, sendo um dos pedidos relacionados justamente à não realização de cobranças, justificada está a pertinência subjetiva. Acolho a impugnação ao valor da causa, uma vez que em ações da natureza da presente, quando acolhida a pretensão, as indenizações têm o valor médio de R$ 10.000,00 aproximadamente, não se justificando a fixação de valor estratosférico, aproveitando-se a parte da circunstância de não recolher custas, por ser beneficiária da gratuidade. Para a parte adversa, pelo contrário, há efeitos concretos, uma vez que o exercício do direito a recursos resta onerado de forma indevida. Fixo, pois, o valor da causa em R$ 13.798,48. Quanto ao mérito a hipótese é de julgamento antecipado da lide, nos termos do artigo 355, inciso I, do Código de Processo Civil, a considerar que a autora e o réu Fundo não têm provas a produzir (folhas 251/252), não tendo a ré Recovery manifestado interesse na dilação probatória (folha 246). Neste passo, a pretensão deduzida na inicial merece parcial acolhida. Como admite a autora à folha 04, os lançamentos objeto da presente ação encontram-se na plataforma Serasa Consumidor, conhecido como Serasa Limpa o Nome, que permite ao cidadão acessar suas próprias informações, atuais e pretéritas, não se confundindo com o rol de maus pagadores. Tal sistema, ainda, enseja ao cidadão oportunidade para a quitação de pendências existentes, encontrem-se ou não prescritas. Trata-se, pois, de anotação acessível no cadastro da autora, apenas por ela mesma através da criação de senha própria, para a verificação de sua situação pessoal. Em consonância com o Código de Defesa do Consumidor, há publicidade dos lançamentos desfavoráveis a um devedor pelo prazo máximo de 05 (cinco) anos, mas não há obrigatoriedade de que sejam os mesmos deletados do sistema. O que não pode é que terceiros continuem a visualizá-los após tal prazo, mas nada obsta que o próprio devedor tenha acesso à dívida que não pagou. Se vai ou não se incomodar com a situação e buscar resolvê-la é uma questão pessoal. Inexiste, pois, no caso concreto, lançamento em desfavor da autora junto aos órgãos de proteção ao crédito. Os documentos de folhas 38/40 indicam com precisão que os lançamentos se referem a dívidas com o então Banco Banespa, sucedido pelo Santander, relacionados a contratos de empréstimo e de cheque especial. A autora não impugnou diretamente a existência de tais dívidas. Sequer cogitou ter realizado o pagamento respectivo, buscando, apenas, o afastamento delas pela prescrição. É inegável o fato de que ocorreu a prescrição no caso concreto, já que as dívidas venceram em 2013 e nem os réus indicaram a ocorrência de fato impeditivo, interruptivo ou suspensivo da prescrição. Entretanto, o fato de encontrar-se prescrita a dívida tampouco enseja tal obrigatoriedade de exclusão, uma vez que o artigo 189 do Código Civil dispõe que, violado o direito, nasce para o titular a pretensão, a qual se extingue pela prescrição, nos prazos previstos nos artigos 205 e 206 do mesmo Diploma Legal. A prescrição, pois, não atinge o próprio direito subjetivo, que continua a existir, tanto que, caso o devedor venha a realizar o pagamento, não há como pleitear a restituição. Alcança ela a pretensão de cobrança, seja por via extrajudicial ou judicial, não podendo os réus realizar qualquer ato nesse sentido, não havendo que se falar em inexistência da dívida: DIREITO CIVIL. RECURSO ESPECIAL. AÇÃO DECLARATÓRIA. CONTRATO DE COMPRA E VENDA DE IMÓVEL. PARCELAS INADIMPLIDAS. PRESCRIÇÃO. INTERRUPÇÃO. NÃO OCORRÊNCIA. REEXAME DE FATOS E PROVAS. INADMISSIBILIDADE. PRESCRIÇÃO QUE ATINGE A PRETENSÃO, E NÃO O DIREITO SUBJETIVO EM SI. 1. Ação ajuizada em 27/03/2013. Recurso especial concluso ao gabinete em 14/12/2016. Julgamento: CPC/73. 2. O propósito recursal é definir i) se, na hipótese, houve a interrupção da prescrição da pretensão da cobrança das parcelas inadimplidas, em virtude de suposto ato inequívoco que importou reconhecimento do direito pelo devedor; e ii) se, ainda que reconhecida a prescrição da pretensão de cobrança, deve-se considerar como subsistente o inadimplemento em si e como viável a declaração de quitação do bem. 3. Partindo-se das premissas fáticas estabelecidas pelo Tribunal de origem quanto à inexistência de ato inequívoco que importasse em reconhecimento do direito por parte da recorrida premissas estas inviáveis de serem reanalisadas ou alteradas em razão do óbice da Súmula 7/STJ não há como se admitir a ocorrência de interrupção do prazo prescricional. 4. A prescrição pode ser definida como a perda, pelo titular do direito violado, da pretensão à sua reparação. Inviável se admitir, portanto, o reconhecimento de inexistência da dívida e quitação do saldo devedor, uma vez que a prescrição não atinge o direito subjetivo em si mesmo. 5. Recurso especial parcialmente conhecido e, nessa parte, provido. (Superior Tribunal de Justiça; REsp nº 1.694.322-SP (2016/0301649-0); Douta Relatora: Ministra NANCY ANDRIGHI; Data do julgamento: 07.11.2017). Mesmo prescrita, pois, a dívida existe, não podendo, apenas, ser exigida, o que implica em não ensejar o direito ao protesto, à negativação ou a outro ato que, mesmo paralelamente, implique na tentativa de obrigar o devedor ao pagamento. Mas isto, como visto, aqui não ocorreu. Os réus não manifestam qualquer pretensão de exigir o pagamento, mantendo apenas o registro de que existe, registro este, que além de real, como já explicitado mais de uma vez, é acessível apenas pela autora. Nem se diga que os lançamentos gerariam efeitos deletérios ao score de crédito da autora, nada havendo a indicar tal hipótese inclusive. Há a possibilidade, pelo contrário, de se conceder um bônus no score do devedor que, mesmo tendo ocorrido a prescrição da dívida, demonstra interesse em quitá-la, e o faz, preservando o direito de seu credor. Mas daí a dizer que o não pagamento enseja prejuízos ao devedor há uma enorme distância. Nada produziu a autora, ainda, para demonstrar o contrário. O pleito de indenização por danos morais é improcedente, a considerar que o lançamento existente, como visto, não gera efeitos perante terceiros e tampouco prejudica o score da autora. No sentido supra, inclusive, o Enunciado de número 11 da Egrégia Seção de Direito Privado do Tribunal de Justiça deste Estado: A cobrança extrajudicial de dívida prescrita é ilícita. O seu registro na plataforma Serasa Limpa Nome ou similares de mesma natureza, por si só, não caracteriza dano moral, exceto provada divulgação a terceiros ou alteração no sistema de pontuação de créditos: score. Poder-se-ia exigir a apresentação exata dos documentos relativos à cessão se os lançamentos tivessem alguma repercussão externa. Não ocorrendo esta e restando vedada a cobrança, pela prescrição, como pretendido pela autora, não há motivo para tal discussão. Declara-se, pois, a prescrição, sendo as dívidas inexigíveis, o que, contudo, não faz com que inexistam, restando os réus, apenas, privados dos meios judiciais e administrativos para a cobrança. Ante o exposto, julgo parcialmente procedente a presente ação declaratória de inexistência de débitos, cumulada com a exclusão de apontamentos e indenização por danos morais promovida por ANA PAULA MOTA DE ARAÚJO em face do FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS NPL II e de RECOVERY DO BRASIL CONSULTORIA S.A., e em consequência: a) declaro prescrita a obrigação relativa aos contratos 4268000036610320155 (R$ 3.105,43) e 4268010631818000152 (R$ 693,05), sendo, portanto, inexigíveis judicial ou extrajudicialmente; e b) rejeito os pedidos de declaração de inexistência dos débitos referidos na alínea anterior; de exclusão dos apontamentos; e de indenização por danos morais. Condeno a autora, que restou vencida praticamente de forma integral, já que não havia controvérsia quanto à prescrição declarada, ao pagamento das custas e despesas processuais, bem como de honorários advocatícios, que arbitro no valor equivalente a 10% (dez por cento) daquele atribuído à causa, a ser corrigido monetariamente desde o ajuizamento pelos índices constantes da Tabela de Atualização do Tribunal de Justiça deste Estado, bem como acrescido de juros de mora de 1% (um por cento) ao mês, contados desde o trânsito em julgado da presente. Beneficiária da gratuidade, a exigibilidade das verbas de sucumbência dependerá da comprovação da perda da condição de hipossuficiente. P.I.
+Advogados(s): Mariana Denuzzo Salomão (OAB 253384/SP), Max Canaverde dos Santos Soares (OAB 408389/SP), Getúlio Santos Moreira (OAB 448551/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			20/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-104924616" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=104924616&amp;nmRecursoAcessado=Julgada+Procedente+em+Parte+a+A%C3%A7%C3%A3o">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-104924616" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=104924616&amp;nmRecursoAcessado=Julgada+Procedente+em+Parte+a+A%C3%A7%C3%A3o"> Julgada Procedente em Parte a Ação
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos, ANA PAULA MOTA DE ARAÚJO promoveu perante este Juízo a presente ação declaratória de inexistência de débitos, cumulada com a exclusão de apontamentos e indenização por danos morais em face do FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS NPL II e de RECOVERY DO BRASIL CONSULTORIA S.A., a alegar ter sido contatada pela segunda ré, que a convidou a se cadastrar na plataforma Serasa Limpa Nome, onde verificaria a existência de proposta de acordo para o pagamento de dívidas. Deparou-se, então, com débitos dos anos de 2013, relacionados aos contratos 4268000036610320155 (R$ 3.105,43) e 4268010631818000152 (R$ 693,05), de titularidade do primeiro réu. Desconhece a que se referem. Encontrando-se prescritas, não poderiam constar de qualquer banco de dados e tampouco ser objeto de cobrança judicial ou extrajudicial. Os referidos lançamentos reduzem o seu score de crédito. A inclusão indevida enseja a ocorrência de danos morais indenizáveis. Pretende, destarte, ver julgada procedente a presente ação: a) declarando-se a prescrição e a inexistência dos débitos prescritos; b) reconhecendo-se a nulidade dos apontamentos, que deverão ser excluídos; e c) condenando-se os réus ao pagamento de indenização por danos morais, no valor de R$ 20.000,00. Com a inicial vieram os documentos de folhas 33/86. A decisão de folha 87 deferiu a gratuidade em favor da autora, mas indeferiu a tutela de urgência. Os réus foram citados (folhas 92/93). O FUNDO DE INVESTIMENTO ofertou contestação a impugnar o valor atribuído à causa. Quanto ao mérito afirmou não ter sido lançado o nome da autora em rol de maus pagadores. Tampouco teve a autora seu score baixado por ato dele contestante. O lançamento referido está em site de negociações, acessível exclusivamente pela autora. Não houve qualquer exposição pública ou constrangimento. É cessionário dos créditos relativos aos contratos objeto da ação, antes titularizados pelo Banco Santander. As dívidas existem e podem ser cobradas extrajudicialmente. Apenas o direito de ação não pode mais ser exercido. Ausente negativação, não há dano moral indenizável. O ônus da prova cabe à autora, que litiga de má-fé. Não pode ser compelido a arcar com os ônus da sucumbência. Se acolhida a pretensão, a indenização deve ser fixada com observância dos critérios da razoabilidade e da proporcionalidade (folhas 94/112). Trouxe aos autos os documentos de folhas 113/223. A ré Recovery apresentou contestação a alegar, preliminarmente, a ilegitimidade passiva. Quanto ao mérito afirmou que não detém qualquer crédito em face da autora e não praticou qualquer ato em seu desfavor, tendo apenas realizado cobranças em nome do corréu. Inexistem ato ilícito e nexo causal. Inviável a inversão do ônus da prova. Não há dano moral a ser indenizado. Caso reconhecido, há de ser fixada a indenização em valor razoável e proporcional (folhas 224/228). Trouxe aos autos os documentos de folhas 229/245. A réplica está às folhas 250/251. É O RELATÓRIO. FUNDAMENTO E DECIDO. Afasto a alegação de ilegitimidade passiva. Nos termos da teoria da asserção, tal condição da ação é analisada segundo a exposição fática constante da petição inicial e não segundo o que consta da contestação. Havendo pertinência subjetiva segundo a narrativa realizada pela autora, presente estará a legitimidade passiva. Há indicação, no site acessado pela autora (folha 38), que a dívida seria titularizada pela ré Recovery, a responsável, pois, pela inclusão, donde não há como dizer ser parte ilegítima. Admitiram os réus, ainda, que tal empresa realiza as cobranças administrativas, donde, sendo um dos pedidos relacionados justamente à não realização de cobranças, justificada está a pertinência subjetiva. Acolho a impugnação ao valor da causa, uma vez que em ações da natureza da presente, quando acolhida a pretensão, as indenizações têm o valor médio de R$ 10.000,00 aproximadamente, não se justificando a fixação de valor estratosférico, aproveitando-se a parte da circunstância de não recolher custas, por ser beneficiária da gratuidade. Para a parte adversa, pelo contrário, há efeitos concretos, uma vez que o exercício do direito a recursos resta onerado de forma indevida. Fixo, pois, o valor da causa em R$ 13.798,48. Quanto ao mérito a hipótese é de julgamento antecipado da lide, nos termos do artigo 355, inciso I, do Código de Processo Civil, a considerar que a autora e o réu Fundo não têm provas a produzir (folhas 251/252), não tendo a ré Recovery manifestado interesse na dilação probatória (folha 246). Neste passo, a pretensão deduzida na inicial merece parcial acolhida. Como admite a autora à folha 04, os lançamentos objeto da presente ação encontram-se na plataforma Serasa Consumidor, conhecido como Serasa Limpa o Nome, que permite ao cidadão acessar suas próprias informações, atuais e pretéritas, não se confundindo com o rol de maus pagadores. Tal sistema, ainda, enseja ao cidadão oportunidade para a quitação de pendências existentes, encontrem-se ou não prescritas. Trata-se, pois, de anotação acessível no cadastro da autora, apenas por ela mesma através da criação de senha própria, para a verificação de sua situação pessoal. Em consonância com o Código de Defesa do Consumidor, há publicidade dos lançamentos desfavoráveis a um devedor pelo prazo máximo de 05 (cinco) anos, mas não há obrigatoriedade de que sejam os mesmos deletados do sistema. O que não pode é que terceiros continuem a visualizá-los após tal prazo, mas nada obsta que o próprio devedor tenha acesso à dívida que não pagou. Se vai ou não se incomodar com a situação e buscar resolvê-la é uma questão pessoal. Inexiste, pois, no caso concreto, lançamento em desfavor da autora junto aos órgãos de proteção ao crédito. Os documentos de folhas 38/40 indicam com precisão que os lançamentos se referem a dívidas com o então Banco Banespa, sucedido pelo Santander, relacionados a contratos de empréstimo e de cheque especial. A autora não impugnou diretamente a existência de tais dívidas. Sequer cogitou ter realizado o pagamento respectivo, buscando, apenas, o afastamento delas pela prescrição. É inegável o fato de que ocorreu a prescrição no caso concreto, já que as dívidas venceram em 2013 e nem os réus indicaram a ocorrência de fato impeditivo, interruptivo ou suspensivo da prescrição. Entretanto, o fato de encontrar-se prescrita a dívida tampouco enseja tal obrigatoriedade de exclusão, uma vez que o artigo 189 do Código Civil dispõe que, violado o direito, nasce para o titular a pretensão, a qual se extingue pela prescrição, nos prazos previstos nos artigos 205 e 206 do mesmo Diploma Legal. A prescrição, pois, não atinge o próprio direito subjetivo, que continua a existir, tanto que, caso o devedor venha a realizar o pagamento, não há como pleitear a restituição. Alcança ela a pretensão de cobrança, seja por via extrajudicial ou judicial, não podendo os réus realizar qualquer ato nesse sentido, não havendo que se falar em inexistência da dívida: DIREITO CIVIL. RECURSO ESPECIAL. AÇÃO DECLARATÓRIA. CONTRATO DE COMPRA E VENDA DE IMÓVEL. PARCELAS INADIMPLIDAS. PRESCRIÇÃO. INTERRUPÇÃO. NÃO OCORRÊNCIA. REEXAME DE FATOS E PROVAS. INADMISSIBILIDADE. PRESCRIÇÃO QUE ATINGE A PRETENSÃO, E NÃO O DIREITO SUBJETIVO EM SI. 1. Ação ajuizada em 27/03/2013. Recurso especial concluso ao gabinete em 14/12/2016. Julgamento: CPC/73. 2. O propósito recursal é definir i) se, na hipótese, houve a interrupção da prescrição da pretensão da cobrança das parcelas inadimplidas, em virtude de suposto ato inequívoco que importou reconhecimento do direito pelo devedor; e ii) se, ainda que reconhecida a prescrição da pretensão de cobrança, deve-se considerar como subsistente o inadimplemento em si e como viável a declaração de quitação do bem. 3. Partindo-se das premissas fáticas estabelecidas pelo Tribunal de origem quanto à inexistência de ato inequívoco que importasse em reconhecimento do direito por parte da recorrida premissas estas inviáveis de serem reanalisadas ou alteradas em razão do óbice da Súmula 7/STJ não há como se admitir a ocorrência de interrupção do prazo prescricional. 4. A prescrição pode ser definida como a perda, pelo titular do direito violado, da pretensão à sua reparação. Inviável se admitir, portanto, o reconhecimento de inexistência da dívida e quitação do saldo devedor, uma vez que a prescrição não atinge o direito subjetivo em si mesmo. 5. Recurso especial parcialmente conhecido e, nessa parte, provido. (Superior Tribunal de Justiça; REsp nº 1.694.322-SP (2016/0301649-0); Douta Relatora: Ministra NANCY ANDRIGHI; Data do julgamento: 07.11.2017). Mesmo prescrita, pois, a dívida existe, não podendo, apenas, ser exigida, o que implica em não ensejar o direito ao protesto, à negativação ou a outro ato que, mesmo paralelamente, implique na tentativa de obrigar o devedor ao pagamento. Mas isto, como visto, aqui não ocorreu. Os réus não manifestam qualquer pretensão de exigir o pagamento, mantendo apenas o registro de que existe, registro este, que além de real, como já explicitado mais de uma vez, é acessível apenas pela autora. Nem se diga que os lançamentos gerariam efeitos deletérios ao score de crédito da autora, nada havendo a indicar tal hipótese inclusive. Há a possibilidade, pelo contrário, de se conceder um bônus no score do devedor que, mesmo tendo ocorrido a prescrição da dívida, demonstra interesse em quitá-la, e o faz, preservando o direito de seu credor. Mas daí a dizer que o não pagamento enseja prejuízos ao devedor há uma enorme distância. Nada produziu a autora, ainda, para demonstrar o contrário. O pleito de indenização por danos morais é improcedente, a considerar que o lançamento existente, como visto, não gera efeitos perante terceiros e tampouco prejudica o score da autora. No sentido supra, inclusive, o Enunciado de número 11 da Egrégia Seção de Direito Privado do Tribunal de Justiça deste Estado: A cobrança extrajudicial de dívida prescrita é ilícita. O seu registro na plataforma Serasa Limpa Nome ou similares de mesma natureza, por si só, não caracteriza dano moral, exceto provada divulgação a terceiros ou alteração no sistema de pontuação de créditos: score. Poder-se-ia exigir a apresentação exata dos documentos relativos à cessão se os lançamentos tivessem alguma repercussão externa. Não ocorrendo esta e restando vedada a cobrança, pela prescrição, como pretendido pela autora, não há motivo para tal discussão. Declara-se, pois, a prescrição, sendo as dívidas inexigíveis, o que, contudo, não faz com que inexistam, restando os réus, apenas, privados dos meios judiciais e administrativos para a cobrança. Ante o exposto, julgo parcialmente procedente a presente ação declaratória de inexistência de débitos, cumulada com a exclusão de apontamentos e indenização por danos morais promovida por ANA PAULA MOTA DE ARAÚJO em face do FUNDO DE INVESTIMENTO EM DIREITOS CREDITÓRIOS NÃO PADRONIZADOS NPL II e de RECOVERY DO BRASIL CONSULTORIA S.A., e em consequência: a) declaro prescrita a obrigação relativa aos contratos 4268000036610320155 (R$ 3.105,43) e 4268010631818000152 (R$ 693,05), sendo, portanto, inexigíveis judicial ou extrajudicialmente; e b) rejeito os pedidos de declaração de inexistência dos débitos referidos na alínea anterior; de exclusão dos apontamentos; e de indenização por danos morais. Condeno a autora, que restou vencida praticamente de forma integral, já que não havia controvérsia quanto à prescrição declarada, ao pagamento das custas e despesas processuais, bem como de honorários advocatícios, que arbitro no valor equivalente a 10% (dez por cento) daquele atribuído à causa, a ser corrigido monetariamente desde o ajuizamento pelos índices constantes da Tabela de Atualização do Tribunal de Justiça deste Estado, bem como acrescido de juros de mora de 1% (um por cento) ao mês, contados desde o trânsito em julgado da presente. Beneficiária da gratuidade, a exigibilidade das verbas de sucumbência dependerá da comprovação da perda da condição de hipossuficiente. P.I.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Sentença
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			15/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Especificação de Provas Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.42261852-9
+Tipo da Petição: Indicação de Provas
+Data: 15/12/2022 11:35
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			06/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Réplica Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.42185855-0
+Tipo da Petição: Manifestação Sobre a Contestação
+Data: 06/12/2022 12:20
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 1007/2022
+Data da Publicação: 07/12/2022
+Número do Diário: 3644
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 1007/2022
+Teor do ato: Manifeste(m)-se o(s) autor(es) em réplica, no prazo legal. Especifiquem as partes as provas que pretendem produzir, justificando de forma fundamentada sua pertinência, dentro do prazo legal, e informem se há interesse na realização de audiência de conciliação. No silêncio, o feito será julgado antecipadamente, nos termos do artigo 355, inciso I, do CPC.
+Advogados(s): Mariana Denuzzo Salomão (OAB 253384/SP), Max Canaverde dos Santos Soares (OAB 408389/SP), Getúlio Santos Moreira (OAB 448551/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			05/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-104419007" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=104419007&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-104419007" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=104419007&amp;nmRecursoAcessado=Ato+Ordinat%C3%B3rio+-+Intima%C3%A7%C3%A3o+-+DJE"> Ato Ordinatório - Intimação - DJE
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Manifeste(m)-se o(s) autor(es) em réplica, no prazo legal. Especifiquem as partes as provas que pretendem produzir, justificando de forma fundamentada sua pertinência, dentro do prazo legal, e informem se há interesse na realização de audiência de conciliação. No silêncio, o feito será julgado antecipadamente, nos termos do artigo 355, inciso I, do CPC.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Contestação Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.42171539-3
+Tipo da Petição: Contestação
+Data: 04/12/2022 15:08
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			04/12/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Contestação Juntada
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Nº Protocolo: WJMJ.22.42171537-7
+Tipo da Petição: Contestação
+Data: 04/12/2022 15:07
+
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			16/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					AR Positivo Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Juntada de AR : AA478766688TJ
+Situação : Cumprido
+Modelo : Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+Destinatário : Fundo de Investimento em Direitos Creditórios Não Padronizados NPL II
+Diligência : 07/11/2022
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			10/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					AR Positivo Juntado
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Juntada de AR : AA478766691TJ
+Situação : Cumprido
+Modelo : Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+Destinatário : Recovery do Brasil Consultoria S.A.
+Diligência : 07/11/2022
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			02/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Certidão de Publicação Expedida
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0907/2022
+Data da Publicação: 04/11/2022
+Número do Diário: 3623
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			01/11/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Remetido ao DJE
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Relação: 0907/2022
+Teor do ato: Vistos. Defiro os benefícios da Justiça Gratuita à autora. Anotem-se. As teses arguidas pela autora não podem ser desde logo acolhidas, pois somente através da aprofundada análise do feito, a ser realizada por ocasião do julgamento, será possível o reconhecimento de eventual irregularidade praticada. Ante o exposto, indefiro a tutela de urgência. Desnecessário o aditamento por já ter sido proposto o pleito principal. Em respeito ao princípio constitucional da duração razoável do processo, deixo de designar audiência prévia de conciliação. Consigno, ainda, que em caso de manifestarem ambas as partes interesse na conciliação, será prontamente designada audiência com tal finalidade. Cite-se o réu para oferecimento de resposta no prazo legal, com as cautelas de estilo e advertências legais, inclusive relativas aos efeitos da revelia. Intime-se.
+Advogados(s): Max Canaverde dos Santos Soares (OAB 408389/SP), Getúlio Santos Moreira (OAB 448551/SP)
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-103394042" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=103394042&amp;nmRecursoAcessado=Carta+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-103394042" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=103394042&amp;nmRecursoAcessado=Carta+Expedida"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-103394041" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=103394041&amp;nmRecursoAcessado=Carta+Expedida">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-103394041" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=103394041&amp;nmRecursoAcessado=Carta+Expedida"> Carta Expedida
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Processo Digital - Carta - Citação - Rito Comum - Sem Audiência - Cível - NOVO CPC
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+				
+					
+					
+						
+					
+				
+
+				<a class="linkMovVincProc" id="linkMovVincProc-103373306" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=103373306&amp;nmRecursoAcessado=N%C3%A3o+Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela">
+					<img width="16" height="16" border="0" src="/cpopg/imagens/doc.png"></a>
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+					<a class="linkMovVincProc" id="linkMovVincProc-2-103373306" title="Visualizar documento em inteiro teor" href="/cpopg/abrirDocumentoVinculadoMovimentacao.do?processo.codigo=2S001MJR10000&amp;cdDocumento=103373306&amp;nmRecursoAcessado=N%C3%A3o+Concedida+a+Antecipa%C3%A7%C3%A3o+de+tutela"> Não Concedida a Antecipação de tutela
+					</a>
+				
+				
+			
+			
+			<br><span style="font-style: italic;">
+				Vistos. Defiro os benefícios da Justiça Gratuita à autora. Anotem-se. As teses arguidas pela autora não podem ser desde logo acolhidas, pois somente através da aprofundada análise do feito, a ser realizada por ocasião do julgamento, será possível o reconhecimento de eventual irregularidade praticada. Ante o exposto, indefiro a tutela de urgência. Desnecessário o aditamento por já ter sido proposto o pleito principal. Em respeito ao princípio constitucional da duração razoável do processo, deixo de designar audiência prévia de conciliação. Consigno, ainda, que em caso de manifestarem ambas as partes interesse na conciliação, será prontamente designada audiência com tal finalidade. Cite-se o réu para oferecimento de resposta no prazo legal, com as cautelas de estilo e advertências legais, inclusive relativas aos efeitos da revelia. Intime-se.
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoClaro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			31/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Conclusos para Despacho
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+<tr class="fundoEscuro containerMovimentacao" style="">
+<td class="dataMovimentacao" width="120" style="vertical-align: top">
+			28/10/2022
+		</td>
+		<td width="20" valign="top" aria-hidden="true">
+			
+		</td>
+		<td class="descricaoMovimentacao" style="vertical-align: top; padding-bottom: 5px">
+			
+			
+				
+				
+					Distribuído Livremente (por Sorteio) (movimentação exclusiva do distribuidor)
+				
+			
+			
+			<br><span style="font-style: italic;">
+				
+			</span>
+			
+		</td>
+	</tr>
+</tbody>
+</table>
+<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value=""><input id="linkNaoExibidomovimentacoes" type="hidden" value="Recolher"><span id="mensagensExibindomovimentacoes" class="mensagemExibindo">
+
+</span>  
+
+    <a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+        <span id="setasDireitamovimentacoes" class="setasDireita">
+            <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+        </span>
+        Mais
+    </a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+			
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+			
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+		
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+</div>
+
+		
+
+	
+
+	                
+	                
+	                
+	                
+	                
+	                
+	            
+	        
+	            
+	                
+	                
+	                
+	                
+	                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Petições diversas</h2>
+		
+	
+</div>
+
+<!-- Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+<thead>
+<tr class="label">
+<th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td></td>
+					<td></td>
+				</tr>
+</thead>
+<tbody>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								04/12/2022
+							</td>
+							<td width="*">
+								Contestação <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								04/12/2022
+							</td>
+							<td width="*">
+								Contestação <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								06/12/2022
+							</td>
+							<td width="*">
+								Manifestação Sobre a Contestação <br>
+</td>
+						</tr>
+<tr class="fundoEscuro">
+<td width="140" style="text-align:left">
+								15/12/2022
+							</td>
+							<td width="*">
+								Indicação de Provas <br>
+</td>
+						</tr>
+<tr class="fundoClaro">
+<td width="140" style="text-align:left">
+								09/02/2023
+							</td>
+							<td width="*">
+								Razões de Apelação <br>
+</td>
+						</tr>
+</tbody>
+</table>
+<!--  Tabela de petições diversas --><script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+			if(!captcha){
+				return;
+			}
+			$('.incidente a').each(function(){
+				var $incidente = $(this);
+				var url = $incidente.attr('href');
+				$incidente.attr('href', url+'&uuidCaptcha='+captcha);
+			});
+		})
+	})(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tr>
+<td id="processoSemIncidentes" colspan="3" align="left">
+		 	
+ 				
+ 				
+ 					Não há incidentes, ações incidentais, recursos ou execuções de sentenças vinculados a este processo.
+ 				
+ 			
+		  </td> 
+	    </tr></table>
+<!--  Incidentes --><script type="text/javascript">
+    (function ($) {
+        $(function () {
+            var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+            if(!captcha){
+                return;
+            }
+            $.each($('.processoApensado'), function (i, value) {
+                var $link = $(value);
+                $link.attr('href', $link.attr('href') + '&uuidCaptcha=' + captcha);
+            })
+
+        })
+    })(jQuery);
+</script><div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Apensos, Entranhados e Unificados</h2>
+		
+	
+</div>
+
+
+
+    
+        <table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tbody id="dadosApensosNaoDisponiveis"><tr>
+<td colspan="3" align="left">Não há processos apensados, entranhados e unificados a este processo.</td>
+            </tr></tbody></table>
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle tituloDoBloco">Audiências</h2>
+		
+	
+</div>
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+            
+                
+            
+        
+    
+    
+
+<a name="audienciasPlaceHolder"></a>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1"><tr>
+<td id="processoSemAudiencias" colspan="3" align="left">
+                    
+                        
+                        
+                            Não há Audiências futuras vinculadas a este processo.
+                        
+                    
+                </td>
+            </tr></table>
+<form id="popupCdas" style="display: none;">
+	<!--  dados da lista (CDAs) -->
+	<div style="height:210px; overflow: auto;">
+		<table id="tableCdasPrincipais" style="margin-left:10px; margin-top:1px; width: 98%;">
+<thead>
+<tr class="fundoClaro">
+<th style="text-align:left;">Número CDA</th>
+					<th style="text-align:left;">Valor</th>
+					<th style="text-align:left;">Dt. CDA</th>
+					<th style="text-align:left;">Valor atualizado</th>
+					<th style="text-align:left;">Dt. atualização</th>
+					<th style="text-align:left;">Situação</th>
+				</tr>
+<tr class="fundoEscuro" height="2" aria-hidden="true">
+<td colspan="6"></td>
+				</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</form>
+
+	                
+	                
+	                
+	                
+	            
+	        
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	<form action="/cpopg/show.do?processo.codigo=2S001MJR10000&amp;processo.foro=100&amp;processo.numero=1119237-36.2022.8.26.0100" id="popupSenha" style="display: none;" method="POST">
+		
+		<table role="document">
+<tr>
+<td colspan="2" style="padding-bottom:20px">Atendendo a resolução 121 do CNJ.</td>
+			</tr>
+<tr align="center">
+<td align="left" colspan="2" style="padding-bottom:20px">
+					<div style="float:left; line-height:30px;">Se for uma parte ou interessado, digite a senha do processo</div>
+					<div style="float:left;width: 140px; padding-left:15px">
+						<input type="password" name="senhaProcesso" maxlength="12" value="" rotulo="" class="form-control" id="senhaProcesso"><input type="hidden" name="idRecursoQueProvocouLiberacaoPorSenha" value="">
+</div>
+					<div class="unj-form-control-group__icon">
+						<div class="dropdown show">
+							<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyph glyph-info" aria-hidden="true"></span>
+							</a>
+							<div class="dropdown-menu tooltip-campos" aria-labelledby="dropdownMenuLink">
+								
+									É necessário informar uma senha para acessar processo em segredo de justiça, bem como para acessar autos dos demais processos.<br><br>
+									Se for parte do processo e ainda não possua uma senha, <b>solicite-a no cartório</b>.<br><br>
+</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+<tr>
+<td colspan="2" align="center">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	    
+	<input type="button" name="btFechar" value="Cancelar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotao " id="botaoFecharPopupSenha"><input type="submit" name="btEnviarSenha" value="Continuar" onclick="" onmouseover="B_mOver(this);" onmouseout="B_mOut(this);" class="spwBotaoDefault btn-space" id="btEnviarSenha">
+</td>
+			</tr>
+</table>
+</form>
+
+
+
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer><nav class="navbar__footer"><div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+<li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-saj.png" alt="SAJ"></a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="https://esaj.tjsp.jus.br/esaj/img/brand/icon-softplan.png" alt="Softplan"></a>
+                </li>
+            </ul>
+<ul class="navbar__footer__list-actions"></ul>
+</div>
+    </nav></footer>
+</body>
+</html>
